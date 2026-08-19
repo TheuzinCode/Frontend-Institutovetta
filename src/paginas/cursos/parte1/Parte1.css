@@ -1,0 +1,725 @@
+/* ==========================================
+   SEÇÃO PRINCIPAL
+========================================== */
+
+.parte1-cursos-parte1-cursos {
+    position: relative;
+
+    width: 100%;
+    min-height: 355px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 70%,
+            rgba(255, 103, 54, 0.12),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 15% 40%,
+            rgba(30, 91, 160, 0.08),
+            transparent 25%
+        ),
+        #080d18;
+
+    font-family: "Inter", sans-serif;
+
+    isolation: isolate;
+}
+
+
+/* ==========================================
+   FUNDO ANIMADO
+========================================== */
+
+.fundo-animado-parte1-cursos {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: -1;
+
+}
+
+
+/* ==========================================
+   BRILHO LARANJA
+========================================== */
+
+.brilho-laranja-parte1-cursos {
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    left: 50%;
+    top: 70%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(255, 103, 54, 0.16) 0%,
+        rgba(255, 103, 54, 0.07) 30%,
+        transparent 70%
+    );
+
+    filter: blur(15px);
+
+    animation:
+        movimento-brilho-parte1-cursos
+        8s ease-in-out infinite;
+
+}
+
+
+/* ==========================================
+   BRILHO AZUL
+========================================== */
+
+.brilho-azul-parte1-cursos {
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    left: 10%;
+    top: 20%;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(35, 100, 180, 0.08),
+        transparent 70%
+    );
+
+    filter: blur(25px);
+
+    animation:
+        movimento-azul-parte1-cursos
+        12s ease-in-out infinite;
+
+}
+
+
+/* ==========================================
+   CÍRCULOS DE FUNDO
+========================================== */
+
+.circulo-1-parte1-cursos {
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    left: 50%;
+    top: 100%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 103, 54, 0.10);
+
+    animation:
+        flutuar-circulo-1-parte1-cursos
+        10s ease-in-out infinite;
+
+}
+
+
+.circulo-2-parte1-cursos {
+
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    left: 50%;
+    top: 100%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 103, 54, 0.06);
+
+    animation:
+        flutuar-circulo-2-parte1-cursos
+        14s ease-in-out infinite;
+
+}
+
+
+.circulo-3-parte1-cursos {
+
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    left: 50%;
+    top: 100%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 103, 54, 0.035);
+
+    animation:
+        flutuar-circulo-3-parte1-cursos
+        18s ease-in-out infinite;
+
+}
+
+
+/* ==========================================
+   PARTÍCULAS
+========================================== */
+
+.particula-1-parte1-cursos,
+.particula-2-parte1-cursos,
+.particula-3-parte1-cursos,
+.particula-4-parte1-cursos,
+.particula-5-parte1-cursos,
+.particula-6-parte1-cursos,
+.particula-7-parte1-cursos,
+.particula-8-parte1-cursos,
+.particula-9-parte1-cursos,
+.particula-10-parte1-cursos,
+.particula-11-parte1-cursos,
+.particula-12-parte1-cursos {
+
+    position: absolute;
+
+    width: 3px;
+    height: 3px;
+
+    border-radius: 50%;
+
+    background: #ff713d;
+
+    box-shadow:
+        0 0 7px rgba(255, 113, 61, 0.8),
+        0 0 15px rgba(255, 113, 61, 0.25);
+
+    animation:
+        piscar-particula-parte1-cursos
+        3s ease-in-out infinite;
+
+}
+
+
+/* Posições */
+
+.particula-1-parte1-cursos {
+    left: 3%;
+    top: 25%;
+    animation-delay: .3s;
+}
+
+.particula-2-parte1-cursos {
+    left: 15%;
+    top: 55%;
+    animation-delay: 1.2s;
+}
+
+.particula-3-parte1-cursos {
+    left: 26%;
+    top: 38%;
+    animation-delay: 2s;
+}
+
+.particula-4-parte1-cursos {
+    left: 36%;
+    top: 12%;
+    animation-delay: .7s;
+}
+
+.particula-5-parte1-cursos {
+    left: 47%;
+    top: 38%;
+    animation-delay: 1.8s;
+}
+
+.particula-6-parte1-cursos {
+    left: 54%;
+    top: 8%;
+    animation-delay: 2.5s;
+}
+
+.particula-7-parte1-cursos {
+    left: 67%;
+    top: 45%;
+    animation-delay: .4s;
+}
+
+.particula-8-parte1-cursos {
+    left: 74%;
+    top: 20%;
+    animation-delay: 1.5s;
+}
+
+.particula-9-parte1-cursos {
+    left: 83%;
+    top: 55%;
+    animation-delay: 2.2s;
+}
+
+.particula-10-parte1-cursos {
+    left: 91%;
+    top: 32%;
+    animation-delay: .9s;
+}
+
+.particula-11-parte1-cursos {
+    left: 97%;
+    top: 8%;
+    animation-delay: 1.7s;
+}
+
+.particula-12-parte1-cursos {
+    left: 31%;
+    top: 78%;
+    animation-delay: 2.7s;
+}
+
+
+/* ==========================================
+   CONTEÚDO
+========================================== */
+
+.container-parte1-cursos {
+
+    position: relative;
+
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    z-index: 2;
+
+}
+
+
+/* ==========================================
+   BADGE
+========================================== */
+
+.badge-parte1-cursos {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 9px 20px;
+
+    margin-bottom: 25px;
+
+    border-radius: 30px;
+
+    border: 1px solid rgba(255, 103, 54, 0.35);
+
+    background: rgba(255, 103, 54, 0.10);
+
+    color: #ff8a5f;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    backdrop-filter: blur(8px);
+
+    -webkit-backdrop-filter: blur(8px);
+
+}
+
+
+.icone-badge-parte1-cursos {
+
+    font-size: 13px;
+
+    color: #ff713d;
+
+}
+
+
+/* ==========================================
+   TÍTULO
+========================================== */
+
+.titulo-parte1-cursos {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 56px;
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1.5px;
+
+}
+
+
+.titulo-destaque-parte1-cursos {
+
+    color: #ff6b23;
+
+}
+
+
+/* ==========================================
+   DESCRIÇÃO
+========================================== */
+
+.descricao-parte1-cursos {
+
+    max-width: 650px;
+
+    margin: 15px auto 0;
+
+    color: #8c96a8;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    font-weight: 400;
+
+}
+
+
+/* ==========================================
+   ANIMAÇÕES
+========================================== */
+
+@keyframes movimento-brilho-parte1-cursos {
+
+    0% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(0.9);
+
+        opacity: .7;
+
+    }
+
+    50% {
+
+        transform:
+            translate(-50%, -55%)
+            scale(1.15);
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(0.9);
+
+        opacity: .7;
+
+    }
+
+}
+
+
+@keyframes movimento-azul-parte1-cursos {
+
+    0% {
+
+        transform: translate(0, 0);
+
+        opacity: .4;
+
+    }
+
+    50% {
+
+        transform: translate(80px, 40px);
+
+        opacity: .8;
+
+    }
+
+    100% {
+
+        transform: translate(0, 0);
+
+        opacity: .4;
+
+    }
+
+}
+
+
+@keyframes flutuar-circulo-1-parte1-cursos {
+
+    0% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(.95);
+
+        opacity: .5;
+
+    }
+
+    50% {
+
+        transform:
+            translate(-50%, -53%)
+            scale(1.05);
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(.95);
+
+        opacity: .5;
+
+    }
+
+}
+
+
+@keyframes flutuar-circulo-2-parte1-cursos {
+
+    0% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+
+        opacity: .3;
+
+    }
+
+    50% {
+
+        transform:
+            translate(-50%, -48%)
+            scale(1.04);
+
+        opacity: .7;
+
+    }
+
+    100% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+
+        opacity: .3;
+
+    }
+
+}
+
+
+@keyframes flutuar-circulo-3-parte1-cursos {
+
+    0% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+
+        opacity: .2;
+
+    }
+
+    50% {
+
+        transform:
+            translate(-50%, -52%)
+            scale(1.06);
+
+        opacity: .5;
+
+    }
+
+    100% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+
+        opacity: .2;
+
+    }
+
+}
+
+
+@keyframes piscar-particula-parte1-cursos {
+
+    0% {
+
+        opacity: .2;
+
+        transform: scale(.7);
+
+    }
+
+    50% {
+
+        opacity: 1;
+
+        transform: scale(1.5);
+
+    }
+
+    100% {
+
+        opacity: .2;
+
+        transform: scale(.7);
+
+    }
+
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 992px) {
+
+    .parte1-cursos-parte1-cursos {
+
+        min-height: 350px;
+
+    }
+
+    .titulo-parte1-cursos {
+
+        font-size: 48px;
+
+    }
+
+}
+
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media (max-width: 768px) {
+
+    .parte1-cursos-parte1-cursos {
+
+        min-height: 370px;
+
+        padding: 50px 0;
+
+    }
+
+    .container-parte1-cursos {
+
+        width: 90%;
+
+    }
+
+    .badge-parte1-cursos {
+
+        font-size: 11px;
+
+        padding: 8px 16px;
+
+        margin-bottom: 20px;
+
+    }
+
+    .titulo-parte1-cursos {
+
+        font-size: 38px;
+
+        letter-spacing: -1px;
+
+    }
+
+    .descricao-parte1-cursos {
+
+        font-size: 15px;
+
+        max-width: 450px;
+
+    }
+
+}
+
+
+/* ==========================================
+   CELULARES PEQUENOS
+========================================== */
+
+@media (max-width: 480px) {
+
+    .parte1-cursos-parte1-cursos {
+
+        min-height: 390px;
+
+    }
+
+    .titulo-parte1-cursos {
+
+        font-size: 32px;
+
+    }
+
+    .descricao-parte1-cursos {
+
+        font-size: 14px;
+
+    }
+
+}

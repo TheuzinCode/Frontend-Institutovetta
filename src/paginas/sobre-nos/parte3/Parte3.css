@@ -1,0 +1,262 @@
+.pagina-sobre-nós-parte3 {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ff5722 0%, #ff7346 50%, #ff8a63 100%);
+    padding: 60px 40px 70px 40px;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+/* PARTICULAS */
+
+.particulas-sobre-nós-parte3 {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+
+.particula-sobre-nós-parte3 {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ffffff;
+    opacity: 0.3;
+}
+
+
+.particula-sobre-nós-parte3:nth-child(1)  { top: 4%;  left: 6%;  opacity: 0.2; }
+.particula-sobre-nós-parte3:nth-child(2)  { top: 21%; left: 3%;  }
+.particula-sobre-nós-parte3:nth-child(3)  { top: 2%;  left: 74%; opacity: 0.25; }
+.particula-sobre-nós-parte3:nth-child(4)  { top: 14%; left: 88%; opacity: 0.18; }
+.particula-sobre-nós-parte3:nth-child(5)  { top: 20%; left: 95%; }
+.particula-sobre-nós-parte3:nth-child(6)  { top: 48%; left: 2%;  opacity: 0.2; }
+.particula-sobre-nós-parte3:nth-child(7)  { top: 72%; left: 97%; opacity: 0.22; }
+.particula-sobre-nós-parte3:nth-child(8)  { top: 74%; left: 13%; opacity: 0.15; }
+.particula-sobre-nós-parte3:nth-child(9)  { top: 94%; left: 62%; opacity: 0.25; }
+.particula-sobre-nós-parte3:nth-child(10) { top: 88%; left: 33%; opacity: 0.18; }
+
+
+
+/* CONTEUDO */
+
+.conteudo-sobre-nós-parte3 {
+    position: relative;
+    max-width: 1080px;
+    margin: auto;
+}
+
+
+
+/* CABECALHO */
+
+.cabecalho-sobre-nós-parte3 {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+
+.badge-sobre-nós-parte3 {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+.icone-badge-sobre-nós-parte3 {
+    font-size: 12px;
+}
+
+
+.titulo-sobre-nós-parte3 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin: 20px 0 16px 0;
+}
+
+
+.destaque-titulo-sobre-nós-parte3 {
+    padding-bottom: 6px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+
+.descricao-sobre-nós-parte3 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    margin: 0;
+}
+
+
+
+/* CARDS PRINCIPAIS */
+
+.grade-principal-sobre-nós-parte3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-bottom: 22px;
+}
+
+
+.card-principal-sobre-nós-parte3 {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 32px 28px 34px 28px;
+    text-align: center;
+    transition: 0.25s;
+}
+
+
+.card-principal-sobre-nós-parte3:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.45);
+}
+
+
+.icone-principal-sobre-nós-parte3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 24px auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 13px;
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    font-size: 18px;
+}
+
+
+.nome-principal-sobre-nós-parte3 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 14px 0;
+}
+
+
+.texto-principal-sobre-nós-parte3 {
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+
+/* CARDS SECUNDARIOS */
+
+.grade-secundaria-sobre-nós-parte3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+
+.card-secundario-sobre-nós-parte3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 22px 22px 24px 22px;
+    transition: 0.25s;
+}
+
+
+.card-secundario-sobre-nós-parte3:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.16);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+
+.icone-secundario-sobre-nós-parte3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    font-size: 14px;
+}
+
+
+.nome-secundario-sobre-nós-parte3 {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+
+.texto-secundario-sobre-nós-parte3 {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 12px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 950px) {
+
+    .grade-principal-sobre-nós-parte3,
+    .grade-secundaria-sobre-nós-parte3 {
+        grid-template-columns: 1fr;
+    }
+
+
+    .grade-principal-sobre-nós-parte3 {
+        margin-bottom: 18px;
+    }
+
+
+    .titulo-sobre-nós-parte3 {
+        font-size: 30px;
+    }
+
+}
+
+
+@media (max-width: 560px) {
+
+    .pagina-sobre-nós-parte3 {
+        padding: 50px 20px 60px 20px;
+    }
+
+
+    .titulo-sobre-nós-parte3 {
+        font-size: 25px;
+    }
+
+
+    .card-principal-sobre-nós-parte3 {
+        padding: 26px 22px 28px 22px;
+    }
+
+}

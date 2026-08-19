@@ -1,0 +1,125 @@
+.pagina-sobre-nós-parte5 {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(120deg, #ff5722 0%, #ff7346 55%, #ff8f68 100%);
+    padding: 55px 30px 65px 30px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+
+
+/* PARTICULAS */
+
+.particulas-sobre-nós-parte5 {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+
+.particula-sobre-nós-parte5 {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ffffff;
+    opacity: 0.3;
+}
+
+
+.particula-sobre-nós-parte5:nth-child(1)  { top: 8%;  left: 6%;  opacity: 0.2; }
+.particula-sobre-nós-parte5:nth-child(2)  { top: 12%; left: 28%; opacity: 0.16; }
+.particula-sobre-nós-parte5:nth-child(3)  { top: 5%;  left: 63%; opacity: 0.25; }
+.particula-sobre-nós-parte5:nth-child(4)  { top: 20%; left: 87%; opacity: 0.18; }
+.particula-sobre-nós-parte5:nth-child(5)  { top: 41%; left: 79%; }
+.particula-sobre-nós-parte5:nth-child(6)  { top: 55%; left: 96%; opacity: 0.22; }
+.particula-sobre-nós-parte5:nth-child(7)  { top: 68%; left: 12%; opacity: 0.25; }
+.particula-sobre-nós-parte5:nth-child(8)  { top: 84%; left: 4%;  opacity: 0.15; }
+.particula-sobre-nós-parte5:nth-child(9)  { top: 90%; left: 46%; opacity: 0.18; }
+.particula-sobre-nós-parte5:nth-child(10) { top: 88%; left: 74%; opacity: 0.2; }
+
+
+
+/* CONTEUDO */
+
+.conteudo-sobre-nós-parte5 {
+    position: relative;
+    max-width: 620px;
+    margin: auto;
+}
+
+
+.titulo-sobre-nós-parte5 {
+    color: #ffffff;
+    font-size: 33px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin: 0 0 16px 0;
+}
+
+
+.descricao-sobre-nós-parte5 {
+    max-width: 470px;
+    margin: 0 auto 34px auto;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+
+/* BOTAO */
+
+.botao-sobre-nós-parte5 {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    height: 52px;
+    padding: 0 34px;
+    border: none;
+    border-radius: 30px;
+    background: #ffffff;
+    color: #ff5722;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 0 10px 26px rgba(140, 45, 10, 0.18);
+    transition: 0.2s;
+}
+
+
+.botao-sobre-nós-parte5:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(140, 45, 10, 0.28);
+}
+
+
+.seta-botao-sobre-nós-parte5 {
+    font-size: 14px;
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 600px) {
+
+    .pagina-sobre-nós-parte5 {
+        padding: 45px 20px 55px 20px;
+    }
+
+
+    .titulo-sobre-nós-parte5 {
+        font-size: 25px;
+    }
+
+
+    .botao-sobre-nós-parte5 {
+        width: 100%;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+}

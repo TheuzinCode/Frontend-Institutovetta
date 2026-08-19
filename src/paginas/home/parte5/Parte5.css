@@ -1,0 +1,186 @@
+.parte5-home {
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+    background: #fff;
+    font-family: "Inter", sans-serif;
+    background-attachment: fixed;
+}
+
+/* Fundo */
+
+.parte5-home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../../../assets/imgs/fundo-desconto.png") center /cover no-repeat;
+    height: 100%;
+    opacity: .7;
+    pointer-events: none;
+}
+
+.container-parte5-home {
+    position: relative;
+    width: 90%;
+    max-width: 1350px;
+    margin: auto;
+}
+
+/* Conteúdo */
+
+.conteudo-parte5-home {
+    display: grid;
+    grid-template-columns: 1fr 470px;
+    align-items: center;
+    gap: 70px;
+}
+
+.subtitulo-parte5-home {
+    display: block;
+    font-size: 22px;
+    color: #07142d;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.titulo-parte5-home {
+    font-size: 72px;
+    color: #ff631f;
+    font-weight: 800;
+    line-height: 1.05;
+    margin-bottom: 20px;
+
+}
+
+.descricao-parte5-home {
+    max-width: 560px;
+    font-size: 24px;
+    line-height: 1.7;
+    color: #5e6778;
+    margin-bottom: 45px;
+
+}
+
+.botao-parte5-home {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 68px;
+    border-radius: 60px;
+    background: #ff631f;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    transition: .35s;
+
+}
+
+.botao-parte5-home:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 35px rgba(255, 99, 31, .35);
+}
+
+/* Imagem */
+
+.imagem-parte5-home {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.imagem-parte5-home img {
+    width: 100%;
+    max-width: 430px;
+    border-radius: 35px;
+    object-fit: cover;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .12);
+}
+
+/* Notebook */
+
+@media(max-width:1200px) {
+
+    .titulo-parte5-home {
+        font-size: 58px;
+    }
+
+    .descricao-parte5-home {
+        font-size: 20px;
+    }
+
+}
+
+/* Tablet */
+
+@media(max-width:992px) {
+
+    .conteudo-parte5-home {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .descricao-parte5-home {
+        margin: auto auto 40px;
+    }
+
+    .imagem-parte5-home {
+        order: -1;
+    }
+
+}
+
+/* Celular */
+
+@media(max-width:768px) {
+
+    .parte5-home {
+        padding: 40px 0;
+    }
+
+    .topo-btn-parte5-home {
+        width: 100%;
+        justify-content: center;
+        font-size: 17px;
+        padding: 18px 20px;
+    }
+
+    .titulo-parte5-home {
+        font-size: 42px;
+        color: #ff631f;
+        font-weight: 900;
+    }
+    
+
+    .subtitulo-parte5-home {
+        font-size: 18px;
+    }
+
+    .descricao-parte5-home {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .botao-parte5-home {
+        width: 100%;
+    }
+
+    .imagem-parte5-home img {
+       display: none;
+    }
+
+}
+
+/* Celulares pequenos */
+
+@media(max-width:480px) {
+
+    .titulo-parte5-home {
+        font-size: 34px;
+    }
+
+    .descricao-parte5-home {
+        font-size: 16px;
+    }
+
+}

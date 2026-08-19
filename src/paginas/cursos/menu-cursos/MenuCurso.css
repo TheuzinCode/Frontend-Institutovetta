@@ -1,0 +1,455 @@
+/* ==========================================
+   MENU PRINCIPAL
+========================================== */
+
+.menu-cursos-menu-cursos {
+
+    width: 100%;
+
+    background: #080d18;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+    font-family: "Inter", sans-serif;
+
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container-menu-cursos-menu-cursos {
+
+    width: 90%;
+
+    max-width: 1180px;
+
+    min-height: 58px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+/* ==========================================
+   CAMPO DE BUSCA
+========================================== */
+
+.busca-menu-cursos-menu-cursos {
+
+    width: 296px;
+
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 0 14px;
+
+    background: #111722;
+
+    border: 1px solid #252d3a;
+
+    border-radius: 25px;
+
+    transition: .25s;
+
+}
+
+
+.busca-menu-cursos-menu-cursos:focus-within {
+
+    border-color: #3d5f86;
+
+    box-shadow:
+        0 0 0 3px rgba(61, 95, 134, 0.12);
+
+}
+
+
+.icone-busca-menu-cursos-menu-cursos {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #687487;
+
+    font-size: 14px;
+
+    opacity: .8;
+
+}
+
+
+.input-busca-menu-cursos-menu-cursos {
+
+    width: 100%;
+
+    min-width: 0;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #e6e9ee;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+}
+
+
+.input-busca-menu-cursos-menu-cursos::placeholder {
+
+    color: #697386;
+
+}
+
+
+/* ==========================================
+   FILTROS DE CATEGORIA
+========================================== */
+
+.filtros-categoria-menu-cursos-menu-cursos {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    flex: 1;
+
+}
+
+
+/* ==========================================
+   BOTÕES DE CATEGORIA
+========================================== */
+
+.botao-filtro-menu-cursos-menu-cursos {
+
+    height: 36px;
+
+    padding: 0 17px;
+
+    border: 1px solid #252d3a;
+
+    border-radius: 22px;
+
+    background: #111722;
+
+    color: #8993a3;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        transform .25s ease;
+
+}
+
+
+.botao-filtro-menu-cursos-menu-cursos:hover {
+
+    color: #ffffff;
+
+    border-color: #3a4555;
+
+    transform: translateY(-1px);
+
+}
+
+
+/* Categoria ativa */
+
+.botao-filtro-menu-cursos-menu-cursos.ativo-menu-cursos {
+
+    background: #ff671f;
+
+    border-color: #ff671f;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 5px 15px rgba(255, 103, 31, 0.20);
+
+}
+
+
+/* ==========================================
+   MODALIDADES
+========================================== */
+
+.filtros-modalidade-menu-cursos-menu-cursos {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    flex-shrink: 0;
+
+    padding-left: 4px;
+
+}
+
+
+/* ==========================================
+   BOTÕES DE MODALIDADE
+========================================== */
+
+.botao-modalidade-menu-cursos-menu-cursos {
+
+    height: 36px;
+
+    padding: 0 18px;
+
+    border: 1px solid #252d3a;
+
+    border-radius: 22px;
+
+    background: #111722;
+
+    color: #8993a3;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        transform .25s ease;
+
+}
+
+
+.botao-modalidade-menu-cursos-menu-cursos:hover {
+
+    color: #ffffff;
+
+    border-color: #3a4555;
+
+    transform: translateY(-1px);
+
+}
+
+
+/* Modalidade ativa */
+
+.botao-modalidade-menu-cursos-menu-cursos.ativo-modalidade-menu-cursos {
+
+    background: #35699c;
+
+    border-color: #35699c;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 5px 15px rgba(53, 105, 156, 0.20);
+
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .container-menu-cursos-menu-cursos {
+
+        width: 94%;
+
+    }
+
+    .busca-menu-cursos-menu-cursos {
+
+        width: 230px;
+
+    }
+
+    .botao-filtro-menu-cursos-menu-cursos,
+    .botao-modalidade-menu-cursos-menu-cursos {
+
+        padding-left: 13px;
+        padding-right: 13px;
+
+    }
+
+}
+
+
+/* ==========================================
+   TABLET MENOR
+========================================== */
+
+@media (max-width: 900px) {
+
+    .container-menu-cursos-menu-cursos {
+
+        min-height: auto;
+
+        padding: 12px 0;
+
+        flex-wrap: wrap;
+
+    }
+
+    .busca-menu-cursos-menu-cursos {
+
+        width: 100%;
+
+        order: 1;
+
+    }
+
+    .filtros-categoria-menu-cursos-menu-cursos {
+
+        order: 2;
+
+        width: 100%;
+
+        flex: none;
+
+        overflow-x: auto;
+
+        padding-bottom: 3px;
+
+        scrollbar-width: none;
+
+    }
+
+    .filtros-categoria-menu-cursos-menu-cursos::-webkit-scrollbar {
+
+        display: none;
+
+    }
+
+    .filtros-modalidade-menu-cursos-menu-cursos {
+
+        order: 3;
+
+        width: 100%;
+
+        overflow-x: auto;
+
+        padding: 2px 0;
+
+        scrollbar-width: none;
+
+    }
+
+    .filtros-modalidade-menu-cursos-menu-cursos::-webkit-scrollbar {
+
+        display: none;
+
+    }
+
+}
+
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media (max-width: 600px) {
+
+    .menu-cursos-menu-cursos {
+
+        padding: 5px 0;
+
+    }
+
+    .container-menu-cursos-menu-cursos {
+
+        width: 92%;
+
+        gap: 10px;
+
+    }
+
+    .busca-menu-cursos-menu-cursos {
+
+        height: 42px;
+
+    }
+
+    .input-busca-menu-cursos-menu-cursos {
+
+        font-size: 13px;
+
+    }
+
+    .botao-filtro-menu-cursos-menu-cursos,
+    .botao-modalidade-menu-cursos-menu-cursos {
+
+        height: 36px;
+
+        padding: 0 15px;
+
+        font-size: 11px;
+
+    }
+
+}
+
+
+/* ==========================================
+   CELULAR PEQUENO
+========================================== */
+
+@media (max-width: 400px) {
+
+    .container-menu-cursos-menu-cursos {
+
+        width: 94%;
+
+    }
+
+    .botao-filtro-menu-cursos-menu-cursos,
+    .botao-modalidade-menu-cursos-menu-cursos {
+
+        padding: 0 13px;
+
+    }
+
+}

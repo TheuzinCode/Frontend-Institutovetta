@@ -1,0 +1,239 @@
+.pagina-cases-sucesso-parte2 {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    background-image:
+        radial-gradient(ellipse 40% 45% at 55% 25%, rgba(255, 99, 53, 0.06), transparent 70%);
+    padding: 55px 30px 75px 30px;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+/* PARTICULAS */
+
+.particulas-cases-sucesso-parte2 {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+
+.particula-cases-sucesso-parte2 {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ff6335;
+    opacity: 0.22;
+}
+
+
+.particula-cases-sucesso-parte2:nth-child(1) {
+    top: 5%;
+    left: 28%;
+}
+
+.particula-cases-sucesso-parte2:nth-child(2) {
+    top: 3%;
+    left: 60%;
+    opacity: 0.15;
+}
+
+.particula-cases-sucesso-parte2:nth-child(3) {
+    top: 7%;
+    left: 89%;
+    opacity: 0.12;
+}
+
+.particula-cases-sucesso-parte2:nth-child(4) {
+    top: 10%;
+    left: 96%;
+    opacity: 0.18;
+}
+
+.particula-cases-sucesso-parte2:nth-child(5) {
+    top: 38%;
+    left: 4%;
+    opacity: 0.2;
+}
+
+.particula-cases-sucesso-parte2:nth-child(6) {
+    top: 34%;
+    left: 92%;
+    opacity: 0.14;
+}
+
+.particula-cases-sucesso-parte2:nth-child(7) {
+    top: 66%;
+    left: 97%;
+    opacity: 0.25;
+}
+
+.particula-cases-sucesso-parte2:nth-child(8) {
+    top: 88%;
+    left: 21%;
+    opacity: 0.12;
+}
+
+.particula-cases-sucesso-parte2:nth-child(9) {
+    top: 96%;
+    left: 61%;
+    opacity: 0.3;
+}
+
+.particula-cases-sucesso-parte2:nth-child(10) {
+    top: 92%;
+    left: 79%;
+    opacity: 0.16;
+}
+
+
+
+/* CONTEUDO */
+
+.conteudo-cases-sucesso-parte2 {
+    position: relative;
+    max-width: 1050px;
+    margin: auto;
+}
+
+
+
+/* CABECALHO */
+
+.cabecalho-cases-sucesso-parte2 {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+
+.badge-cases-sucesso-parte2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border: 1px solid rgba(255, 99, 53, 0.35);
+    border-radius: 30px;
+    background: rgba(255, 99, 53, 0.06);
+    color: #ff6335;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+
+.ponto-badge-cases-sucesso-parte2 {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ff6335;
+}
+
+
+.titulo-cases-sucesso-parte2 {
+    color: #16202e;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 20px 0 0 0;
+}
+
+
+.destaque-titulo-cases-sucesso-parte2 {
+    color: #ff6335;
+}
+
+
+
+/* GRADE */
+
+.grade-cases-sucesso-parte2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+
+
+/* CARD */
+
+.card-cases-sucesso-parte2 {
+    border: 1px solid #ececf0;
+    border-radius: 14px;
+    background: #ffffff;
+    padding: 28px 26px;
+    transition: 0.25s;
+}
+
+
+.card-cases-sucesso-parte2:hover {
+    transform: translateY(-4px);
+    border-color: #ffd1c0;
+    box-shadow: 0 10px 25px rgba(22, 32, 46, 0.07);
+}
+
+
+.card-destaque-cases-sucesso-parte2 {
+    border-color: #ffd1c0;
+}
+
+
+.numero-cases-sucesso-parte2 {
+    display: block;
+    color: #16202e;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+}
+
+
+.rotulo-cases-sucesso-parte2 {
+    display: block;
+    margin-top: 12px;
+    color: #8a95a6;
+    font-size: 13px;
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+
+    .grade-cases-sucesso-parte2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .titulo-cases-sucesso-parte2 {
+        font-size: 34px;
+    }
+
+}
+
+
+@media (max-width: 560px) {
+
+    .pagina-cases-sucesso-parte2 {
+        padding: 45px 20px 60px 20px;
+    }
+
+
+    .grade-cases-sucesso-parte2 {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+
+    .titulo-cases-sucesso-parte2 {
+        font-size: 28px;
+    }
+
+
+    .numero-cases-sucesso-parte2 {
+        font-size: 34px;
+    }
+
+}

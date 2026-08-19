@@ -1,0 +1,218 @@
+.pagina-page-form-parte4 {
+    position: relative;
+    overflow: hidden;
+    background: #0c1626;
+    background-image:
+        radial-gradient(ellipse 45% 55% at 50% 40%, rgba(32, 46, 70, 0.45), transparent 70%);
+    padding: 55px 40px 60px 40px;
+    font-family: "Inter", sans-serif;
+}
+
+
+.conteudo-page-form-parte4 {
+    position: relative;
+    max-width: 1080px;
+    margin: auto;
+}
+
+
+
+/* CABECALHO */
+
+.cabecalho-page-form-parte4 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.rotulo-page-form-parte4 {
+    display: block;
+    color: #ff6335;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+
+.titulo-page-form-parte4 {
+    color: #ffffff;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 16px 0 16px 0;
+}
+
+
+.destaque-titulo-page-form-parte4 {
+    color: #ff6335;
+}
+
+
+.descricao-page-form-parte4 {
+    max-width: 600px;
+    margin: auto;
+    color: #8998aa;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+
+/* GRADE */
+
+.grade-page-form-parte4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    align-items: stretch;
+}
+
+
+
+/* CARD */
+
+.card-page-form-parte4 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #1e2c3f;
+    border-radius: 14px;
+    background: #101c2d;
+    padding: 26px 24px 24px 24px;
+    transition: 0.25s;
+}
+
+
+.card-page-form-parte4:hover {
+    transform: translateY(-4px);
+    border-color: #33455c;
+}
+
+
+.estrelas-page-form-parte4 {
+    color: #ff6335;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+
+.texto-page-form-parte4 {
+    flex: 1;
+    color: #a4b1c1;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 1.8;
+    margin: 0 0 22px 0;
+}
+
+
+
+/* AUTOR */
+
+.autor-page-form-parte4 {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding-top: 20px;
+    border-top: 1px solid #1e2c3f;
+}
+
+
+.iniciais-page-form-parte4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 99, 53, 0.15);
+    color: #ff8153;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.nome-autor-page-form-parte4 {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.cargo-autor-page-form-parte4 {
+    display: block;
+    margin-top: 3px;
+    color: #7d8b9c;
+    font-size: 12px;
+}
+
+
+
+/* RODAPE */
+
+.rodape-page-form-parte4 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.selo-page-form-parte4 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 24px;
+    border: 1px solid #1e2c3f;
+    border-radius: 10px;
+    background: #101c2d;
+    color: #a4b1c1;
+    font-size: 13px;
+}
+
+
+.estrelas-selo-page-form-parte4 {
+    color: #ff6335;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 950px) {
+
+    .grade-page-form-parte4 {
+        grid-template-columns: 1fr;
+        max-width: 520px;
+        margin: auto;
+    }
+
+
+    .titulo-page-form-parte4 {
+        font-size: 32px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .pagina-page-form-parte4 {
+        padding: 45px 20px 50px 20px;
+    }
+
+
+    .titulo-page-form-parte4 {
+        font-size: 26px;
+    }
+
+
+    .selo-page-form-parte4 {
+        padding: 12px 18px;
+        font-size: 12px;
+    }
+
+}

@@ -1,0 +1,201 @@
+.pagina-cursos-detalhes-parte3 {
+    background: #ff6335;
+    padding: 60px 80px;
+    font-family: "Inter", sans-serif;
+}
+
+
+.conteudo-cursos-detalhes-parte3 {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+/* TITULO */
+
+.titulo-cursos-detalhes-parte3 {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 35px 0;
+}
+
+
+.titulo-cursos-detalhes-parte3 span {
+    padding-bottom: 8px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.55);
+}
+
+
+
+/* GRADE */
+
+.grade-cursos-detalhes-parte3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+
+/* CARD */
+
+.card-cursos-detalhes-parte3 {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+
+.card-cursos-detalhes-parte3:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* IMAGEM */
+
+.imagem-cursos-detalhes-parte3 {
+    position: relative;
+    height: 150px;
+    background: #0d1b2a;
+}
+
+
+.imagem-cursos-detalhes-parte3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.selo-novo-cursos-detalhes-parte3,
+.selo-alta-cursos-detalhes-parte3 {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: 5px 13px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.selo-novo-cursos-detalhes-parte3 {
+    background: #1f3550;
+}
+
+
+.selo-alta-cursos-detalhes-parte3 {
+    background: #ff6335;
+}
+
+
+
+/* INFORMACOES */
+
+.info-cursos-detalhes-parte3 {
+    padding: 18px 20px 20px 20px;
+}
+
+
+.categoria-cursos-detalhes-parte3 {
+    display: block;
+    color: #ff6335;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+.nome-curso-cursos-detalhes-parte3 {
+    color: #16202e;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0 0 18px 0;
+    min-height: 42px;
+}
+
+
+
+/* RODAPE */
+
+.rodape-cursos-detalhes-parte3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.dados-cursos-detalhes-parte3 {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+.estrela-cursos-detalhes-parte3 {
+    color: #ffb400;
+    font-size: 13px;
+}
+
+
+.nota-cursos-detalhes-parte3,
+.horas-cursos-detalhes-parte3 {
+    color: #8a95a6;
+    font-size: 13px;
+}
+
+
+.ponto-cursos-detalhes-parte3 {
+    color: #c8cfd8;
+    font-size: 13px;
+}
+
+
+.preco-cursos-detalhes-parte3 {
+    color: #16202e;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 1000px) {
+
+    .pagina-cursos-detalhes-parte3 {
+        padding: 45px 25px;
+    }
+
+
+    .grade-cursos-detalhes-parte3 {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+}
+
+
+@media (max-width: 640px) {
+
+    .grade-cursos-detalhes-parte3 {
+        grid-template-columns: 1fr;
+    }
+
+
+    .nome-curso-cursos-detalhes-parte3 {
+        min-height: auto;
+    }
+
+}

@@ -1,0 +1,182 @@
+.parte4-home{
+    padding:90px 0;
+    font-family:Inter,sans-serif;
+    background:#fff;
+}
+
+.container-parte4-home{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+.cabecalho-parte4-home{
+    text-align:center;
+    margin-bottom:90px;
+}
+
+.badge-parte4-home{
+    display:inline-block;
+    padding:10px 24px;
+    border:1px solid #ffb693;
+    border-radius:40px;
+    background:#fff6f2;
+    color:#ff6d39;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:25px;
+}
+
+.titulo-parte4-home{
+    font-size:62px;
+    font-weight:800;
+    color:#09162d;
+    margin-bottom:25px;
+}
+
+.titulo-parte4-home span{
+    color:#ff6836;
+}
+
+.descricao-parte4-home{
+    max-width:720px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.7;
+    color:#65748b;
+}
+
+.etapas-parte4-home{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px;
+    position:relative;
+    
+}
+
+.linha-parte4-home{
+    width:75%;
+    height:3px;
+    background:#ff6836;
+    margin:0 auto -60px;
+}
+
+.etapa-parte4-home{
+    text-align:center;
+    position:relative;
+}
+
+.circulo-parte4-home{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    background:#fff;
+    border:2px solid #ececec;
+    margin:0 auto 30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    color:#ff6836;
+    font-size:42px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.numero-parte4-home{
+    position:absolute;
+    top:-10px;
+    right:-8px;
+
+    width:34px;
+    height:34px;
+
+    border-radius:50%;
+
+    background:#ff6836;
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:14px;
+    font-weight:700;
+}
+
+.etapa-parte4-home h3{
+    font-size:30px;
+    color:#09162d;
+    margin-bottom:20px;
+}
+
+.etapa-parte4-home p{
+    color:#64748b;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* Tablet */
+
+@media(max-width:1100px){
+
+    .titulo-parte4-home{
+        font-size:48px;
+    }
+
+    .descricao-parte4-home{
+        font-size:18px;
+    }
+
+    .linha-parte4-home{
+        display:none;
+    }
+
+    .etapas-parte4-home{
+        grid-template-columns:repeat(2,1fr);
+        gap:60px;
+    }
+
+}
+
+/* Celular */
+
+@media(max-width:768px){
+
+    .parte4-home{
+        padding:70px 0;
+    }
+
+    .cabecalho-parte4-home{
+        margin-bottom:60px;
+    }
+
+    .titulo-parte4-home{
+        font-size:36px;
+        line-height:1.2;
+    }
+
+    .descricao-parte4-home{
+        font-size:17px;
+    }
+
+    .etapas-parte4-home{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .circulo-parte4-home{
+        width:90px;
+        height:90px;
+        font-size:34px;
+    }
+
+    .etapa-parte4-home h3{
+        font-size:24px;
+    }
+
+    .etapa-parte4-home p{
+        font-size:16px;
+    }
+
+}

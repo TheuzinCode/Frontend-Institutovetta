@@ -1,0 +1,166 @@
+.pagina-page-form-parte2 {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    background-image:
+        radial-gradient(ellipse 30% 45% at 92% 45%, rgba(255, 99, 53, 0.04), transparent 70%);
+    padding: 55px 40px 60px 40px;
+    font-family: "Inter", sans-serif;
+}
+
+
+.conteudo-page-form-parte2 {
+    position: relative;
+    max-width: 1080px;
+    margin: auto;
+}
+
+
+
+/* CABECALHO */
+
+.cabecalho-page-form-parte2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.rotulo-page-form-parte2 {
+    display: block;
+    color: #ff6335;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+
+.titulo-page-form-parte2 {
+    color: #16202e;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 16px 0 16px 0;
+}
+
+
+.destaque-titulo-page-form-parte2 {
+    color: #ff6335;
+}
+
+
+.descricao-page-form-parte2 {
+    max-width: 580px;
+    margin: auto;
+    color: #6b7787;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+
+/* GRADE */
+
+.grade-page-form-parte2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+
+
+/* CARD */
+
+.card-page-form-parte2 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ececf0;
+    border-radius: 14px;
+    background: #ffffff;
+    padding: 28px 26px 34px 26px;
+    transition: 0.25s;
+}
+
+
+.card-page-form-parte2:hover {
+    transform: translateY(-4px);
+    border-color: #ffd1c0;
+    box-shadow: 0 10px 25px rgba(22, 32, 46, 0.07);
+}
+
+
+.icone-page-form-parte2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 11px;
+    background: #fff1eb;
+    color: #ff6335;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+
+.nome-curso-page-form-parte2 {
+    color: #16202e;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+}
+
+
+.texto-curso-page-form-parte2 {
+    color: #7d8899;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 950px) {
+
+    .grade-page-form-parte2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .titulo-page-form-parte2 {
+        font-size: 32px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .pagina-page-form-parte2 {
+        padding: 45px 20px 50px 20px;
+    }
+
+
+    .grade-page-form-parte2 {
+        grid-template-columns: 1fr;
+    }
+
+
+    .titulo-page-form-parte2 {
+        font-size: 26px;
+    }
+
+
+    .card-page-form-parte2 {
+        padding: 24px 22px 28px 22px;
+    }
+
+
+    .icone-page-form-parte2 {
+        margin-bottom: 20px;
+    }
+
+}

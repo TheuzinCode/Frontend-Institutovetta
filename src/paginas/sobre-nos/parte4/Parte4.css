@@ -1,0 +1,254 @@
+.pagina-sobre-nós-parte4 {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    background-image:
+        radial-gradient(ellipse 35% 45% at 65% 55%, rgba(255, 99, 53, 0.04), transparent 70%);
+    padding: 55px 40px 60px 40px;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+/* PARTICULAS */
+
+.particulas-sobre-nós-parte4 {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+
+.particula-sobre-nós-parte4 {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ff6335;
+    opacity: 0.2;
+}
+
+
+.particula-sobre-nós-parte4:nth-child(1)  { top: 2%;  left: 25%; opacity: 0.25; }
+.particula-sobre-nós-parte4:nth-child(2)  { top: 6%;  left: 38%; opacity: 0.14; }
+.particula-sobre-nós-parte4:nth-child(3)  { top: 22%; left: 17%; opacity: 0.16; }
+.particula-sobre-nós-parte4:nth-child(4)  { top: 30%; left: 34%; opacity: 0.12; }
+.particula-sobre-nós-parte4:nth-child(5)  { top: 45%; left: 43%; opacity: 0.18; }
+.particula-sobre-nós-parte4:nth-child(6)  { top: 48%; left: 12%; }
+.particula-sobre-nós-parte4:nth-child(7)  { top: 51%; left: 14%; opacity: 0.15; }
+.particula-sobre-nós-parte4:nth-child(8)  { top: 17%; left: 99%; opacity: 0.22; }
+.particula-sobre-nós-parte4:nth-child(9)  { top: 58%; left: 97%; opacity: 0.16; }
+.particula-sobre-nós-parte4:nth-child(10) { top: 60%; left: 71%; opacity: 0.14; }
+.particula-sobre-nós-parte4:nth-child(11) { top: 86%; left: 5%;  opacity: 0.18; }
+.particula-sobre-nós-parte4:nth-child(12) { top: 66%; left: 83%; opacity: 0.12; }
+
+
+
+/* CONTEUDO */
+
+.conteudo-sobre-nós-parte4 {
+    position: relative;
+    max-width: 1080px;
+    margin: auto;
+}
+
+
+
+/* CABECALHO */
+
+.cabecalho-sobre-nós-parte4 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.badge-sobre-nós-parte4 {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    border: 1px solid rgba(255, 99, 53, 0.35);
+    border-radius: 30px;
+    background: rgba(255, 99, 53, 0.06);
+    color: #ff6335;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+.icone-badge-sobre-nós-parte4 {
+    font-size: 12px;
+}
+
+
+.titulo-sobre-nós-parte4 {
+    color: #16202e;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 20px 0 14px 0;
+}
+
+
+.destaque-titulo-sobre-nós-parte4 {
+    color: #ff6335;
+}
+
+
+.descricao-sobre-nós-parte4 {
+    color: #6b7787;
+    font-size: 15px;
+    margin: 0;
+}
+
+
+
+/* LINHA DO TEMPO */
+
+.linha-tempo-sobre-nós-parte4 {
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+.linha-tempo-sobre-nós-parte4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: #eceef2;
+    transform: translateX(-50%);
+}
+
+
+.marco-sobre-nós-parte4 {
+    position: relative;
+    display: flex;
+    margin-bottom: 28px;
+}
+
+
+.marco-sobre-nós-parte4:last-child {
+    margin-bottom: 0;
+}
+
+
+.marco-direita-sobre-nós-parte4 {
+    justify-content: flex-end;
+}
+
+
+.marco-esquerda-sobre-nós-parte4 {
+    justify-content: flex-start;
+}
+
+
+
+/* CARD */
+
+.card-sobre-nós-parte4 {
+    position: relative;
+    width: 340px;
+    border: 1px solid #ececf0;
+    border-radius: 12px;
+    background: #ffffff;
+    padding: 22px 24px 24px 24px;
+    transition: 0.25s;
+}
+
+
+.card-sobre-nós-parte4:hover {
+    border-color: #ffd1c0;
+    box-shadow: 0 10px 25px rgba(22, 32, 46, 0.07);
+}
+
+
+.ponto-sobre-nós-parte4 {
+    position: absolute;
+    top: 18px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ff6335;
+}
+
+
+.marco-direita-sobre-nós-parte4 .ponto-sobre-nós-parte4 {
+    left: 18px;
+}
+
+
+.marco-esquerda-sobre-nós-parte4 .ponto-sobre-nós-parte4 {
+    right: 18px;
+}
+
+
+.ano-sobre-nós-parte4 {
+    display: block;
+    margin-top: 14px;
+    color: #ff6335;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+
+.texto-sobre-nós-parte4 {
+    margin: 10px 0 0 0;
+    color: #6b7787;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+
+    .pagina-sobre-nós-parte4 {
+        padding: 45px 20px 50px 20px;
+    }
+
+
+    .titulo-sobre-nós-parte4 {
+        font-size: 30px;
+    }
+
+
+    .linha-tempo-sobre-nós-parte4::before {
+        left: 6px;
+        transform: none;
+    }
+
+
+    .marco-direita-sobre-nós-parte4,
+    .marco-esquerda-sobre-nós-parte4 {
+        justify-content: flex-start;
+        padding-left: 26px;
+    }
+
+
+    .card-sobre-nós-parte4 {
+        width: 100%;
+    }
+
+
+    .marco-esquerda-sobre-nós-parte4 .ponto-sobre-nós-parte4 {
+        right: auto;
+        left: 18px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .titulo-sobre-nós-parte4 {
+        font-size: 25px;
+    }
+
+}

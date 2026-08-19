@@ -1,0 +1,153 @@
+.pagina-page-form-parte5 {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ff5722 0%, #ff7346 55%, #ff8a63 100%);
+    padding: 65px 30px 75px 30px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+
+.conteudo-page-form-parte5 {
+    position: relative;
+    max-width: 620px;
+    margin: auto;
+}
+
+
+
+/* TITULO */
+
+.titulo-page-form-parte5 {
+    color: #ffffff;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    margin: 0 0 18px 0;
+}
+
+
+.destaque-titulo-page-form-parte5 {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.85);
+    padding-bottom: 2px;
+}
+
+
+
+/* DESCRICAO */
+
+.descricao-page-form-parte5 {
+    max-width: 470px;
+    margin: 0 auto 40px auto;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+
+/* BOTAO */
+
+.botao-page-form-parte5 {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    height: 60px;
+    padding: 0 38px;
+    border: none;
+    border-radius: 40px;
+    background: #ffffff;
+    color: #ff5722;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 0 12px 30px rgba(140, 45, 10, 0.2);
+    transition: 0.2s;
+}
+
+
+.botao-page-form-parte5:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 38px rgba(140, 45, 10, 0.3);
+}
+
+
+.seta-botao-page-form-parte5 {
+    font-size: 15px;
+}
+
+
+
+/* STATUS */
+
+.status-page-form-parte5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 26px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 13px;
+}
+
+
+.ponto-status-page-form-parte5 {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ffffff;
+    animation: pulsar-page-form-parte5 2s ease-in-out infinite;
+}
+
+
+@keyframes pulsar-page-form-parte5 {
+
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 600px) {
+
+    .pagina-page-form-parte5 {
+        padding: 50px 20px 60px 20px;
+    }
+
+
+    .titulo-page-form-parte5 {
+        font-size: 28px;
+    }
+
+
+    .botao-page-form-parte5 {
+        width: 100%;
+        height: 56px;
+        padding: 0 20px;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .ponto-status-page-form-parte5 {
+        animation: none;
+    }
+
+}

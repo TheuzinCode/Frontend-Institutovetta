@@ -1,0 +1,198 @@
+.pagina-page-whatsApp-parte2 {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    background-image:
+        radial-gradient(ellipse 30% 40% at 88% 8%, rgba(255, 99, 53, 0.05), transparent 70%);
+    padding: 55px 40px 45px 40px;
+    font-family: "Inter", sans-serif;
+}
+
+
+.conteudo-page-whatsApp-parte2 {
+    position: relative;
+    max-width: 1080px;
+    margin: auto;
+}
+
+
+
+/* CABECALHO */
+
+.cabecalho-page-whatsApp-parte2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.rotulo-page-whatsApp-parte2 {
+    display: block;
+    color: #ff6335;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+.titulo-page-whatsApp-parte2 {
+    color: #16202e;
+   font-family: "Playfair Display", serif;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 14px 0 16px 0;
+}
+
+
+.destaque-titulo-page-whatsApp-parte2 {
+    color: #ff6335;
+}
+
+
+.descricao-page-whatsApp-parte2 {
+    max-width: 560px;
+    margin: auto;
+    color: #6b7787;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+
+/* GRADE */
+
+.grade-page-whatsApp-parte2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+
+
+/* CARD */
+
+.card-page-whatsApp-parte2 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ececf0;
+    border-radius: 14px;
+    background: #ffffff;
+    padding: 28px 26px 34px 26px;
+    transition: 0.25s;
+}
+
+
+.card-page-whatsApp-parte2:hover {
+    transform: translateY(-4px);
+    border-color: #c6ead6;
+    box-shadow: 0 10px 25px rgba(22, 32, 46, 0.07);
+}
+
+
+.icone-page-whatsApp-parte2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 11px;
+    background: #e9f8ef;
+    color: #22a45d;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+
+.nome-curso-page-whatsApp-parte2 {
+    color: #16202e;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+}
+
+
+.texto-curso-page-whatsApp-parte2 {
+    color: #7d8899;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+
+/* RODAPE */
+
+.rodape-page-whatsApp-parte2 {
+    text-align: center;
+    margin-top: 45px;
+}
+
+
+.link-rodape-page-whatsApp-parte2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #ff6335;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+
+.link-rodape-page-whatsApp-parte2:hover {
+    gap: 12px;
+    color: #f2521f;
+}
+
+
+.seta-rodape-page-whatsApp-parte2 {
+    font-size: 13px;
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 950px) {
+
+    .grade-page-whatsApp-parte2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .titulo-page-whatsApp-parte2 {
+        font-size: 32px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .pagina-page-whatsApp-parte2 {
+        padding: 45px 20px 40px 20px;
+    }
+
+
+    .grade-page-whatsApp-parte2 {
+        grid-template-columns: 1fr;
+    }
+
+
+    .titulo-page-whatsApp-parte2 {
+        font-size: 26px;
+    }
+
+
+    .card-page-whatsApp-parte2 {
+        padding: 24px 22px 28px 22px;
+    }
+
+
+    .icone-page-whatsApp-parte2 {
+        margin-bottom: 20px;
+    }
+
+}

@@ -1,0 +1,136 @@
+.pagina-sobre-nós-parte2 {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    background-image:
+        radial-gradient(ellipse 35% 60% at 45% 40%, rgba(255, 99, 53, 0.04), transparent 70%);
+    padding: 45px 40px 50px 40px;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+/* PARTICULAS */
+
+.particulas-sobre-nós-parte2 {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+
+.particula-sobre-nós-parte2 {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ff6335;
+    opacity: 0.22;
+}
+
+
+.particula-sobre-nós-parte2:nth-child(1)  { top: 6%;  left: 7%;  opacity: 0.14; }
+.particula-sobre-nós-parte2:nth-child(2)  { top: 30%; left: 3%;  }
+.particula-sobre-nós-parte2:nth-child(3)  { top: 4%;  left: 24%; opacity: 0.16; }
+.particula-sobre-nós-parte2:nth-child(4)  { top: 12%; left: 40%; opacity: 0.12; }
+.particula-sobre-nós-parte2:nth-child(5)  { top: 3%;  left: 43%; opacity: 0.3; }
+.particula-sobre-nós-parte2:nth-child(6)  { top: 8%;  left: 51%; opacity: 0.18; }
+.particula-sobre-nós-parte2:nth-child(7)  { top: 26%; left: 63%; opacity: 0.12; }
+.particula-sobre-nós-parte2:nth-child(8)  { top: 5%;  left: 82%; opacity: 0.15; }
+.particula-sobre-nós-parte2:nth-child(9)  { top: 55%; left: 92%; opacity: 0.2; }
+.particula-sobre-nós-parte2:nth-child(10) { top: 78%; left: 15%; opacity: 0.14; }
+.particula-sobre-nós-parte2:nth-child(11) { top: 88%; left: 47%; opacity: 0.12; }
+.particula-sobre-nós-parte2:nth-child(12) { top: 92%; left: 76%; opacity: 0.16; }
+
+
+
+/* CONTEUDO */
+
+.conteudo-sobre-nós-parte2 {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.grade-sobre-nós-parte2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+
+/* ITEM */
+
+.item-sobre-nós-parte2 {
+    text-align: center;
+}
+
+
+.icone-sobre-nós-parte2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin: 0 auto 18px auto;
+    border: 1px solid #ffd9c9;
+    border-radius: 11px;
+    background: #fff5f1;
+    color: #ff6335;
+    font-size: 16px;
+    transition: 0.25s;
+}
+
+
+.item-sobre-nós-parte2:hover .icone-sobre-nós-parte2 {
+    transform: translateY(-4px);
+    border-color: #ffb99e;
+    box-shadow: 0 8px 18px rgba(120, 60, 35, 0.1);
+}
+
+
+.numero-sobre-nós-parte2 {
+    display: block;
+    color: #16202e;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+
+
+.rotulo-sobre-nós-parte2 {
+    display: block;
+    margin-top: 12px;
+    color: #8a95a6;
+    font-size: 13px;
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+
+    .grade-sobre-nós-parte2 {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 20px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .pagina-sobre-nós-parte2 {
+        padding: 35px 20px 40px 20px;
+    }
+
+
+    .numero-sobre-nós-parte2 {
+        font-size: 26px;
+    }
+
+}

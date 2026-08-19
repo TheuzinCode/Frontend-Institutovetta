@@ -1,0 +1,351 @@
+.pagina-page-whatsApp-parte1 {
+    position: relative;
+    overflow: hidden;
+    background: #0c1626;
+    background-image:
+        radial-gradient(ellipse 45% 60% at 72% 45%, rgba(37, 211, 102, 0.07), transparent 70%);
+    padding: 60px 70px 70px 70px;
+    font-family: "Inter", sans-serif;
+}
+
+
+.conteudo-page-whatsApp-parte1 {
+    position: relative;
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+
+
+/* COLUNA ESQUERDA */
+
+.coluna-texto-page-whatsApp-parte1 {
+    flex: 1;
+    min-width: 0;
+}
+
+
+.badge-page-whatsApp-parte1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 8px 18px;
+    border: 1px solid rgba(37, 211, 102, 0.35);
+    border-radius: 30px;
+    background: rgba(37, 211, 102, 0.10);
+    color: #37d47e;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+.ponto-badge-page-whatsApp-parte1 {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #25d366;
+}
+
+
+.titulo-page-whatsApp-parte1 {
+    max-width: 480px;
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    margin: 28px 0 24px 0;
+}
+
+
+.destaque-titulo-page-whatsApp-parte1 {
+    color: #25d366;
+}
+
+
+.descricao-page-whatsApp-parte1 {
+    max-width: 420px;
+    color: #93a1b4;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0 0 38px 0;
+}
+
+
+
+/* BOTOES */
+
+.acoes-page-whatsApp-parte1 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 34px;
+}
+
+
+.botao-principal-page-whatsApp-parte1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    height: 54px;
+    padding: 0 28px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #25d366, #1fae56);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.25);
+    transition: 0.2s;
+}
+
+
+.botao-principal-page-whatsApp-parte1:hover {
+    filter: brightness(1.07);
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+}
+
+
+.icone-whats-botao-page-whatsApp-parte1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.22);
+    font-size: 13px;
+}
+
+
+.seta-botao-page-whatsApp-parte1 {
+    display: flex;
+    margin-top: 4px;
+    align-self: center;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+
+.botao-secundario-page-whatsApp-parte1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    padding: 0 24px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.04);
+    color: #c3ccd8;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.botao-secundario-page-whatsApp-parte1:hover {
+    background: rgba(255, 255, 255, 0.09);
+    border-color: rgba(255, 255, 255, 0.28);
+    color: #ffffff;
+}
+
+
+.icone-download-page-whatsApp-parte1 {
+    font-size: 13px;
+}
+
+
+
+/* SELOS */
+
+.selos-page-whatsApp-parte1 {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+
+.selo-page-whatsApp-parte1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #6e8091;
+    font-size: 13px;
+}
+
+
+.icone-selo-page-whatsApp-parte1 {
+     display: flex;
+    align-items: center;
+    color: #25d366;
+    font-size: 12px;
+}
+
+
+
+/* COLUNA DIREITA */
+
+.coluna-visual-page-whatsApp-parte1 {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+}
+
+
+.quadro-page-whatsApp-parte1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 48px;
+    background: linear-gradient(150deg, #3ddc7f, #22b45c);
+    box-shadow: 0 20px 50px rgba(37, 211, 102, 0.2);
+    animation: flutuar-page-whatsApp-parte1 5s ease-in-out infinite;
+}
+
+
+.simbolo-whats-page-whatsApp-parte1 {
+    color: #ffffff;
+    font-size: 82px;
+    line-height: 1;
+}
+
+
+@keyframes flutuar-page-whatsApp-parte1 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+}
+
+
+
+/* BOLHAS */
+
+.bolha-topo-page-whatsApp-parte1,
+.bolha-lateral-page-whatsApp-parte1,
+.bolha-base-page-whatsApp-parte1 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.bolha-topo-page-whatsApp-parte1 {
+    top: -22px;
+    right: -34px;
+    width: 44px;
+    height: 44px;
+    color: #25d366;
+    font-size: 18px;
+}
+
+
+.bolha-lateral-page-whatsApp-parte1 {
+    top: 42%;
+    right: -60px;
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    color: #ff6335;
+    font-size: 13px;
+}
+
+
+.bolha-base-page-whatsApp-parte1 {
+    bottom: -18px;
+    left: -22px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    color: #25d366;
+    font-size: 13px;
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 950px) {
+
+    .pagina-page-whatsApp-parte1 {
+        padding: 55px 25px 65px 25px;
+    }
+
+
+    .conteudo-page-whatsApp-parte1 {
+        flex-direction: column-reverse;
+        gap: 55px;
+    }
+
+
+    .coluna-visual-page-whatsApp-parte1 {
+        width: 100%;
+    }
+
+
+    .titulo-page-whatsApp-parte1,
+    .descricao-page-whatsApp-parte1 {
+        max-width: 100%;
+    }
+
+
+    .titulo-page-whatsApp-parte1 {
+        font-size: 34px;
+    }
+
+}
+
+
+@media (max-width: 560px) {
+
+    .acoes-page-whatsApp-parte1 {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+
+    .botao-principal-page-whatsApp-parte1,
+    .botao-secundario-page-whatsApp-parte1 {
+        justify-content: center;
+    }
+
+
+    .selos-page-whatsApp-parte1 {
+        gap: 14px;
+    }
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .quadro-page-whatsApp-parte1 {
+        animation: none;
+    }
+
+}

@@ -1,0 +1,344 @@
+/* ===========================
+        PARTE 3 HOME
+=========================== */
+
+.secao-parte3-home {
+    width: 100%;
+    background: linear-gradient(180deg, #09101E, #0B1120);
+    padding: 80px 0;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+}
+
+.container-parte3-home {
+    width: 79%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===========================
+        CABEÇALHO
+=========================== */
+
+.cabecalho-parte3-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.badge-parte3-home {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 12px 28px;
+
+    border: 1px solid rgba(242, 103, 22, .35);
+    border-radius: 40px;
+
+    color: #F26716;
+    background: #1A1F2E;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    margin-bottom: 28px;
+}
+
+.titulo-parte3-home {
+    font-family: "Roboto", sans-serif;
+    font-size: 60px;
+    color: #FFF;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.titulo-parte3-home span {
+    color: #F26716;
+}
+
+.descricao-parte3-home {
+    max-width: 750px;
+    color: #8D94A5;
+    font-size: 21px;
+    line-height: 1.7;
+}
+
+/* ===========================
+            GRID
+=========================== */
+
+.cards-parte3-home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;  
+}
+
+/* ===========================
+            CARD
+=========================== */
+
+.card-parte3-home {
+
+    background: #171C28;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 28px;
+    overflow: hidden;
+    transition: .35s;
+}
+
+.card-parte3-home:hover {
+
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .35);
+    border-color: #F26716;
+}
+
+/* ===========================
+            IMAGEM
+=========================== */
+
+.imagem-parte3-home {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.imagem-parte3-home img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .45s;
+}
+
+.card-parte3-home:hover .imagem-parte3-home img {
+    transform: scale(1.08);
+}
+
+/* ===========================
+        BADGES
+=========================== */
+
+.categoria-parte3-home {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+    background: rgba(255, 255, 255, .12);
+    backdrop-filter: blur(8px);
+    color: #FFF;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.status-laranja-parte3-home {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: #F26716;
+    color: #FFF;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.status-azul-parte3-home {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: #2F66B1;
+    color: #FFF;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* ===========================
+        CONTEÚDO
+=========================== */
+
+.conteudo-card-parte3-home {
+    padding: 28px;
+}
+
+.conteudo-card-parte3-home h3 {
+    color: #FFF;
+    font-size: 22px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.conteudo-card-parte3-home p {
+    color: #8C93A6;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 5px;
+    min-height: 125px;
+}
+
+/* ===========================
+            INFOS
+=========================== */
+
+.infos-parte3-home {
+    display: flex;
+    gap: 30px;
+    color: #8C93A6;
+    border-top: 1px solid rgba(255, 255, 255, .08);
+    padding-top: 20px;
+    margin-bottom: 25px;
+}
+
+.infos-parte3-home span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.infos-parte3-home svg {
+    color: #F26716;
+}
+
+/* ===========================
+            BOTÃO
+=========================== */
+
+.botao-card-parte3-home {
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    background: #2A2125;
+    border: 1px solid rgba(242, 103, 22, .35);
+    color: #F26716;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .35s;
+}
+
+.botao-card-parte3-home:hover {
+    background: #F26716;
+    color: #FFF;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(242, 103, 22, .35);
+}
+
+/* ===========================
+    BOTÃO VER TODOS
+=========================== */
+
+.container-botao-parte3-home {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.botao-ver-todos-parte3-home {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background: #F26716;
+    color: #FFF;
+    padding: 18px 40px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .35s;
+}
+
+.botao-ver-todos-parte3-home:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(242, 103, 22, .35);
+}
+
+/* ===========================
+        TABLET
+=========================== */
+
+@media(max-width:1100px) {
+
+    .cards-parte3-home {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .titulo-parte3-home {
+        font-size: 50px;
+    }
+
+}
+
+/* ===========================
+        CELULAR
+=========================== */
+
+@media(max-width:768px) {
+
+    .container-parte3-home {
+        width: 88%;
+    }
+
+    .cards-parte3-home {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-parte3-home {
+        font-size: 38px;
+    }
+
+    .descricao-parte3-home {
+        font-size: 18px;
+    }
+
+    .conteudo-card-parte3-home h3 {
+        font-size: 28px;
+    }
+
+    .conteudo-card-parte3-home {
+        padding: 22px;
+    }
+
+    .conteudo-card-parte3-home p {
+        min-height: auto;
+    }
+
+    .infos-parte3-home {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .botao-ver-todos-parte3-home {
+        width: 100%;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+}
+
+/* ===========================
+    CELULAR PEQUENO
+=========================== */
+
+@media(max-width:480px) {
+
+    .titulo-parte3-home {
+        font-size: 32px;
+    }
+
+    .descricao-parte3-home {
+        font-size: 16px;
+    }
+
+    .badge-parte3-home {
+        font-size: 12px;
+        padding: 10px 18px;
+    }
+
+}

@@ -1,0 +1,543 @@
+.container-central-part2-home {
+    width: 79%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background: #fff;
+    font-family: "Inter", sans-serif;
+}
+
+.cursos-part2-home {
+  padding-top: 50px;
+}
+.container-part2-home {
+    width: 88%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.cabecalho-cursos-part2-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.badge-part2-home {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid #ffb190;
+    background: #fff7f4;
+    color: #ff6b35;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.titulo-area-h1-part2-home {
+    font-size: 44px;
+    font-weight: 800;
+    color: #07142d;
+    line-height: 1.15;
+    margin-bottom: 10px;
+}
+
+.titulo-area-h1-span-part2-home {
+    color: #ff6836;
+}
+
+.titulo-area-h2-part2-home {
+    font-size: 35px;
+    font-weight: 700;
+    color: #9ca5b5;
+    line-height: 1.3;
+}
+
+.btn-cursos-part2-home {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff6836;
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 35px;
+    border-radius: 40px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: all .3s ease;
+}
+
+.btn-cursos-part2-home:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(255, 104, 54, .35);
+}
+
+/* Cards */
+
+.cards-part2-home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card-part2-home {
+    background: #fff;
+    border: 1px solid #e5e8ef;
+    border-radius: 22px;
+    padding: 30px;
+    transition: .35s ease;
+}
+
+.card-part2-home:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .08);
+}
+
+.topo-card-part2-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.icone-part2-home {
+    width: 58px;
+    height: 58px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff6f2;
+    border: 1px solid #ffc0a6;
+    color: #ff6836;
+    font-size: 26px;
+}
+
+.icone-part2-home.azul {
+    background: #eef5ff;
+    border-color: #bdd8ff;
+    color: #3065b0;
+}
+
+.tag-part2-home {
+    padding: 6px 14px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.tag-part2-home.laranja {
+    background: #ff6836;
+}
+
+.tag-part2-home.azul {
+    background: #295a99;
+}
+
+.card-h3-part2-home {
+    font-size: 20px;
+    color: #07142d;
+    margin-bottom: 18px;
+    line-height: 1.3;
+}
+
+.card-p-part2-home {
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.rodape-card-part2-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #9ca5b5;
+    font-size: 15px;
+    gap: 15px;
+}
+
+.rodape-card-a-part2-home {
+    color: #ff6836;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.rodape-card-a-part2-home:hover {
+    color: #e6511d;
+    text-decoration: underline;
+}
+
+/* ==========================
+        TABLET
+========================== */
+
+@media (max-width:1100px) {
+
+    .container-central-part2-home {
+        width: 90%;
+    }
+
+    .cabecalho-cursos-part2-home {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .titulo-area-h1-part2-home {
+        font-size: 42px;
+    }
+
+    .titulo-area-h2-part2-home {
+        font-size: 32px;
+    }
+
+    .cards-part2-home {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* ==========================
+        CELULAR
+========================== */
+
+@media (max-width:768px) {
+
+    .container-central-part2-home {
+        width: 90%;
+    }
+
+    .cursos-part2-home {
+        padding: 50px 0;
+    }
+
+    .container-part2-home {
+        width: 100%;
+    }
+
+    .cabecalho-cursos-part2-home {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    .badge-part2-home {
+        font-size: 12px;
+    }
+
+    .titulo-area-h1-part2-home {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .titulo-area-h2-part2-home {
+        font-size: 25px;
+        line-height: 1.4;
+    }
+
+    .btn-cursos-part2-home {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cards-part2-home {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-part2-home {
+        padding: 22px;
+    }
+
+    .topo-card-part2-home {
+        margin-bottom: 25px;
+    }
+
+    .card-h3-part2-home {
+        font-size: 22px;
+    }
+
+    .card-p-part2-home {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .rodape-card-part2-home {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+}
+
+/* ==========================
+     CELULAR PEQUENO
+========================== */
+
+@media (max-width:480px) {
+
+    .container-central-part2-home {
+        width: 90%;
+    }
+
+    .titulo-area-h1-part2-home {
+        font-size: 30px;
+    }
+
+    .titulo-area-h2-part2-home {
+        font-size: 21px;
+    }
+
+    .card-part2-home {
+        padding: 20px;
+    }
+
+    .icone-part2-home {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .btn-cursos-part2-home {
+        padding: 16px 20px;
+    }
+
+}
+
+
+/* PARTE LARANJA DESTAQUE DO MOMENTO*/
+
+
+.destaque-ia-parte2-home {
+    padding: 50px 0;
+    font-family: "Inter", sans-serif;
+}
+
+.container-destaque-parte2-home {
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+
+    min-height: 240px;
+
+    overflow: hidden;
+    border-radius: 28px;
+
+    background: #ff6d39;
+    box-shadow: 0 20px 45px rgba(255, 107, 53, .25);
+}
+
+.texto-destaque-parte2-home {
+    padding: 45px;
+    color: #fff;
+}
+
+.badge-destaque-parte2-home {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    color: #fff;
+    opacity: .9;
+}
+
+.texto-destaque-h2-parte2-home {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.texto-destaque-p-parte2-home {
+    max-width: 620px;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    color: #fff7f5;
+
+    margin-bottom: 35px;
+}
+
+.botao-inscrever-parte2-home {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 16px 34px;
+
+    border-radius: 60px;
+
+    background: #fff;
+    color: #f26716;
+
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    transition: all .3s ease;
+}
+
+.botao-inscrever-parte2-home:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.18);
+}
+
+.imagem-destaque-parte2-home {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+    background: rgba(0,0,0,.08);
+}
+
+.imagem-destaque-img-parte2-home {
+    position: absolute;
+
+    right: 20px;
+    bottom: 0;
+
+    height: 95%;
+
+    opacity: .15;
+    object-fit: contain;
+}
+
+/* ===========================
+        TABLET
+=========================== */
+
+@media (max-width:1100px){
+
+    .container-destaque-parte2-home{
+        grid-template-columns:1fr;
+    }
+
+    .texto-destaque-parte2-home{
+        padding:40px;
+    }
+
+    .texto-destaque-h2-parte2-home{
+        font-size:34px;
+    }
+
+    .texto-destaque-p-parte2-home{
+        max-width:100%;
+    }
+
+    .imagem-destaque-parte2-home{
+        min-height:220px;
+    }
+
+    .imagem-destaque-img-parte2-home{
+        height:180px;
+        right:50%;
+        transform:translateX(50%);
+    }
+
+}
+
+/* ===========================
+        CELULAR
+=========================== */
+
+@media (max-width:768px){
+
+    .destaque-ia-parte2-home{
+        padding:40px 0;
+    }
+
+    .container-destaque-parte2-home{
+        width:95%;
+        grid-template-columns:1fr;
+        min-height:auto;
+    }
+
+    .texto-destaque-parte2-home{
+        padding:35px 25px;
+        text-align:center;
+    }
+
+    .badge-destaque-parte2-home{
+        font-size:13px;
+    }
+
+    .texto-destaque-h2-parte2-home{
+        font-size:30px;
+        line-height:1.25;
+    }
+
+    .texto-destaque-p-parte2-home{
+        font-size:16px;
+        line-height:1.7;
+        margin-bottom:30px;
+    }
+
+    .botao-inscrever-parte2-home{
+        width:100%;
+        padding:16px;
+        font-size:16px;
+    }
+
+    .imagem-destaque-parte2-home{
+        min-height:180px;
+        padding:20px;
+    }
+
+    .imagem-destaque-img-parte2-home{
+        position:relative;
+        height:160px;
+        right:auto;
+        bottom:auto;
+        transform:none;
+    }
+
+}
+
+/* ===========================
+    CELULAR PEQUENO
+=========================== */
+
+@media (max-width:480px){
+
+    .texto-destaque-parte2-home{
+        padding:30px 20px;
+    }
+
+    .texto-destaque-h2-parte2-home{
+        font-size:26px;
+    }
+
+    .texto-destaque-p-parte2-home{
+        font-size:15px;
+    }
+
+    .botao-inscrever-parte2-home{
+        font-size:15px;
+        padding:15px;
+    }
+
+    .imagem-destaque-img-parte2-home{
+        height:130px;
+    }
+
+}

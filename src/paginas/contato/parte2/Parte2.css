@@ -1,0 +1,228 @@
+.pagina-contato-parte2 {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    background-image:
+        radial-gradient(ellipse 45% 55% at 62% 30%, rgba(255, 99, 53, 0.07), transparent 70%);
+    padding: 70px 30px 90px 30px;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+/* PARTICULAS */
+
+.particulas-contato-parte2 {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+
+.particula-contato-parte2 {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ff6335;
+    opacity: 0.25;
+}
+
+
+.particula-contato-parte2:nth-child(1)  { top: 3%;  left: 8%;  }
+.particula-contato-parte2:nth-child(2)  { top: 10%; left: 19%; opacity: 0.15; }
+.particula-contato-parte2:nth-child(3)  { top: 25%; left: 26%; }
+.particula-contato-parte2:nth-child(4)  { top: 6%;  left: 46%; opacity: 0.12; }
+.particula-contato-parte2:nth-child(5)  { top: 41%; left: 62%; opacity: 0.18; }
+.particula-contato-parte2:nth-child(6)  { top: 2%;  left: 83%; opacity: 0.14; }
+.particula-contato-parte2:nth-child(7)  { top: 34%; left: 96%; }
+.particula-contato-parte2:nth-child(8)  { top: 88%; left: 43%; opacity: 0.3; }
+.particula-contato-parte2:nth-child(9)  { top: 95%; left: 13%; opacity: 0.2; }
+.particula-contato-parte2:nth-child(10) { top: 90%; left: 85%; opacity: 0.12; }
+
+
+
+/* CONTEUDO */
+
+.conteudo-contato-parte2 {
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+
+/* CABECALHO */
+
+.cabecalho-contato-parte2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.badge-contato-parte2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border: 1px solid rgba(255, 99, 53, 0.35);
+    border-radius: 30px;
+    background: rgba(255, 99, 53, 0.06);
+    color: #ff6335;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+
+.icone-badge-contato-parte2 {
+    font-size: 13px;
+}
+
+
+.titulo-contato-parte2 {
+    color: #16202e;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 22px 0 16px 0;
+}
+
+
+.destaque-titulo-contato-parte2 {
+    color: #ff6335;
+}
+
+
+.descricao-contato-parte2 {
+    max-width: 480px;
+    margin: auto;
+    color: #6b7787;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+
+/* GRADE */
+
+.grade-contato-parte2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    align-items: start;
+}
+
+
+
+/* CARD */
+
+.card-contato-parte2 {
+    background: #ffffff;
+    border: 1px solid #ececf0;
+    border-radius: 14px;
+    padding: 25px 22px;
+    transition: 0.25s;
+}
+
+
+.card-contato-parte2:hover {
+    transform: translateY(-4px);
+    border-color: #ffd1c0;
+    box-shadow: 0 10px 25px rgba(22, 32, 46, 0.07);
+}
+
+
+
+/* ICONES */
+
+.icone-laranja-contato-parte2,
+.icone-verde-contato-parte2,
+.icone-azul-contato-parte2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+
+.icone-laranja-contato-parte2 {
+    background: #fff1eb;
+    color: #ff6335;
+}
+
+
+.icone-verde-contato-parte2 {
+    background: #e8f8ee;
+    color: #22a45d;
+}
+
+
+.icone-azul-contato-parte2 {
+    background: #eaf1fd;
+    color: #2f6fd0;
+}
+
+
+
+/* TEXTOS */
+
+.nome-canal-contato-parte2 {
+    color: #16202e;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 14px 0;
+}
+
+
+.texto-canal-contato-parte2 {
+    color: #7d8899;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 0 4px 0;
+}
+
+
+.texto-canal-contato-parte2:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 1000px) {
+
+    .grade-contato-parte2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .titulo-contato-parte2 {
+        font-size: 34px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .pagina-contato-parte2 {
+        padding: 55px 20px 70px 20px;
+    }
+
+
+    .grade-contato-parte2 {
+        grid-template-columns: 1fr;
+    }
+
+
+    .titulo-contato-parte2 {
+        font-size: 28px;
+    }
+
+}

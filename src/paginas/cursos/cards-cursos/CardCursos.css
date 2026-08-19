@@ -1,0 +1,622 @@
+/* =========================================================
+   CARD PRINCIPAL
+========================================================= */
+.container-cards-cursos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 90px 20px;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+
+
+.curso-card-cards-cursos {
+    width: 100%;
+    max-width: 365px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e6eb;
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    font-family: "Inter", sans-serif;
+}
+
+.curso-card-cards-cursos:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   IMAGEM
+========================================================= */
+
+.imagem-container-cards-cursos {
+    position: relative;
+
+    width: 100%;
+    height: 190px;
+
+    overflow: hidden;
+
+    background: #edf1f4;
+}
+
+.imagem-curso-cards-cursos {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.curso-card-cards-cursos:hover .imagem-curso-cards-cursos {
+    transform: scale(1.04);
+}
+
+
+/* =========================================================
+   BADGE MAIS PROCURADO
+========================================================= */
+
+.badge-procurado-cards-cursos {
+    position: absolute;
+
+    top: 14px;
+    right: 15px;
+
+    padding: 7px 14px;
+
+    background: #ff681b;
+    color: #ffffff;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    box-shadow: 0 5px 15px rgba(255, 104, 27, 0.25);
+}
+
+
+/* =========================================================
+   CATEGORIA
+========================================================= */
+
+.categoria-curso-cards-cursos {
+    position: absolute;
+
+    left: 15px;
+    bottom: 15px;
+
+    padding: 7px 14px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    color: #27364a;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   CONTEÚDO
+========================================================= */
+
+.conteudo-curso-cards-cursos {
+    padding: 22px;
+}
+
+
+/* =========================================================
+   AVALIAÇÃO
+========================================================= */
+
+.avaliacao-cards-cursos {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 8px;
+}
+
+.estrelas-cards-cursos {
+    color: #ffb000;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+}
+
+.estrelas-cards-cursos span {
+    color: #d9dde3;
+}
+
+.nota-cards-cursos {
+    color: #8290a3;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   TÍTULO
+========================================================= */
+
+.titulo-curso-cards-cursos {
+    margin: 0 0 10px;
+
+    color: #07142d;
+
+    font-size: 17px;
+    font-weight: 750;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   DESCRIÇÃO
+========================================================= */
+
+.descricao-curso-cards-cursos {
+    margin: 0;
+
+    color: #68778d;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+    min-height: 65px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES
+========================================================= */
+
+.informacoes-curso-cards-cursos {
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+
+    margin-top: 15px;
+    padding-top: 15px;
+
+    border-top: 1px solid #edf0f3;
+}
+
+.informacao-cards-cursos {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    color: #8a96a6;
+
+    font-size: 12px;
+}
+
+.icone-informacao-cards-cursos {
+    color: #ff681b;
+
+    font-size: 15px;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   PREÇO
+========================================================= */
+
+.preco-container-cards-cursos {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 17px;
+}
+
+.preco-cards-cursos {
+    color: #07142d;
+
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.preco-antigo-cards-cursos {
+    color: #a9b1bc;
+
+    font-size: 11px;
+
+    text-decoration: line-through;
+}
+
+
+/* =========================================================
+   BOTÕES
+========================================================= */
+
+.botoes-curso-cards-cursos {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+
+    margin-top: 14px;
+}
+
+.botao-detalhes-cards-cursos,
+.botao-inscrever-cards-cursos {
+    height: 40px;
+
+    border-radius: 22px;
+
+    font-family: inherit;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+/* =========================================================
+   BOTÃO DETALHES
+========================================================= */
+
+.botao-detalhes-cards-cursos {
+    border: 1px solid #e1e5ea;
+
+    background: #f8f9fa;
+
+    color: #07142d;
+}
+
+.botao-detalhes-cards-cursos:hover {
+    background: #ffffff;
+
+    border-color: #cdd3da;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   BOTÃO INSCREVER
+========================================================= */
+
+.botao-inscrever-cards-cursos {
+    border: none;
+
+    background: #ff681b;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 8px 18px rgba(255, 104, 27, 0.20);
+}
+
+.botao-inscrever-cards-cursos:hover {
+    background: #f45b0d;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 24px rgba(255, 104, 27, 0.30);
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE — TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .container-cards-cursos{
+        width: 94%;
+    }
+
+    .curso-card-cards-cursos {
+        max-width: 340px;
+    }
+
+    .imagem-container-cards-cursos {
+        height: 180px;
+    }
+
+    .conteudo-curso-cards-cursos {
+        padding: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE — CELULAR
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .container-cards-cursos{
+        width: 94%;
+    }
+
+    .curso-card-cards-cursos {
+        width: 100%;
+        max-width: 100%;
+
+        border-radius: 20px;
+    }
+
+    .imagem-container-cards-cursos {
+        height: 200px;
+    }
+
+    .conteudo-curso-cards-cursos {
+        padding: 20px;
+    }
+
+    .titulo-curso-cards-cursos {
+        font-size: 18px;
+    }
+
+    .descricao-curso-cards-cursos {
+        font-size: 13px;
+    }
+
+    .informacoes-curso-cards-cursos {
+        justify-content: flex-start;
+
+        gap: 22px;
+    }
+
+    .botoes-curso-cards-cursos {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES PEQUENOS
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .container-cards-cursos{
+        width: 95%;
+    }
+
+    .imagem-container-cards-cursos {
+        height: 190px;
+    }
+
+    .conteudo-curso-cards-cursos {
+        padding: 18px;
+    }
+
+    .badge-procurado-cards-cursos {
+        top: 12px;
+        right: 12px;
+
+        font-size: 11px;
+
+        padding: 6px 11px;
+    }
+
+    .categoria-curso-cards-cursos {
+        left: 12px;
+        bottom: 12px;
+
+        font-size: 11px;
+
+        padding: 6px 12px;
+    }
+
+    .avaliacao-cards-cursos {
+        gap: 6px;
+    }
+
+    .estrelas-cards-cursos {
+        font-size: 13px;
+    }
+
+    .titulo-curso-cards-cursos {
+        font-size: 17px;
+    }
+
+    .descricao-curso-cards-cursos {
+        font-size: 12px;
+
+        line-height: 1.7;
+    }
+
+    .informacoes-curso-cards-cursos {
+        gap: 15px;
+    }
+
+    .informacao-cards-cursos {
+        font-size: 11px;
+    }
+
+    .preco-cards-cursos {
+        font-size: 18px;
+    }
+
+    .botoes-curso-cards-cursos {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+    }
+
+    .botao-detalhes-cards-cursos,
+    .botao-inscrever-cards-cursos {
+        height: 42px;
+
+        font-size: 13px;
+    }
+
+}
+
+/* =========================================================
+   PAGINAÇÃO
+========================================================= */
+
+.paginacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+
+    margin: 10px auto 80px;
+    padding: 0 20px;
+
+    font-family: "Inter", sans-serif;
+}
+
+.paginacao span {
+    color: #68778d;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.paginacao button {
+    min-width: 130px;
+    height: 45px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: #ff681b;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 18px rgba(255, 104, 27, 0.20);
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.paginacao button:hover:not(:disabled) {
+    background: #f45b0d;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 24px rgba(255, 104, 27, 0.30);
+}
+
+.paginacao button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.paginacao button:disabled {
+    background: #d8dde3;
+    color: #8a96a6;
+
+    cursor: not-allowed;
+
+    box-shadow: none;
+}
+
+/* =========================================================
+   PAGINAÇÃO - TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .paginacao {
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 60px;
+    }
+
+    .paginacao button {
+        min-width: 120px;
+        height: 42px;
+        font-size: 12px;
+    }
+
+    .paginacao span {
+        width: 100%;
+        text-align: center;
+        font-size: 13px;
+        order: -1;
+    }
+
+}
+
+/* =========================================================
+   PAGINAÇÃO - CELULARES PEQUENOS
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .paginacao {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .paginacao button {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .paginacao span {
+        font-size: 12px;
+    }
+
+}

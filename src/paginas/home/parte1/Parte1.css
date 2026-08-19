@@ -1,0 +1,261 @@
+.parte1-container-home {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    min-height: 92vh;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+
+.container-frase-efeito-home {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.frase-efeito-home {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    background-color: #f2671625;
+    border-radius: 20px;
+    padding: 7px 15px;
+    color: #ff7d31;
+    border: 0.5px solid #ff792c71;
+    justify-content: center;
+    width: min(40%, 600px);
+}
+
+.pointer {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.degrade-home {
+    background: linear-gradient(-45deg, #08101f, #07111f, #0b1730, #09101E);
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.titulo-principal-home {
+    font-family: "Roboto", sans-serif;
+    font-size: 72px;
+    font-weight: 900;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.descricao-principal-home {
+    font-size: 20px;
+    text-align: center;
+    color: #adabab;
+    margin-bottom: 40px;
+}
+
+.container-botoes-home {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botao-ver-cursos,
+.botao-matricule-se {
+    font-family: inherit;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+    text-decoration: none;
+}
+
+.botao-ver-cursos {
+    background: #F26716;
+    color: #FFFFFF;
+    border: none;
+}
+
+.config-link{
+    text-decoration: none;
+}
+.botao-ver-cursos:hover {
+    box-shadow: 0 0 20px rgba(242, 103, 22, 0.7);
+}
+
+.botao-matricule-se {
+    background: #f8f7f623;
+    color: #f3f2f1;
+    border: 1px solid #f3f2f13d;
+}
+
+.botao-matricule-se:hover {
+    background: #f8f7f633;
+    box-shadow: 0 0 5px rgba(245, 244, 243, 0.329);
+}
+
+.arrow-right-home {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.grid-container-informacoes-home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto 0;
+    padding: 0 20px;
+}
+
+.grid-item-informacoes-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f7f611;
+    border: 1px solid #f3f2f12a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item-informacoes-home:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.grid-numero-informacao-home {
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+.grid-descricao-informacao-home {
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+/* ===========================
+   TABLETS (até 1024px)
+=========================== */
+@media (max-width: 1024px) {
+    .frase-efeito-home {
+        width: 70%;
+    }
+
+    .titulo-principal-home {
+        font-size: 55px;
+    }
+
+    .descricao-principal-home {
+        font-size: 22px;
+        padding: 0 30px;
+    }
+
+    .grid-container-informacoes-home {
+        grid-template-columns: repeat(2, minmax(230px, 300px));
+        justify-content: center;
+    }
+}
+
+/* ===========================
+   CELULARES (até 768px)
+=========================== */
+@media (max-width: 768px) {
+    .container-frase-efeito-home {
+        margin-top: 35px;
+        padding: 0 20px;
+    }
+
+    .frase-efeito-home {
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    .titulo-principal-home {
+        font-size: 42px;
+        line-height: 1.2;
+        padding: 0 20px;
+    }
+
+    .descricao-principal-home {
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 1.6;
+    }
+
+    .container-botoes-home {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .botao-ver-cursos,
+    .botao-matricule-se {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .grid-container-informacoes-home {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    .grid-item-informacoes-home {
+        width: 100%;
+    }
+
+    .grid-numero-informacao-home {
+        font-size: 34px;
+    }
+}
+
+/* ===========================
+   CELULARES PEQUENOS (até 480px)
+=========================== */
+@media (max-width: 480px) {
+    .titulo-principal-home {
+        font-size: 34px;
+    }
+
+    .descricao-principal-home {
+        font-size: 16px;
+    }
+
+    .frase-efeito-home {
+        font-size: 12px;
+    }
+
+    .grid-numero-informacao-home {
+        font-size: 30px;
+    }
+
+    .grid-descricao-informacao-home {
+        font-size: 14px;
+    }
+}

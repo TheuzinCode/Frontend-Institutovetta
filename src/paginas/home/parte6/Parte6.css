@@ -1,0 +1,280 @@
+.parte6-home {
+    padding: 100px 0;
+    background: #fff;
+    font-family: "Inter", sans-serif;
+}
+
+.container-parte6-home {
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+/* ===========================
+   CABEÇALHO
+=========================== */
+
+.cabecalho-parte6-home {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.badge-parte6-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    border: 1px solid #ffc4af;
+    border-radius: 50px;
+    background: #fff7f3;
+    color: #f26716;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 28px;
+}
+
+.titulo-parte6-home {
+    font-size: 70px;
+    font-weight: 800;
+    color: #081529;
+    line-height: 1.1;
+    margin-bottom: 22px;
+}
+
+.titulo-parte6-home span {
+    color: #ff6938;
+}
+
+.descricao-parte6-home {
+    max-width: 720px;
+    margin: auto;
+    font-size: 22px;
+    color: #66758d;
+    line-height: 1.6;
+}
+
+/* ===========================
+   CONTEÚDO
+=========================== */
+
+.conteudo-parte6-home {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 45px;
+    align-items: start;
+}
+
+/* ===========================
+   MAPA
+=========================== */
+
+.mapa-parte6-home {
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    border-radius: 28px;
+    border: 1px solid #ececec;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .08);
+}
+
+.mapa-parte6-home iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ===========================
+   LISTA
+=========================== */
+
+.lista-unidades-parte6-home {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* ===========================
+   CARD PRINCIPAL
+=========================== */
+
+.unidade-ativa-parte6-home {
+    background: #ff6938;
+    color: #fff;
+    border-radius: 28px;
+    padding: 35px;
+    box-shadow: 0 20px 45px rgba(255, 105, 56, .35);
+}
+
+.topo-unidade-parte6-home {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.icone-unidade-parte6-home {
+    width: 65px;
+    height: 65px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, .18);
+    font-size: 28px;
+}
+
+.titulo-unidade-parte6-home {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.titulo-unidade-parte6-home h3 {
+    margin: 0;
+    font-size: 31px;
+    font-weight: 700;
+}
+
+.titulo-unidade-parte6-home span {
+    background: rgba(255, 255, 255, .18);
+    padding: 6px 15px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.informacoes-unidade-parte6-home {
+    border-top: 1px solid rgba(255, 255, 255, .25);
+    padding-top: 25px;
+}
+
+.informacoes-unidade-parte6-home p {
+    margin: 16px 0;
+    font-size: 17px;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+}
+
+/* ===========================
+   ITENS
+=========================== */
+
+.item-unidade-parte6-home {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 28px;
+    border: 1px solid #ececec;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: .35s;
+    background: #fff;
+}
+
+.item-unidade-parte6-home:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .08);
+}
+
+.icone-unidade-pequena-parte6-home {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    background: #fff5ef;
+    color: #f26716;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    flex-shrink: 0;
+}
+
+.item-unidade-parte6-home h4 {
+    margin: 0 0 8px;
+    font-size: 28px;
+    color: #081529;
+}
+
+.item-unidade-parte6-home p {
+    margin: 0;
+    color: #7d8798;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.icone-parte6-home {
+    margin-right: 10px;
+    color: #f7f4f4;
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media (max-width:1200px) {
+
+    .titulo-parte6-home {
+        font-size: 58px;
+    }
+
+    .conteudo-parte6-home {
+        grid-template-columns: 1fr;
+    }
+
+    .mapa-parte6-home {
+        height: 550px;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .parte6-home {
+        padding: 70px 0;
+    }
+
+    .titulo-parte6-home {
+        font-size: 42px;
+    }
+
+    .descricao-parte6-home {
+        font-size: 18px;
+    }
+
+    .mapa-parte6-home {
+        height: 420px;
+    }
+
+    .topo-unidade-parte6-home {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .titulo-unidade-parte6-home {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .titulo-unidade-parte6-home h3 {
+        font-size: 24px;
+    }
+
+    .item-unidade-parte6-home {
+        padding: 22px;
+    }
+
+    .item-unidade-parte6-home h4 {
+        font-size: 22px;
+    }
+
+    .item-unidade-parte6-home p,
+    .informacoes-unidade-parte6-home p {
+        font-size: 15px;
+    }
+
+
+
+}

@@ -1,0 +1,366 @@
+.rodape {
+    background: #07111f;
+    padding: 90px 0 35px;
+    font-family: Inter, sans-serif;
+}
+
+.container-rodape {
+    width: 90%;
+    max-width: 1350px;
+    margin: auto;
+}
+
+.conteudo-rodape {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.2fr;
+    gap: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.logo-rodape img {
+    width: 320px;
+}
+
+.titulo-rodape {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.titulo-rodape span {
+    color: #ff6b35;
+}
+
+.descricao-rodape {
+    color: #7e8898;
+    line-height: 1.8;
+    max-width: 480px;
+    margin-bottom: 35px;
+    font-size: 17px;
+}
+
+.formulario-rodape {
+    display: flex;
+    gap: 15px;
+}
+
+.formulario-rodape input {
+    flex: 1;
+    height: 45px;
+    border: none;
+    outline: none;
+    background: #101826;
+    border: 1px solid rgba(255, 255, 255, .06);
+    border-radius: 50px;
+    color: #fff;
+    padding: 0 24px;
+    font-size: 16px;
+}
+
+.formulario-rodape input::placeholder {
+    color: #687487;
+}
+
+.formulario-rodape button {
+    border: none;
+    cursor: pointer;
+    padding: 0 35px;
+    border-radius: 50px;
+    background: #ff6b35;
+    color: #fff;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.formulario-rodape button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(255, 107, 53, .35);
+}
+
+.coluna-rodape h4 {
+    color: #ff6b35;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 28px;
+}
+
+.coluna-rodape a {
+    display: block;
+    text-decoration: none;
+    color: #7f8998;
+    margin-bottom: 18px;
+    transition: .3s;
+}
+
+.coluna-rodape a:hover {
+    color: #fff;
+}
+
+.item-contato-rodape {
+    display: flex;
+    gap: 11px;
+    align-items: flex-start;
+    color: #7f8998;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.item-contato-rodape svg {
+    color: #ff6b35;
+    margin-top: 3px;
+    min-width: 18px;
+}
+
+.redes-rodape {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.redes-rodape a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #111928;
+    border: 1px solid rgba(255, 255, 255, .05);
+    color: #fff;
+    transition: .3s;
+}
+
+.redes-rodape a:hover {
+    background: #ff6b35;
+    transform: translateY(-5px);
+}
+
+.bottom-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+}
+
+.bottom-rodape p {
+    color: #6f7888;
+    font-size: 15px;
+}
+
+.links-bottom-rodape {
+    display: flex;
+    gap: 30px;
+}
+
+.links-bottom-rodape a {
+    color: #6f7888;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.links-bottom-rodape a:hover {
+    color: #fff;
+}
+
+/* ==========================================
+   NOTEBOOK
+========================================== */
+
+@media (max-width: 1200px) {
+
+    .container-rodape {
+        width: 92%;
+    }
+
+    .conteudo-rodape {
+        grid-template-columns: 1.4fr 1fr 1fr;
+        gap: 45px;
+    }
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 992px) {
+
+    .rodape {
+        padding: 80px 0 35px;
+    }
+
+    .conteudo-rodape {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .newsletter-rodape {
+        grid-column: 1 / -1;
+    }
+
+    .titulo-rodape {
+        font-size: 42px;
+    }
+
+    .formulario-rodape {
+        max-width: 650px;
+    }
+
+}
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media (max-width: 768px) {
+
+    .rodape {
+        padding: 70px 0 30px;
+    }
+
+    .container-rodape {
+        width: 92%;
+    }
+
+    .conteudo-rodape {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .newsletter-rodape {
+        text-align: center;
+    }
+
+    .logo-rodape {
+        display: flex;
+        justify-content: center;
+    }
+
+    .titulo-rodape {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .descricao-rodape {
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .formulario-rodape {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+        height: 115px;
+        color: #fff;
+    }
+
+    .formulario-rodape input {
+        width: 100%;
+        height: 40px;
+        color: #fff;
+    }
+
+    .formulario-rodape button {
+        width: 100%;
+        height: 40px;
+    }
+
+    .coluna-rodape {
+        text-align: center;
+    }
+
+    .coluna-rodape h4 {
+        margin-bottom: 18px;
+    }
+
+    .item-contato-rodape {
+        justify-content: center;
+    }
+
+    .redes-rodape {
+        justify-content: center;
+    }
+
+    .bottom-rodape {
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+        margin-top: 55px;
+    }
+
+    .links-bottom-rodape {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+}
+
+/* ==========================================
+   CELULARES PEQUENOS
+========================================== */
+
+@media (max-width: 480px) {
+
+    .rodape {
+        padding: 60px 0 25px;
+    }
+
+    .titulo-rodape {
+        font-size: 28px;
+    }
+
+    .descricao-rodape {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .formulario-rodape input {
+        padding: 0 20px;
+        font-size: 15px;
+        width: 100%;
+        height: 56px;
+        color: #fff;
+        background: rgba(255, 255, 255, .1);
+        border: 1px solid rgba(255, 255, 255, .2);
+    }
+
+    .formulario-rodape button {
+        font-size: 15px;
+        width: 100%;
+        height: 56px;
+    }
+
+    .coluna-rodape h4 {
+        font-size: 15px;
+    }
+
+    .coluna-rodape a,
+    .item-contato-rodape {
+        font-size: 15px;
+    }
+
+    .redes-rodape {
+        gap: 10px;
+    }
+
+    .redes-rodape a {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .bottom-rodape p {
+        font-size: 13px;
+    }
+
+    .links-bottom-rodape a {
+        font-size: 13px;
+    }
+
+}

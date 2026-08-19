@@ -1,0 +1,260 @@
+.pagina-contato-parte4 {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    background-image:
+        radial-gradient(ellipse 40% 40% at 55% 12%, rgba(255, 99, 53, 0.06), transparent 70%);
+    padding: 60px 30px 80px 30px;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+/* PARTICULAS */
+
+.particulas-contato-parte4 {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+
+.particula-contato-parte4 {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ff6335;
+    opacity: 0.22;
+}
+
+
+.particula-contato-parte4:nth-child(1)  { top: 7%;  left: 46%; }
+.particula-contato-parte4:nth-child(2)  { top: 24%; left: 21%; opacity: 0.15; }
+.particula-contato-parte4:nth-child(3)  { top: 26%; left: 56%; opacity: 0.18; }
+.particula-contato-parte4:nth-child(4)  { top: 20%; left: 88%; opacity: 0.12; }
+.particula-contato-parte4:nth-child(5)  { top: 40%; left: 12%; }
+.particula-contato-parte4:nth-child(6)  { top: 50%; left: 4%;  opacity: 0.3; }
+.particula-contato-parte4:nth-child(7)  { top: 53%; left: 95%; opacity: 0.15; }
+.particula-contato-parte4:nth-child(8)  { top: 66%; left: 19%; opacity: 0.2; }
+.particula-contato-parte4:nth-child(9)  { top: 88%; left: 8%;  opacity: 0.14; }
+.particula-contato-parte4:nth-child(10) { top: 93%; left: 84%; opacity: 0.18; }
+
+
+
+/* CONTEUDO */
+
+.conteudo-contato-parte4 {
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+
+/* CABECALHO */
+
+.cabecalho-contato-parte4 {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+
+.badge-contato-parte4 {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border: 1px solid rgba(255, 99, 53, 0.35);
+    border-radius: 30px;
+    background: rgba(255, 99, 53, 0.06);
+    color: #ff6335;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+
+.icone-badge-contato-parte4 {
+    font-size: 13px;
+    display: flex;
+    
+}
+
+
+.titulo-contato-parte4 {
+    color: #16202e;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 20px 0 14px 0;
+}
+
+
+.destaque-titulo-contato-parte4 {
+    color: #ff6335;
+}
+
+
+.descricao-contato-parte4 {
+    color: #6b7787;
+    font-size: 16px;
+    margin: 0;
+}
+
+
+
+/* LISTA */
+
+.lista-contato-parte4 {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+.item-contato-parte4 {
+    border: 1px solid #ececf0;
+    border-radius: 12px;
+    background: #ffffff;
+    padding: 4px 22px;
+    transition: 0.2s;
+}
+
+
+.item-contato-parte4:hover {
+    border-color: #ffd1c0;
+}
+
+
+.item-aberto-contato-parte4 {
+    background: #fff5f1;
+    border-color: #ffd1c0;
+    padding-bottom: 20px;
+}
+
+
+
+/* PERGUNTA */
+
+.pergunta-contato-parte4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    padding: 18px 0;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+.texto-pergunta-contato-parte4 {
+    color: #16202e;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+
+.seta-contato-parte4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #f1f3f6;
+    color: #8a95a6;
+    font-size: 14px;
+    line-height: 1;
+    padding-bottom: 4px;
+    transition: 0.25s;
+}
+
+
+.item-aberto-contato-parte4 .seta-contato-parte4 {
+    background: #ff6335;
+    color: #ffffff;
+    transform: rotate(180deg);
+    padding-bottom: 0;
+    padding-top: 4px;
+}
+
+
+
+/* RESPOSTA */
+
+.resposta-contato-parte4 {
+    margin: 0;
+    padding-right: 40px;
+    color: #7d8899;
+    font-size: 14px;
+    line-height: 1.7;
+    animation: abrir-contato-parte4 0.25s ease;
+}
+
+
+@keyframes abrir-contato-parte4 {
+
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 700px) {
+
+    .pagina-contato-parte4 {
+        padding: 50px 20px 65px 20px;
+    }
+
+
+    .titulo-contato-parte4 {
+        font-size: 30px;
+    }
+
+
+    .descricao-contato-parte4 {
+        font-size: 15px;
+    }
+
+
+    .item-contato-parte4 {
+        padding: 4px 18px;
+    }
+
+
+    .texto-pergunta-contato-parte4 {
+        font-size: 14px;
+    }
+
+
+    .resposta-contato-parte4 {
+        padding-right: 0;
+    }
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .resposta-contato-parte4 {
+        animation: none;
+    }
+
+}

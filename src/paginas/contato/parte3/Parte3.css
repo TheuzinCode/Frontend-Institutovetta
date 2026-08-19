@@ -1,0 +1,340 @@
+.pagina-contato-parte3 {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ff6335 0%, #ff8153 55%, #ff9670 100%);
+    padding: 70px 40px;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+/* PARTICULAS */
+
+.particulas-contato-parte3 {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+
+.particula-contato-parte3 {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ffffff;
+    opacity: 0.35;
+}
+
+
+.particula-contato-parte3:nth-child(1)  { top: 6%;  left: 5%;  }
+.particula-contato-parte3:nth-child(2)  { top: 30%; left: 3%;  opacity: 0.2; }
+.particula-contato-parte3:nth-child(3)  { top: 68%; left: 13%; opacity: 0.25; }
+.particula-contato-parte3:nth-child(4)  { top: 92%; left: 27%; }
+.particula-contato-parte3:nth-child(5)  { top: 4%;  left: 61%; opacity: 0.2; }
+.particula-contato-parte3:nth-child(6)  { top: 17%; left: 68%; }
+.particula-contato-parte3:nth-child(7)  { top: 45%; left: 76%; opacity: 0.22; }
+.particula-contato-parte3:nth-child(8)  { top: 79%; left: 62%; opacity: 0.3; }
+.particula-contato-parte3:nth-child(9)  { top: 12%; left: 91%; opacity: 0.25; }
+.particula-contato-parte3:nth-child(10) { top: 55%; left: 96%; }
+.particula-contato-parte3:nth-child(11) { top: 86%; left: 88%; opacity: 0.2; }
+.particula-contato-parte3:nth-child(12) { top: 40%; left: 44%; opacity: 0.18; }
+
+
+
+/* CONTEUDO */
+
+.conteudo-contato-parte3 {
+    position: relative;
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+
+
+/* COLUNA ESQUERDA */
+
+.coluna-texto-contato-parte3 {
+    flex: 1;
+    min-width: 0;
+}
+
+
+.badge-contato-parte3 {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+
+.icone-badge-contato-parte3 {
+    font-size: 13px;
+}
+
+
+.titulo-contato-parte3 {
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin: 22px 0 18px 0;
+}
+
+
+.destaque-titulo-contato-parte3 {
+    padding-bottom: 6px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.55);
+}
+
+
+.descricao-contato-parte3 {
+    max-width: 400px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0 0 40px 0;
+}
+
+
+
+/* VANTAGENS */
+
+.lista-vantagens-contato-parte3 {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+
+.vantagem-contato-parte3 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.icone-vantagem-contato-parte3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 15px;
+}
+
+
+.nome-vantagem-contato-parte3 {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+
+.texto-vantagem-contato-parte3 {
+    display: block;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+
+/* FORMULARIO */
+
+.card-formulario-contato-parte3 {
+    width: 580px;
+    flex-shrink: 0;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 20px 50px rgba(120, 40, 15, 0.18);
+}
+
+
+.titulo-formulario-contato-parte3 {
+    color: #16202e;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0 0 25px 0;
+}
+
+
+.linha-campos-contato-parte3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+.campo-contato-parte3 {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+
+.rotulo-contato-parte3 {
+    display: block;
+    color: #16202e;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+.entrada-contato-parte3,
+.selecao-contato-parte3,
+.area-texto-contato-parte3 {
+    width: 100%;
+    border: 1px solid #e6e9ee;
+    border-radius: 8px;
+    background: #f8f9fb;
+    padding: 0 14px;
+    color: #16202e;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: 0.2s;
+    box-sizing: border-box;
+}
+
+
+.entrada-contato-parte3,
+.selecao-contato-parte3 {
+    height: 42px;
+}
+
+
+.selecao-contato-parte3 {
+    background: #ffffff;
+    cursor: pointer;
+}
+
+
+.area-texto-contato-parte3 {
+    height: 110px;
+    padding: 14px;
+    line-height: 1.6;
+    resize: vertical;
+}
+
+
+.entrada-contato-parte3::placeholder,
+.area-texto-contato-parte3::placeholder {
+    color: #a7b0bd;
+}
+
+
+.entrada-contato-parte3:focus,
+.selecao-contato-parte3:focus,
+.area-texto-contato-parte3:focus {
+    border-color: #ff6335;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(255, 99, 53, 0.12);
+}
+
+
+.contador-contato-parte3 {
+    display: block;
+    margin-top: 6px;
+    text-align: right;
+    color: #ff6335;
+    font-size: 12px;
+}
+
+
+
+/* BOTAO */
+
+.botao-enviar-contato-parte3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #ff6335, #ff8153);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.botao-enviar-contato-parte3:hover {
+    filter: brightness(1.06);
+    box-shadow: 0 8px 20px rgba(255, 99, 53, 0.4);
+}
+
+
+.icone-botao-contato-parte3 {
+    font-size: 13px;
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 1050px) {
+
+    .conteudo-contato-parte3 {
+        flex-direction: column;
+        gap: 45px;
+    }
+
+
+    .card-formulario-contato-parte3 {
+        width: 100%;
+    }
+
+
+    .descricao-contato-parte3 {
+        max-width: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .pagina-contato-parte3 {
+        padding: 55px 20px;
+    }
+
+
+    .card-formulario-contato-parte3 {
+        padding: 25px 20px;
+    }
+
+
+    .linha-campos-contato-parte3 {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+
+    .titulo-contato-parte3 {
+        font-size: 30px;
+    }
+
+}

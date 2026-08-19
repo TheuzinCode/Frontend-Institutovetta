@@ -1,0 +1,183 @@
+.pagina-cases-sucesso-parte4 {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    background-image:
+        radial-gradient(ellipse 35% 60% at 52% 30%, rgba(255, 99, 53, 0.05), transparent 70%);
+    padding: 40px 0 45px 0;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+/* PARTICULAS */
+
+.particulas-cases-sucesso-parte4 {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+
+.particula-cases-sucesso-parte4 {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ff6335;
+    opacity: 0.25;
+}
+
+
+.particula-cases-sucesso-parte4:nth-child(1) { top: 12%; left: 3%;  opacity: 0.15; }
+.particula-cases-sucesso-parte4:nth-child(2) { top: 20%; left: 28%; }
+.particula-cases-sucesso-parte4:nth-child(3) { top: 8%;  left: 34%; opacity: 0.14; }
+.particula-cases-sucesso-parte4:nth-child(4) { top: 30%; left: 62%; opacity: 0.12; }
+.particula-cases-sucesso-parte4:nth-child(5) { top: 6%;  left: 80%; opacity: 0.18; }
+.particula-cases-sucesso-parte4:nth-child(6) { top: 55%; left: 98%; opacity: 0.2; }
+.particula-cases-sucesso-parte4:nth-child(7) { top: 82%; left: 92%; opacity: 0.15; }
+.particula-cases-sucesso-parte4:nth-child(8) { top: 88%; left: 15%; opacity: 0.12; }
+
+
+
+/* CONTEUDO */
+
+.conteudo-cases-sucesso-parte4 {
+    position: relative;
+}
+
+
+
+/* CABECALHO */
+
+.cabecalho-cases-sucesso-parte4 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.badge-cases-sucesso-parte4 {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid rgba(255, 99, 53, 0.4);
+    border-radius: 30px;
+    background: rgba(255, 99, 53, 0.05);
+    color: #ff6335;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+
+.descricao-cases-sucesso-parte4 {
+    color: #7d8899;
+    font-size: 14px;
+    margin: 18px 0 0 0;
+}
+
+
+
+/* FAIXA / CARROSSEL */
+
+.faixa-cases-sucesso-parte4 {
+    position: relative;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+
+.trilha-cases-sucesso-parte4 {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    width: max-content;
+    animation: rolar-cases-sucesso-parte4 35s linear infinite;
+}
+
+
+.faixa-cases-sucesso-parte4:hover .trilha-cases-sucesso-parte4 {
+    animation-play-state: paused;
+}
+
+
+@keyframes rolar-cases-sucesso-parte4 {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+
+/* EMPRESA */
+
+.empresa-cases-sucesso-parte4 {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+
+.icone-empresa-cases-sucesso-parte4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    background: #fff1eb;
+    color: #ff6335;
+    font-size: 14px;
+}
+
+
+.nome-empresa-cases-sucesso-parte4 {
+    color: #4b5666;
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 700px) {
+
+    .pagina-cases-sucesso-parte4 {
+        padding: 35px 0 40px 0;
+    }
+
+
+    .trilha-cases-sucesso-parte4 {
+        gap: 35px;
+        animation-duration: 25s;
+    }
+
+
+    .nome-empresa-cases-sucesso-parte4 {
+        font-size: 14px;
+    }
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .trilha-cases-sucesso-parte4 {
+        animation: none;
+    }
+
+
+    .faixa-cases-sucesso-parte4 {
+        overflow-x: auto;
+    }
+
+}

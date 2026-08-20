@@ -1,44 +1,49 @@
 import React from 'react'
 import './Parte2.css'
+import { FaChartColumn } from "react-icons/fa6";
+import { LuBrain } from "react-icons/lu";
+import { FaRegBuilding } from "react-icons/fa";
+import { FaPeopleRobbery } from "react-icons/fa6";
+import { GoGraph } from "react-icons/go";
 
 const Parte2 = () => {
 
     const cursos = [
         {
-            icone: "📈",
+            icone: <GoGraph />,
             nome: "Marketing Digital",
             texto:
-                "Domine SEO, tráfego pago, social media e estratégias de growth que geram resultados reais para negócios."
+                "Marketing Digital, Facebook Business, Meta Business e Google Ads com cases de grandes marcas brasileiras."
         },
         {
-            icone: "📊",
+            icone: <FaChartColumn />,
             nome: "Análise de Dados",
             texto:
-                "Aprenda Python, SQL, Power BI e transforme dados brutos em insights estratégicos para tomada de decisão."
+                "Python, SQL, Power BI e Excel Avançado com dados para decisões estratégicas de alto impacto."
         },
         {
-            icone: "🗂",
-            nome: "Gestão de Projetos",
+            icone: <FaRegBuilding />,
+            nome: "IA para Negocios",
             texto:
-                "Metodologias ágeis, Scrum, PMBOK e liderança de times para entregar projetos no prazo e no orçamento."
+                "Empreendendo com IA nos Negócios, ChatGPT, comunicação profissional para inovar e escalar os lucros da sua empresa."
         },
         {
             icone: "</>",
             nome: "Desenvolvimento Web",
             texto:
-                "Do front-end ao back-end: React, Node.js, bancos de dados e deploy em cloud com projetos práticos."
+                "HTML, CSS, PHP e WordPress com projetos do zero ao deploy em produção."
         },
         {
-            icone: "🎨",
-            nome: "Design UX/UI",
-            texto:
-                "Pesquisa com usuários, prototipação no Figma, design systems e testes de usabilidade com cases reais."
-        },
-        {
-            icone: "🧠",
+            icone: <LuBrain />,
             nome: "Inteligência Artificial",
             texto:
-                "Machine Learning, NLP, visão computacional e LLMs aplicados a problemas reais do mercado."
+                "Fundamentos do N8N, ChatGPT, Inteligência Artificial E Lovable com aplicações práticas em negócios."
+        },
+        {
+            icone: <FaPeopleRobbery />,
+            nome: "Cuidador de Idosos",
+            texto:
+                "Figma, design systems, pesquisa com usuários e prototipação interativa com feedback de experts."
         }
     ];
 

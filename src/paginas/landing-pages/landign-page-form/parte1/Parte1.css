@@ -32,8 +32,8 @@
 .titulo-page-form-parte1 {
     max-width: 480px;
     color: #ffffff;
-    font-family: "Georgia", "Times New Roman", serif;
-    font-size: 48px;
+    font-family: "Playfair Display", serif;
+    font-size: 55px;
     font-weight: 700;
     line-height: 1.15;
     letter-spacing: -1px;
@@ -75,7 +75,7 @@
 
 .titulo-formulario-page-form-parte1 {
     color: #16202e;
-    font-family: "Georgia", "Times New Roman", serif;
+    font-family: "Playfair Display", serif;
     font-size: 19px;
     font-weight: 700;
     margin: 0 0 10px 0;

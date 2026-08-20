@@ -1,32 +1,36 @@
 import React from 'react'
 import './Parte3.css'
+import { ImUser } from "react-icons/im";//icone user
+import { LuMedal } from "react-icons/lu";//icone medalha
+import { CiCalendar } from "react-icons/ci";//icone calendar
+import { FiShield } from "react-icons/fi";//icone escuso
 
 const Parte3 = () => {
 
     const diferenciais = [
         {
-            icone: "👤",
+            icone: <ImUser />,
             nome: "Instrutores do Mercado",
             texto:
-                "Profissionais que atuam nas maiores empresas do Brasil, trazendo casos reais para a sala de aula."
+                "Profissionais atuantes nas maiores empresas, trazendo desafios reais para você resolver."
         },
         {
-            icone: "📅",
-            nome: "14 Anos de Excelência",
+            icone: <CiCalendar />,
+            nome: "1 Anos de Excelência",
             texto:
-                "Mais de uma década formando profissionais que hoje ocupam cargos de liderança no mercado."
+                "Mais de uma década formando líderes que hoje dirigem equipes nas principais empresas do país."
         },
         {
-            icone: "🎖",
+            icone: <LuMedal />,
             nome: "Certificação Reconhecida",
             texto:
-                "Certificados com validade nacional e chancela das principais associações profissionais do setor."
+                "Certificados com validade nacional chancelados pelas associações profissionais do setor."
         },
         {
-            icone: "🛡",
-            nome: "Garantia de Satisfação",
+            icone: <FiShield />,
+            nome: "Garantia de Aprendizado",
             texto:
-                "Se não gostar na primeira semana, devolvemos 100% do seu investimento. Sem burocracia."
+                "aqui você entra para aprender e só sai dominando a habilidade, com acompanhamento de perto."
         }
     ];
 

@@ -85,8 +85,7 @@ const Parte1 = () => {
 
 
                             <button className="botao-page-form-parte1">
-                                Agendar Consultoria Gratuita
-                                <span className="seta-botao-page-form-parte1">→</span>
+                                INSCREVER - SE
                             </button>
 
                         </div>

@@ -33,6 +33,7 @@ const Parte3 = () => {
                 "aqui você entra para aprender e só sai dominando a habilidade, com acompanhamento de perto."
         }
     ];
+    
     return (
         <>
             <section className="pagina-page-whatsApp-parte3">

@@ -9,21 +9,18 @@ const Parte4 = () => {
                 "“O Instituto Vetta mudou completamente a minha trajetória profissional. Em 6 meses após o curso, consegui uma promoção e meu salário dobrou. A metodologia prática fez toda a diferença.”",
             iniciais: "CR",
             nome: "Camila Rodrigues",
-            cargo: "Analista de Marketing Sênior na Vivo"
         },
         {
             texto:
                 "“Eu trabalhava com suporte técnico e migrei para dados. O instituto me deu toda a base e o suporte para essa transição. Hoje trabalho com o que amo e ganho 3x mais.”",
             iniciais: "LA",
             nome: "Lucas Andrade",
-            cargo: "Cientista de Dados no iFood"
         },
         {
             texto:
                 "“Fiz o curso de Gestão de Projetos e foi o melhor investimento da minha vida. Os professores são incríveis e o networking que fiz durante o curso foi fundamental.”",
             iniciais: "JS",
             nome: "Juliana Santos",
-            cargo: "Product Manager no Nubank"
         }
     ];
 
@@ -87,10 +84,6 @@ const Parte4 = () => {
                                         <strong className="nome-autor-page-form-parte4">
                                             {item.nome}
                                         </strong>
-
-                                        <span className="cargo-autor-page-form-parte4">
-                                            {item.cargo}
-                                        </span>
                                     </div>
 
                                 </div>

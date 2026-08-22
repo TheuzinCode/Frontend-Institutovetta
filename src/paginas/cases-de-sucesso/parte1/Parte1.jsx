@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Parte1.css"
 
+
 const Parte1 = () => {
     return (
         <>
@@ -65,7 +66,6 @@ const Parte1 = () => {
                     <div className="acoes-cases-sucesso-parte1">
 
                         <button className="botao-principal-cases-sucesso-parte1">
-                            <span className="icone-botao-cases-sucesso-parte1">🚀</span>
                             Comece Sua Jornada
                         </button>
 

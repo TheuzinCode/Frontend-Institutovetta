@@ -10,22 +10,71 @@ import {
 } from "react-icons/fa";
 import "./Rodape.css"
 import logo from "../../assets/imgs/Logo-cabecalho.png"
-
-import { Link } from "react-router-dom";
+import { FaFacebook } from "react-icons/fa";
+import { Link, useNavigate  } from "react-router-dom";
 import { useState } from "react";
+
+
 
 
 const Rodape = () => {
 
+
+
+  const linkInstagram = "https://www.instagram.com/institutovetta/"
+  const linkFacebook = "https://www.facebook.com/profile.php?id=61589252169527"
+
+
+  const numero = '5511940818818';
+  const mensagem = 'Olá! Gostaria de saber mais sobre os cursos do Instituto Vetta.';
+
+  const linkWhats = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e) => {
+  const linkUrl = `http://localhost:8080/novidade/novo`
+
+  async function novidade(e) {
     e.preventDefault();
 
+    if (!email) {
+      alert("Por favor, preencha todos os campos");
+      return;
+    }
 
+    if (!email.includes("@")) {
+      alert("Digite um email válido");
+      return;
+    }
 
+    const novidadeEmail = {
+      email: email
+    };
 
-  };
+    try {
+      const response = await fetch(linkUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(novidadeEmail)
+      });
+
+      if (!response.ok) {
+        throw new Error("Erro ao salvar");
+      }
+
+      const data = await response.json();
+
+      console.log(data);
+      
+      setEmail("")
+
+    } catch (error) {
+      console.error("Erro ao salvar:", error);
+      alert("Erro ao salvar. Por favor, tente novamente.");
+    }
+  }
 
   return (
     <>
@@ -61,7 +110,7 @@ const Rodape = () => {
                   onChange={(e) => setEmail(e.target.value)}
                 />
 
-                <button type="submit" onClick={handleSubmit}>
+                <button type="submit" onClick={novidade}>
                   Inscrever-se
                 </button>
 
@@ -129,19 +178,20 @@ const Rodape = () => {
 
               <div className="redes-rodape">
 
-                <a href="#">
+                <a href={linkInstagram}
+                  target='_blank'>
                   <FaInstagram />
                 </a>
 
-                <a href="#">
-                  <FaLinkedin />
+                <a href={linkFacebook}
+                  target='_blank'>
+                  <FaFacebook />
                 </a>
 
-                <a href="#">
-                  <FaYoutube />
-                </a>
-
-                <a href="#">
+                <a href={linkWhats}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label='Falar no WhatsApp'>
                   <FaWhatsapp />
                 </a>
 

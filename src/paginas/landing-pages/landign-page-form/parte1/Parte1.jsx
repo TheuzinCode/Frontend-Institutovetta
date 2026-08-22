@@ -1,5 +1,6 @@
 import React from 'react'
 import './Parte1.css'
+import { ImUser } from "react-icons/im";
 
 const Parte1 = () => {
     return (
@@ -23,8 +24,8 @@ const Parte1 = () => {
                         <p className="descricao-page-form-parte1">
                             Cursos livres com metodologia prática, instrutores do mercado e
                             certificação reconhecida. Mais de{" "}
-                            <strong>5.000 alunos</strong> formados e{" "}
-                            <strong>92% de empregabilidade</strong>.
+                            <strong>600 alunos</strong> formados e{" "}
+                            <strong>85% de empregabilidade</strong>.
                         </p>
 
 
@@ -114,7 +115,7 @@ const Parte1 = () => {
 
                                 <div>
                                     <strong className="numero-page-form-parte1">
-                                        92%
+                                        85%
                                     </strong>
 
                                     <span className="rotulo-page-form-parte1">
@@ -128,12 +129,12 @@ const Parte1 = () => {
                             <div className="cartao-base-page-form-parte1">
 
                                 <div className="icone-laranja-page-form-parte1">
-                                    👤
+                                    <ImUser size={17} />
                                 </div>
 
                                 <div>
                                     <strong className="numero-page-form-parte1">
-                                        5.000+
+                                        600+
                                     </strong>
 
                                     <span className="rotulo-page-form-parte1">

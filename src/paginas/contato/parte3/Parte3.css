@@ -27,18 +27,73 @@
 }
 
 
-.particula-contato-parte3:nth-child(1)  { top: 6%;  left: 5%;  }
-.particula-contato-parte3:nth-child(2)  { top: 30%; left: 3%;  opacity: 0.2; }
-.particula-contato-parte3:nth-child(3)  { top: 68%; left: 13%; opacity: 0.25; }
-.particula-contato-parte3:nth-child(4)  { top: 92%; left: 27%; }
-.particula-contato-parte3:nth-child(5)  { top: 4%;  left: 61%; opacity: 0.2; }
-.particula-contato-parte3:nth-child(6)  { top: 17%; left: 68%; }
-.particula-contato-parte3:nth-child(7)  { top: 45%; left: 76%; opacity: 0.22; }
-.particula-contato-parte3:nth-child(8)  { top: 79%; left: 62%; opacity: 0.3; }
-.particula-contato-parte3:nth-child(9)  { top: 12%; left: 91%; opacity: 0.25; }
-.particula-contato-parte3:nth-child(10) { top: 55%; left: 96%; }
-.particula-contato-parte3:nth-child(11) { top: 86%; left: 88%; opacity: 0.2; }
-.particula-contato-parte3:nth-child(12) { top: 40%; left: 44%; opacity: 0.18; }
+.particula-contato-parte3:nth-child(1) {
+    top: 6%;
+    left: 5%;
+}
+
+.particula-contato-parte3:nth-child(2) {
+    top: 30%;
+    left: 3%;
+    opacity: 0.2;
+}
+
+.particula-contato-parte3:nth-child(3) {
+    top: 68%;
+    left: 13%;
+    opacity: 0.25;
+}
+
+.particula-contato-parte3:nth-child(4) {
+    top: 92%;
+    left: 27%;
+}
+
+.particula-contato-parte3:nth-child(5) {
+    top: 4%;
+    left: 61%;
+    opacity: 0.2;
+}
+
+.particula-contato-parte3:nth-child(6) {
+    top: 17%;
+    left: 68%;
+}
+
+.particula-contato-parte3:nth-child(7) {
+    top: 45%;
+    left: 76%;
+    opacity: 0.22;
+}
+
+.particula-contato-parte3:nth-child(8) {
+    top: 79%;
+    left: 62%;
+    opacity: 0.3;
+}
+
+.particula-contato-parte3:nth-child(9) {
+    top: 12%;
+    left: 91%;
+    opacity: 0.25;
+}
+
+.particula-contato-parte3:nth-child(10) {
+    top: 55%;
+    left: 96%;
+}
+
+.particula-contato-parte3:nth-child(11) {
+    top: 86%;
+    left: 88%;
+    opacity: 0.2;
+}
+
+.particula-contato-parte3:nth-child(12) {
+    top: 40%;
+    left: 44%;
+    opacity: 0.18;
+}
 
 
 
@@ -337,4 +392,39 @@
         font-size: 30px;
     }
 
+}
+
+.popup-vetta {
+    border-radius: 18px;
+    padding: 30px;
+    width: 450px;
+    font-family: "Poppins", sans-serif;
+}
+
+.titulo-vetta {
+    color: #0b63ce;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.texto-vetta {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.botao-vetta {
+    background: #ff7a00;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-vetta:hover {
+    background: #e96d00;
 }

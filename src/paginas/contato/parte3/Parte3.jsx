@@ -3,17 +3,118 @@ import { IoChatbubbleOutline } from "react-icons/io5"; //icone balao do mensagem
 import { FaRegClock } from "react-icons/fa6"; // icone relogio
 import { GoShieldCheck } from "react-icons/go"; // icone escudo check
 import { ImUser } from "react-icons/im"; //icone pessoa
+import Swal from "sweetalert2";
 import "./Parte3.css"
-
-
-
-
-
-
 
 const Parte3 = () => {
 
-      const [mensagem, setMensagem] = useState("");
+    const [nome, setNome] = useState("");
+    const [email, setEmail] = useState("");
+    const [numero, setNumero] = useState("");
+    const [assunto, setAssunto] = useState("");
+    const [mensagem, setMensagem] = useState("");
+
+    const link = `http://localhost:8080/contato/novo/leadcontato`
+
+
+    function formatarTelefone(valor) {
+        // Remove tudo que não for número
+        valor = valor.replace(/\D/g, "");
+
+        // Limita a 11 dígitos
+        valor = valor.slice(0, 11);
+
+        // (11) 98765-4321
+        if (valor.length > 10) {
+            return valor.replace(
+                /^(\d{2})(\d{5})(\d{4})$/,
+                "($1) $2-$3"
+            );
+        }
+
+        // (11) 9876-5432
+        if (valor.length > 6) {
+            return valor.replace(
+                /^(\d{2})(\d{4})(\d+)$/,
+                "($1) $2-$3"
+            );
+        }
+
+        if (valor.length > 2) {
+            return valor.replace(
+                /^(\d{2})(\d+)$/,
+                "($1) $2"
+            );
+        }
+
+        if (valor.length > 0) {
+            return valor.replace(/^(\d+)/, "($1");
+        }
+
+        return valor;
+    }
+
+    function formatarNome(valor) {
+        return valor.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ\s]/g, "");
+    }
+
+
+    async function salvarLeads(e) {
+        e.preventDefault();
+
+        if (!nome || !email || !numero || !assunto || !mensagem) {
+            alert("Por favor, preencha todos os campos");
+            return;
+        }
+
+        if (!email.includes("@")) {
+            alert("Digite um email válido");
+            return;
+        }
+
+        const Lead = {
+            nome: nome,
+            email: email,
+            telefone: numero,
+            assunto: assunto,
+            mensagem: mensagem
+        }
+
+
+        try {
+            const resp = await fetch(link, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(Lead)
+            });
+
+            Swal.fire({
+                icon: "success",
+                title: "Enviado com sucesso!",
+                text: "Agora é só aguardar. Em breve, um dos nossos representantes entrará em contato com você.",
+                confirmButtonText: "Entendi",
+                customClass: {
+                    popup: "popup-vetta",
+                    title: "titulo-vetta",
+                    htmlContainer: "texto-vetta",
+                    confirmButton: "botao-vetta"
+                },
+                buttonsStyling: false
+            });
+
+            setNome("")
+            setEmail("")
+            setNumero("")
+            setAssunto("")
+            setMensagem("")
+
+        } catch (error) {
+            console.error("Erro ao salvar:", error);
+            alert("Erro ao salvar. Por favor, tente novamente.");
+        }
+    }
 
     return (
         <>
@@ -109,7 +210,7 @@ const Parte3 = () => {
                             <div className="vantagem-contato-parte3">
 
                                 <div className="icone-vantagem-contato-parte3">
-                                    <ImUser color='#ffff' size={20}/>
+                                    <ImUser color='#ffff' size={20} />
                                 </div>
 
                                 <div>
@@ -153,6 +254,8 @@ const Parte3 = () => {
                                     type="text"
                                     className="entrada-contato-parte3"
                                     placeholder="Seu nome"
+                                    value={nome}
+                                    onChange={(e) => setNome(formatarNome(e.target.value))}
                                 />
 
                             </div>
@@ -168,6 +271,8 @@ const Parte3 = () => {
                                     type="email"
                                     className="entrada-contato-parte3"
                                     placeholder="seu@email.com"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
                                 />
 
                             </div>
@@ -187,6 +292,8 @@ const Parte3 = () => {
                                     type="tel"
                                     className="entrada-contato-parte3"
                                     placeholder="(11) 99999-9999"
+                                    value={numero}
+                                    onChange={(e) => setNumero(formatarTelefone(e.target.value))}
                                 />
 
                             </div>
@@ -198,7 +305,9 @@ const Parte3 = () => {
                                     Assunto
                                 </label>
 
-                                <select className="selecao-contato-parte3" defaultValue="">
+                                <select className="selecao-contato-parte3"
+                                    onChange={(e) => setAssunto(e.target.value)}
+                                    value={assunto}>
 
                                     <option value="" disabled>
                                         Selecione um assunto
@@ -248,7 +357,7 @@ const Parte3 = () => {
                         </div>
 
 
-                        <button className="botao-enviar-contato-parte3">
+                        <button className="botao-enviar-contato-parte3" onClick={salvarLeads}>
                             <span className="icone-botao-contato-parte3">➤</span>
                             Enviar Mensagem
                         </button>

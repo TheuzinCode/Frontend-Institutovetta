@@ -14,37 +14,32 @@ const Parte4 = () => {
         {
             pergunta: "Como funciona o processo de matrícula?",
             resposta:
-                'O processo é 100% online. Escolha seu curso, clique em "Matricule-se", preencha seus dados e escolha a forma de pagamento. Você recebe acesso imediato ao conteúdo após a confirmação.'
+                'Você fala com a gente no WhatsApp e agenda uma visita na unidade mais perto de você. Na visita você conhece a sala, o material e tira todas as dúvidas com nossa equipe.'
         },
         {
             pergunta: "Os cursos possuem certificado?",
             resposta:
-                "Sim. Ao concluir 100% das aulas você recebe um certificado digital com carga horária, válido em todo o território nacional."
+                "Sim. Ao concluir, você recebe o certificado de conclusão do Instituto Vetta, válido para apresentar no currículo e em processos seletivos., válido em todo o território nacional."
         },
         {
-            pergunta: "Posso parcelar o pagamento?",
+            pergunta: "Preciso ter experiência ou saber mexer em computador para começar?",
             resposta:
-                "Sim. Aceitamos parcelamento em até 12x no cartão de crédito, além de PIX e boleto à vista com desconto."
+                "Não. A maioria dos nossos alunos começa do zero, e a aula é individualizada: o instrutor senta do seu lado e acompanha o seu ritmo. Basta ter, no mínimo, o ensino fundamental I."
         },
         {
             pergunta: "E se eu não gostar do curso?",
             resposta:
-                "Você tem 7 dias para pedir o reembolso integral, sem precisar justificar. Basta enviar uma mensagem para o nosso suporte."
+                "Você pode trocar. Se durante o curso perceber que se identifica mais com outra área, é só falar com a nossa equipe que a gente faz a mudança para o curso que combina mais com você."
         },
         {
-            pergunta: "O acesso ao curso é vitalício?",
+            pergunta: "E se eu faltar uma aula?",
             resposta:
-                "Sim. Depois da matrícula o conteúdo fica disponível para sempre, incluindo as atualizações futuras do curso."
+                "Você não fica para trás. Temos aulas de reforço justamente para quem precisou faltar ou quer revisar um conteúdo antes de seguir para o próximo módulo. É só combinar com o instrutor."
         },
         {
-            pergunta: "Vocês oferecem suporte durante o curso?",
+            pergunta: "Tenho mais de 40 anos. Ainda dá tempo?",
             resposta:
-                "Oferecemos suporte por e-mail e WhatsApp de segunda a sexta, das 8h às 20h, com tutores que acompanham cada turma."
-        },
-        {
-            pergunta: "Preciso ter experiência prévia para fazer os cursos?",
-            resposta:
-                "Não. Os cursos partem do nível iniciante e cada módulo indica os pré-requisitos, quando existirem."
+                "Dá. Temos alunas que voltaram a estudar depois de 20 anos fora da sala de aula e hoje trabalham na área. Como o acompanhamento é individual, ninguém é comparado com ninguém, cada um vai no seu ritmo, e o instrutor está ali para explicar quantas vezes for preciso."
         }
     ];
 

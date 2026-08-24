@@ -15,7 +15,7 @@ const CardCursos = () => {
 
     async function buscarCursos() {
         try {
-            const resp = await fetch(`http://localhost:8080/Cursos`);
+            const resp = await fetch(`http://localhost:8080/cursos`);
             const data = await resp.json();
             setListaCursos(data)
         } catch (error) {

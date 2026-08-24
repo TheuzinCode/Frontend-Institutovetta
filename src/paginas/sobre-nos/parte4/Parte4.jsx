@@ -5,22 +5,23 @@ const Parte4 = () => {
 
   const marcos = [
     {
-      ano: "2010",
-      texto: "Fundação do instituto com 3 cursos presenciais em São Paulo"
+      ano: "2025",
+      texto: "Fundação do instituto com 50 cursos presenciais em São Paulo"
     },
     {
-      ano: "2014",
+      ano: "2025",
       texto: "Expansão para o formato online, alcançando alunos em todo o Brasil"
     },
+    
     {
-      ano: "2017",
+      ano: "2026",
       texto:
-        "Parceria com mais de 50 empresas para programas de capacitação corporativa"
+        "Parceria com mais de 5 empresas para programas de capacitação corporativa"
     },
     {
-      ano: "2020",
+      ano: "2026",
       texto:
-        "Lançamento da plataforma digital própria com mais de 1.000 alunos ativos"
+        "Lançamento da plataforma digital com mais de 500 alunos ativos"
     }
   ];
 

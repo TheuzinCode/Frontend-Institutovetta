@@ -1,6 +1,11 @@
 import React from 'react'
 import "./Parte1.css"
 import { Link } from "react-router-dom";
+import { CiClock2 } from "react-icons/ci";
+import { PiMedal } from "react-icons/pi";
+import { MdOutlineShield } from "react-icons/md";
+import { FaArrowDown } from "react-icons/fa";
+import { RiComputerLine } from "react-icons/ri";
 
 const Parte1 = ({ curso }) => {
 
@@ -17,27 +22,23 @@ const Parte1 = ({ curso }) => {
                     <div className="area-informacoes-cursos-detalhes-completo">
 
                         <div className="breadcrumb-cursos-detalhes-completo">
-                           <Link to={"/"} className="breadcrumb-cursos-detalhes-completo">Home</Link>  
-                           <span>›</span> 
-                           <Link to={"/cursos"}className="breadcrumb-cursos-detalhes-completo">Cursos</Link> 
-                           <span>›</span> 
-                           {curso?.nome}
+                            <Link to={"/"} className="breadcrumb-cursos-detalhes-completo">Home</Link>
+                            <span>›</span>
+                            <Link to={"/cursos"} className="breadcrumb-cursos-detalhes-completo">Cursos</Link>
+                            <span>›</span>
+                            {curso?.nome}
                         </div>
 
 
                         <div className="tags-cursos-detalhes-completo">
 
                             <span className="tag-principal-cursos-detalhes-completo">
-                                Inteligência Artificial
+                                {curso?.categoria}
                             </span>
 
-                            <span className="tag-popular-cursos-detalhes-completo">
+                            {/* <span className="tag-popular-cursos-detalhes-completo">
                                 Mais Procurado
-                            </span>
-
-                            <span className="tag-nivel-cursos-detalhes-completo">
-                                Iniciante
-                            </span>
+                            </span> */}
 
                         </div>
 
@@ -66,7 +67,7 @@ const Parte1 = ({ curso }) => {
                             </strong>
 
                             <span className="item-info-cursos-detalhes-completo">
-                                ◉ {curso?.duracao} de conteúdo
+                                <CiClock2 />  {curso?.duracao}h de conteúdo
                             </span>
 
                             <span className="item-info-cursos-detalhes-completo">
@@ -74,20 +75,8 @@ const Parte1 = ({ curso }) => {
                             </span>
 
                             <span className="item-info-cursos-detalhes-completo">
-                                ♧ Certificado incluso
+                                <PiMedal /> Certificado incluso
                             </span>
-
-                        </div>
-
-
-                        <div className="instrutor-cursos-detalhes-completo">
-
-                            { /*  <div className="foto-instrutor-cursos-detalhes-completo">
-                                <img
-                                    src="https://via.placeholder.com/45"
-                                    alt="Instrutor"
-                                />
-                            </div> */ }
 
                         </div>
 
@@ -97,34 +86,24 @@ const Parte1 = ({ curso }) => {
 
                     <div className="card-compra-cursos-detalhes-completo">
 
-                        { /* <div className="imagem-curso-cursos-detalhes-completo">
+                        <div className="imagem-curso-cursos-detalhes-completo">
 
                             <img
-                                src="https://via.placeholder.com/400x180"
-                                alt="Curso IA"
+                                src={`data:image/jpeg;base64,${curso.imagemCapaCurso}`}
+                                alt={curso?.nome}
                             />
-
-                            <span className="desconto-cursos-detalhes-completo">
-                                -50% OFF
-                            </span>
-
-                        </div> */}
+                        </div>
 
 
                         <div className="conteudo-card-cursos-detalhes-completo">
 
                             <div className="preco-cursos-detalhes-completo">
-                                R$ 497
-                            </div>
-
-
-                            <div className="preco-antigo-cursos-detalhes-completo">
-                                R$ 997
+                                Garanta já sua vaga!
                             </div>
 
 
                             <p className="economia-cursos-detalhes-completo">
-                                Economize R$ 500 — Oferta por tempo limitado!
+                                <CiClock2 />   Inscrições por tempo limitado — inscreva-se agora!
                             </p>
 
 
@@ -134,26 +113,62 @@ const Parte1 = ({ curso }) => {
 
 
                             <div className="garantia-cursos-detalhes-completo">
-                                🛡 Garantia de aprendizado
+                                <div className='beneficios-cursos-descritivo'>
+                                    <div className='icone-beneficios-curso'>
+                                        <MdOutlineShield size={17} />
+                                    </div>
+                                    <div>
+                                        Garantia de aprendizado
+                                    </div>
+                                </div>
+
                             </div>
 
 
                             <ul className="beneficios-cursos-detalhes-completo">
 
                                 <li>
-                                    ◉ {curso?.duracao} de conteúdo
+                                    <div className='beneficios-cursos-descritivo'>
+                                        <div className='icone-beneficios-curso'>
+                                            <CiClock2 size={15} />
+                                        </div>
+                                        <div>
+                                            {curso?.duracao}h de conteúdo
+                                        </div>
+                                    </div>
                                 </li>
 
                                 <li>
-                                    ↓ Materiais para download
+                                    <div className='beneficios-cursos-descritivo'>
+                                        <div className='icone-beneficios-curso'>
+                                            <FaArrowDown size={14} />
+                                        </div>
+                                        <div>
+                                            Materiais para download
+                                        </div>
+                                    </div>
                                 </li>
 
                                 <li>
-                                    ◫ Acesso mobile e desktop
+                                    <div className='beneficios-cursos-descritivo'>
+                                        <div className='icone-beneficios-curso'>
+                                            <RiComputerLine size={15} />
+                                        </div>
+                                        <div>
+                                            Acesso mobile e desktop
+                                        </div>
+                                    </div>
                                 </li>
 
                                 <li>
-                                    ♧ Certificado de conclusão
+                                    <div className='beneficios-cursos-descritivo'>
+                                        <div className='icone-beneficios-curso'>
+                                            <PiMedal size={16} />
+                                        </div>
+                                        <div>
+                                            Certificado de conclusão
+                                        </div>
+                                    </div>
                                 </li>
 
                             </ul>

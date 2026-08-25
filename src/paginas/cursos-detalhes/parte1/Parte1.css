@@ -1,6 +1,6 @@
 .pagina-cursos-detalhes-completo {
     background: #071522;
-    min-height: 100vh;
+    min-height: 85vh;
     color: white;
     padding: 60px 80px;
     font-family: "Inter", sans-serif;
@@ -38,82 +38,84 @@
 
 
 .tags-cursos-detalhes-completo {
-    display:flex;
-    gap:10px;
-    margin-bottom:20px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 
 
 .tags-cursos-detalhes-completo span {
-    padding:6px 13px;
-    border-radius:20px;
-    font-size:12px;
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 12px;
 }
 
 
 
 .tag-principal-cursos-detalhes-completo {
-    background:#251d22;
-    color:#ff6335;
-    border:1px solid #ff6335;
+    background: #251d22;
+    color: #ff6335;
+    border: 1px solid #ff6335;
 }
 
 
 .tag-popular-cursos-detalhes-completo {
-    background:#ff6335;
+    background: #ff6335;
 }
 
 
 .tag-nivel-cursos-detalhes-completo {
-    background:#1b2937;
-    color:#b7c0ca;
+    background: #1b2937;
+    color: #b7c0ca;
 }
 
 
 
 .titulo-cursos-detalhes-completo {
-    font-size:42px;
-    line-height:1.1;
-    margin-bottom:20px;
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
 
 
 
 .descricao-cursos-detalhes-completo {
-    color:#9aa8b8;
-    font-size:16px;
-    line-height:1.7;
+    color: #9aa8b8;
+    font-size: 16px;
+    line-height: 1.7;
 }
 
 
 
 .avaliacao-cursos-detalhes-completo {
 
-    display:flex;
-    align-items:center;
-    gap:12px;
-    margin-top:35px;
-    flex-wrap:wrap;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 35px;
+    flex-wrap: wrap;
 }
 
 
 
 .estrelas-cursos-detalhes-completo {
-    color:#ffc400;
+    color: #ffc400;
 }
 
 
 .nota-cursos-detalhes-completo {
-    color:#ffc400;
+    color: #ffc400;
 }
 
 
 .alunos-cursos-detalhes-completo,
 .item-info-cursos-detalhes-completo {
-
-    color:#8b99aa;
-    font-size:14px;
+    color: #8b99aa;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 
 }
 
@@ -121,36 +123,36 @@
 
 .instrutor-cursos-detalhes-completo {
 
-    display:flex;
-    gap:15px;
-    align-items:center;
-    margin-top:35px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 35px;
 
 }
 
 
 .foto-instrutor-cursos-detalhes-completo img {
 
-    width:45px;
-    height:45px;
-    border-radius:50%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
 
 }
 
 
 .instrutor-cursos-detalhes-completo span {
 
-    display:block;
-    color:#7e8b99;
-    font-size:13px;
+    display: block;
+    color: #7e8b99;
+    font-size: 13px;
 
 }
 
 
 .instrutor-cursos-detalhes-completo strong {
 
-    display:block;
-    margin-top:5px;
+    display: block;
+    margin-top: 5px;
 
 }
 
@@ -159,11 +161,11 @@
 
 .card-compra-cursos-detalhes-completo {
 
-    width:350px;
-    background:#111d2b;
-    border:1px solid #243244;
-    border-radius:18px;
-    overflow:hidden;
+    width: 390px;
+    background: #111d2b;
+    border: 1px solid #243244;
+    border-radius: 18px;
+    overflow: hidden;
 
 }
 
@@ -171,7 +173,7 @@
 
 .imagem-curso-cursos-detalhes-completo {
 
-    position:relative;
+    position: relative;
 
 }
 
@@ -179,9 +181,9 @@
 
 .imagem-curso-cursos-detalhes-completo img {
 
-    width:100%;
-    height:180px;
-    object-fit:cover;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
 
 }
 
@@ -189,13 +191,13 @@
 
 .desconto-cursos-detalhes-completo {
 
-    position:absolute;
-    right:15px;
-    top:15px;
-    background:#ff6335;
-    padding:6px 12px;
-    border-radius:20px;
-    font-size:12px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: #ff6335;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
 
 }
 
@@ -203,7 +205,7 @@
 
 .conteudo-card-cursos-detalhes-completo {
 
-    padding:22px;
+    padding: 22px;
 
 }
 
@@ -211,9 +213,10 @@
 
 .preco-cursos-detalhes-completo {
 
-    display:inline-block;
-    font-size:32px;
-    font-weight:700;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 8px;
 
 }
 
@@ -221,10 +224,10 @@
 
 .preco-antigo-cursos-detalhes-completo {
 
-    display:inline-block;
-    margin-left:10px;
-    color:#657080;
-    text-decoration:line-through;
+    display: inline-block;
+    margin-left: 10px;
+    color: #657080;
+    text-decoration: line-through;
 
 }
 
@@ -232,24 +235,27 @@
 
 .economia-cursos-detalhes-completo {
 
-    color:#ff6335;
-    font-size:13px;
-
+    color: #ff6335;
+    font-size: 13px;
+    display: flex;
+    align-self: center;
+    gap: 5px;
 }
 
 
 
 .botao-principal-cursos-detalhes-completo {
 
-    width:100%;
-    height:42px;
-    border:none;
-    border-radius:10px;
-    background:#ff6335;
-    color:white;
-    font-weight:bold;
-    margin-top:15px;
-    cursor:pointer;
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-radius: 10px;
+    background: #ff6335;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 18px;
 
 }
 
@@ -257,13 +263,13 @@
 
 .botao-secundario-cursos-detalhes-completo {
 
-    width:100%;
-    height:42px;
-    margin-top:10px;
-    border-radius:10px;
-    background:transparent;
-    border:1px solid #465465;
-    color:white;
+    width: 100%;
+    height: 42px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #465465;
+    color: white;
 
 }
 
@@ -271,11 +277,11 @@
 
 .garantia-cursos-detalhes-completo {
 
-    margin-top:25px;
-    padding-top:20px;
-    border-top:1px solid #263444;
-    font-size:13px;
-    color:#738293;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #263444;
+    font-size: 13px;
+    color: #738293;
 
 }
 
@@ -283,19 +289,29 @@
 
 .beneficios-cursos-detalhes-completo {
 
-    margin-top:20px;
-    padding:0;
-    list-style:none;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
 
 }
 
-
+.beneficios-cursos-descritivo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+.icone-beneficios-curso{
+    display: flex;
+}
 
 .beneficios-cursos-detalhes-completo li {
-
-    color:#8290a0;
-    font-size:13px;
-    margin-bottom:14px;
+    color: #8290a0;
+    font-size: 13px;
+    margin-bottom: 14px;
 
 }
 
@@ -303,30 +319,30 @@
 
 /* RESPONSIVO */
 
-@media(max-width:900px){
+@media(max-width:900px) {
 
-    .pagina-cursos-detalhes-completo{
-        padding:40px 20px;
+    .pagina-cursos-detalhes-completo {
+        padding: 40px 20px;
     }
 
 
-    .conteudo-cursos-detalhes-completo{
+    .conteudo-cursos-detalhes-completo {
 
-        flex-direction:column;
-
-    }
-
-
-    .card-compra-cursos-detalhes-completo{
-
-        width:100%;
+        flex-direction: column;
 
     }
 
 
-    .titulo-cursos-detalhes-completo{
+    .card-compra-cursos-detalhes-completo {
 
-        font-size:32px;
+        width: 100%;
+
+    }
+
+
+    .titulo-cursos-detalhes-completo {
+
+        font-size: 32px;
 
     }
 

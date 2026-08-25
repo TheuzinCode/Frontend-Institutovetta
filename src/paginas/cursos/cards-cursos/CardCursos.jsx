@@ -1,9 +1,11 @@
 import React from 'react'
 import "./CardCursos.css";
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const CardCursos = () => {
 
+    const navigate = useNavigate();
     const [listaCursos, setListaCursos] = useState([]);
     const [paginaAtual, setPaginaAtual] = useState(0)
 
@@ -88,10 +90,12 @@ const CardCursos = () => {
 
                             {/* BOTÕES */}
                             <div className="botoes-curso-cards-cursos">
-                                <button className="botao-detalhes-cards-cursos">
+                                <button className="botao-detalhes-cards-cursos"
+                                 onClick={() => navigate(`/curso/${curso.id}`)}>
                                     Ver Detalhes
                                 </button>
-                                <button className="botao-inscrever-cards-cursos">
+                                <button className="botao-inscrever-cards-cursos"
+                                 onClick={() => navigate(`/curso/${curso.id}`)}>
                                     Inscrever-se
                                 </button>
                             </div>

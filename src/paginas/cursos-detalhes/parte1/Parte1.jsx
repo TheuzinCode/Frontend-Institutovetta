@@ -1,7 +1,13 @@
 import React from 'react'
 import "./Parte1.css"
+import { Link } from "react-router-dom";
 
-const Parte1 = () => {
+const Parte1 = ({ curso }) => {
+
+    if (!curso) {
+        return <h1>Carregando...</h1>;
+    }
+
     return (
         <>
             <section className="pagina-cursos-detalhes-completo">
@@ -11,7 +17,11 @@ const Parte1 = () => {
                     <div className="area-informacoes-cursos-detalhes-completo">
 
                         <div className="breadcrumb-cursos-detalhes-completo">
-                            Home <span>›</span> Cursos <span>›</span> IA Generativa & ChatGPT na Prática
+                           <Link to={"/"} className="breadcrumb-cursos-detalhes-completo">Home</Link>  
+                           <span>›</span> 
+                           <Link to={"/cursos"}className="breadcrumb-cursos-detalhes-completo">Cursos</Link> 
+                           <span>›</span> 
+                           {curso?.nome}
                         </div>
 
 
@@ -33,42 +43,34 @@ const Parte1 = () => {
 
 
                         <h1 className="titulo-cursos-detalhes-completo">
-                            IA Generativa & ChatGPT na Prática
+                            {curso?.nome}
                         </h1>
 
 
                         <p className="descricao-cursos-detalhes-completo">
-                            Domine o ChatGPT, Midjourney, Copilot e as principais ferramentas
-                            de IA generativa. <br />
-                            Aumente sua produtividade e se destaque no mercado com as
-                            tecnologias mais quentes de 2025.
+                            {curso.descricao}
                         </p>
 
 
                         <div className="avaliacao-cursos-detalhes-completo">
 
                             <span className="estrelas-cursos-detalhes-completo">
-                                ★★★★☆
+                                <span className="estrelas-cursos-detalhes-completo">
+                                    {"★".repeat(curso.avaliacao)}
+                                    {"☆".repeat(5 - curso.avaliacao)}
+                                </span>
                             </span>
 
                             <strong className="nota-cursos-detalhes-completo">
-                                4.9
+                                {curso.avaliacao}
                             </strong>
 
-                            <span className="alunos-cursos-detalhes-completo">
-                                (3.842 alunos)
+                            <span className="item-info-cursos-detalhes-completo">
+                                ◉ {curso?.duracao} de conteúdo
                             </span>
 
                             <span className="item-info-cursos-detalhes-completo">
-                                ◉ 40h de conteúdo
-                            </span>
-
-                            <span className="item-info-cursos-detalhes-completo">
-                                ▣ Online
-                            </span>
-
-                            <span className="item-info-cursos-detalhes-completo">
-                                🌐 Português
+                                ▣ Presencial
                             </span>
 
                             <span className="item-info-cursos-detalhes-completo">
@@ -80,22 +82,12 @@ const Parte1 = () => {
 
                         <div className="instrutor-cursos-detalhes-completo">
 
-                            <div className="foto-instrutor-cursos-detalhes-completo">
+                            { /*  <div className="foto-instrutor-cursos-detalhes-completo">
                                 <img
                                     src="https://via.placeholder.com/45"
                                     alt="Instrutor"
                                 />
-                            </div>
-
-                            <div>
-                                <span>
-                                    Instrutor
-                                </span>
-
-                                <strong>
-                                    Dr. Rafael Mendes
-                                </strong>
-                            </div>
+                            </div> */ }
 
                         </div>
 
@@ -105,7 +97,7 @@ const Parte1 = () => {
 
                     <div className="card-compra-cursos-detalhes-completo">
 
-                        <div className="imagem-curso-cursos-detalhes-completo">
+                        { /* <div className="imagem-curso-cursos-detalhes-completo">
 
                             <img
                                 src="https://via.placeholder.com/400x180"
@@ -116,7 +108,7 @@ const Parte1 = () => {
                                 -50% OFF
                             </span>
 
-                        </div>
+                        </div> */}
 
 
                         <div className="conteudo-card-cursos-detalhes-completo">
@@ -137,32 +129,23 @@ const Parte1 = () => {
 
 
                             <button className="botao-principal-cursos-detalhes-completo">
-                                Matricular-se Agora
-                            </button>
-
-
-                            <button className="botao-secundario-cursos-detalhes-completo">
-                                Experimente Grátis
+                                Inscreva-se Agora
                             </button>
 
 
                             <div className="garantia-cursos-detalhes-completo">
-                                🛡 Garantia de 7 dias ou seu dinheiro de volta
+                                🛡 Garantia de aprendizado
                             </div>
 
 
                             <ul className="beneficios-cursos-detalhes-completo">
 
                                 <li>
-                                    ◉ 40h de conteúdo em vídeo
+                                    ◉ {curso?.duracao} de conteúdo
                                 </li>
 
                                 <li>
                                     ↓ Materiais para download
-                                </li>
-
-                                <li>
-                                    ∞ Acesso vitalício
                                 </li>
 
                                 <li>

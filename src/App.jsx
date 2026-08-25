@@ -20,7 +20,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cursos" element={<PaginaCursos />} />
-          <Route path="/cursos-detalhes" element={<CursosDetalhes />} />
+          {/* <Route path="/cursos-detalhes" element={<CursosDetalhes />} /> */}
+           <Route path="/curso/:id" element={<CursosDetalhes />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/cases-de-sucesso" element={<CasesDeSucesso />} />
           <Route path="/page-whatsapp" element={<LandingPageWhats />} />

@@ -7,6 +7,7 @@ import { BsTelephone } from "react-icons/bs"; //icone telefone
 import { MdOutlineEmail } from "react-icons/md"; // icone email
 import { CiClock2 } from "react-icons/ci"; //icone relogio
 
+
 const Parte6 = () => {
 
     const unidades = [
@@ -31,7 +32,7 @@ const Parte6 = () => {
                 <div className="container-parte6-home">
                     <div className="cabecalho-parte6-home">
                         <div className="badge-parte6-home">
-                            📍 NOSSAS UNIDADES
+                            <IoLocationSharp /> NOSSAS UNIDADES
                         </div>
                         <h2 className="titulo-parte6-home">
                             Presentes na <span>Zona Sul de SP</span>

@@ -2,7 +2,8 @@ import React from 'react'
 import "./Parte2.css"
 import { LuBrain } from "react-icons/lu";
 import { RiRobot2Line } from "react-icons/ri";
-
+import { Link } from "react-router-dom";
+import { CiClock2 } from "react-icons/ci";
 
 const Parte2 = () => {
     return (
@@ -22,9 +23,11 @@ const Parte2 = () => {
                                     que estão transformando carreiras
                                 </h2>
                             </div>
-                            <a href="#" className="btn-cursos-part2-home">
-                                Ver todos os cursos de IA →
-                            </a>
+                            <Link to={"/cursos"}>
+                                <a className="btn-cursos-part2-home">
+                                    Ver todos os cursos de IA →
+                                </a>
+                            </Link>
                         </div>
                         <div className="cards-part2-home">
                             <div className="card-part2-home">
@@ -40,8 +43,13 @@ const Parte2 = () => {
                                     ferramentas de IA generativa para turbinar sua produtividade.
                                 </p>
                                 <div className="rodape-card-part2-home">
-                                    <span>🕒 40h de conteúdo</span>
-                                    <a className="rodape-card-a-part2-home" href="#">Saiba mais →</a>
+                                    <div className='horas-rodape'>
+                                        <CiClock2 className='icone-relogio' size={15} />  <span> 40h de conteúdo</span>
+                                    </div>
+
+                                    <Link to={"/cursos"} className='saiba-mais'>
+                                        <a className="rodape-card-a-part2-home" >Saiba mais →</a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="card-part2-home">
@@ -57,25 +65,33 @@ const Parte2 = () => {
                                     comunicação profissional para inovar e escalar os lucros da sua empresa.
                                 </p>
                                 <div className="rodape-card-part2-home">
-                                    <span>🕒 120h de conteúdo</span>
-                                    <a className="rodape-card-a-part2-home" href="#">Saiba mais →</a>
+                                    <div className='horas-rodape'>
+                                        <CiClock2 className='icone-relogio' size={15} />  <span> 120h de conteúdo</span>
+                                    </div>
+                                    <Link to={"/cursos"} className='saiba-mais'>
+                                        <a className="rodape-card-a-part2-home">Saiba mais →</a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="card-part2-home">
                                 <div className="topo-card-part2-home">
-                                    <div className="icone-part2-home">&lt;/&gt;</div>
-                                    <span className="tag-part2-home laranja">
-                                        Em Alta
+                                    <div className="icone-part2-home azul"><LuBrain /></div>
+                                    <span className="tag-part2-home azul">
+                                        Novo
                                     </span>
                                 </div>
-                                <h3 className="card-h3-part2-home">Automação com IA</h3>
+                                <h3 className="card-h3-part2-home">IA para Negocios</h3>
                                 <p className="card-p-part2-home">
                                     Automatize tarefas repetitivas, crie agentes inteligentes e
                                     integre IA aos seus fluxos utilizando n8n e LangChain.
                                 </p>
                                 <div className="rodape-card-part2-home">
-                                    <span>🕒 60h de conteúdo</span>
-                                    <a className="rodape-card-a-part2-home" href="#">Saiba mais →</a>
+                                    <div className='horas-rodape'>
+                                        <CiClock2 className='icone-relogio' size={15} />  <span> 60h de conteúdo</span>
+                                    </div>
+                                    <Link to={"/cursos"} className='saiba-mais'>
+                                        <a className="rodape-card-a-part2-home">Saiba mais →</a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -109,9 +125,11 @@ const Parte2 = () => {
 
                             <img className="imagem-destaque-img-parte2-home" />
 
-                            <a href="#" className="botao-inscrever-parte2-home">
-                                Quero me inscrever →
-                            </a>
+                            <Link to={"/cursos"}>
+                                <a className="botao-inscrever-parte2-home">
+                                    Quero me inscrever →
+                                </a>
+                            </Link>
 
                         </div>
 

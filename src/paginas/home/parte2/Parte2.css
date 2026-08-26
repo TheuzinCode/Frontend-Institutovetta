@@ -163,7 +163,6 @@
 
 .rodape-card-a-part2-home {
     color: #ff6836;
-    text-decoration: none;
     font-weight: 600;
     transition: .3s;
 }
@@ -171,6 +170,20 @@
 .rodape-card-a-part2-home:hover {
     color: #e6511d;
     text-decoration: underline;
+}
+
+.saiba-mais{
+    text-decoration: none;
+}
+
+.icone-relogio{
+    color: #535455;   
+}
+
+.horas-rodape{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 /* ==========================

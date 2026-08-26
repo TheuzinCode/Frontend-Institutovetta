@@ -33,6 +33,10 @@
     margin-right: 5px;
 }
 
+.book{
+    margin-right: 7px;
+}
+
 .degrade-home {
     background: linear-gradient(-45deg, #08101f, #07111f, #0b1730, #09101E);
     background-size: 400% 400%;

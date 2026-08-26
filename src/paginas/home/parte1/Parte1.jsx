@@ -34,7 +34,7 @@ const Parte1cds = () => {
                     </div>
                     <div className="container-botoes-home">
                         <Link to="/cursos" className='config-link'>
-                            <div className='botao-ver-cursos'> Ver Cursos</div>
+                            <div className='botao-ver-cursos'> <IoBookOutline size={19} className='book'/> Cursos</div>
                         </Link>
 
                         <Link to="/cursos" className='config-link'>

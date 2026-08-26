@@ -3,27 +3,12 @@ import "./CardCursos.css";
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const CardCursos = () => {
+const CardCursos = ({ listaCursos }) => {
 
     const navigate = useNavigate();
-    const [listaCursos, setListaCursos] = useState([]);
     const [paginaAtual, setPaginaAtual] = useState(0)
 
     const itensPorPagina = 12;
-
-    useEffect(() => {
-        buscarCursos();
-    }, []);
-
-    async function buscarCursos() {
-        try {
-            const resp = await fetch(`http://localhost:8080/cursos`);
-            const data = await resp.json();
-            setListaCursos(data)
-        } catch (error) {
-            console.error("ERRO AO BUSCAR OS CURSOS: " + error)
-        }
-    }
 
     const paginasTotal = Math.ceil(listaCursos.length / itensPorPagina)
 
@@ -32,6 +17,9 @@ const CardCursos = () => {
 
     const cursoDaPagina = listaCursos.slice(indiceInicial, indiceFinal)
 
+    useEffect(() => {
+        setPaginaAtual(0);
+    }, [listaCursos]);
     return (
 
         <>
@@ -91,11 +79,11 @@ const CardCursos = () => {
                             {/* BOTÕES */}
                             <div className="botoes-curso-cards-cursos">
                                 <button className="botao-detalhes-cards-cursos"
-                                 onClick={() => navigate(`/curso/${curso.id}`)}>
+                                    onClick={() => navigate(`/curso/${curso.id}`)}>
                                     Ver Detalhes
                                 </button>
                                 <button className="botao-inscrever-cards-cursos"
-                                 onClick={() => navigate(`/curso/${curso.id}`)}>
+                                    onClick={() => navigate(`/curso/${curso.id}`)}>
                                     Inscrever-se
                                 </button>
                             </div>

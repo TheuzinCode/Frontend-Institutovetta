@@ -1,8 +1,9 @@
 import React from 'react'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./MenuCurso.css";
+import { FaMagnifyingGlass } from "react-icons/fa6";
 
-const MenuCurso = () => {
+const MenuCurso = ({ nomeCurso, setNomeCurso }) => {
 
 
     const [categoriaAtiva, setCategoriaAtiva] = useState("Todos");
@@ -19,7 +20,6 @@ const MenuCurso = () => {
 
     const modalidades = [
         "Todos",
-        "Online",
         "Presencial"
     ];
 
@@ -31,15 +31,17 @@ const MenuCurso = () => {
                     {/* BUSCA */}
                     <div className="busca-menu-cursos-menu-cursos">
                         <span className="icone-busca-menu-cursos-menu-cursos">
-                            🔍
+                            <FaMagnifyingGlass />
                         </span>
                         <input
                             type="text"
                             placeholder="Buscar curso..."
                             className="input-busca-menu-cursos-menu-cursos"
+                            value={nomeCurso}
+                            onChange={(e) => setNomeCurso(e.target.value)}
                         />
                     </div>
-                    
+
                     {/* CATEGORIAS */}
                     <div className="filtros-categoria-menu-cursos-menu-cursos">
                         {categorias.map((categoria) => (
@@ -47,8 +49,8 @@ const MenuCurso = () => {
                                 key={categoria}
                                 type="button"
                                 className={`botao-filtro-menu-cursos-menu-cursos ${categoriaAtiva === categoria
-                                        ? "ativo-menu-cursos"
-                                        : ""
+                                    ? "ativo-menu-cursos"
+                                    : ""
                                     }`}
                                 onClick={() => setCategoriaAtiva(categoria)}
                             >
@@ -56,7 +58,7 @@ const MenuCurso = () => {
                             </button>
                         ))}
                     </div>
-                    
+
                     {/* MODALIDADE */}
                     <div className="filtros-modalidade-menu-cursos-menu-cursos">
                         {modalidades.map((modalidade) => (
@@ -64,8 +66,8 @@ const MenuCurso = () => {
                                 key={modalidade}
                                 type="button"
                                 className={`botao-modalidade-menu-cursos-menu-cursos ${modalidadeAtiva === modalidade
-                                        ? "ativo-modalidade-menu-cursos"
-                                        : ""
+                                    ? "ativo-modalidade-menu-cursos"
+                                    : ""
                                     }`}
                                 onClick={() => setModalidadeAtiva(modalidade)}
                             >
@@ -76,6 +78,7 @@ const MenuCurso = () => {
                 </div>
 
             </section>
+
         </>
     )
 }

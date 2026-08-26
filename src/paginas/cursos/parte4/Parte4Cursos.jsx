@@ -1,5 +1,6 @@
 import React from 'react'
 import './Parte4Cursos.css'
+import { Link } from "react-router-dom";
 
 const Parte4Cursos = () => {
     return (
@@ -16,13 +17,15 @@ const Parte4Cursos = () => {
                         Podemos ter a solução ideal para você.
                     </p>
 
-                    <button className="botao-nao-encontrou-cursos">
-                        <span className="icone-email-nao-encontrou-cursos">
-                            ✉
-                        </span>
+                    <Link to={"/contato"} className='saiba-mais'>
+                        <button className="botao-nao-encontrou-cursos">
+                            <span className="icone-email-nao-encontrou-cursos">
+                                ✉
+                            </span>
 
-                        Falar com a Equipe
-                    </button>
+                            Falar com a Equipe
+                        </button>
+                    </Link>
 
                 </div>
             </section>

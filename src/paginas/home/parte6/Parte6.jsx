@@ -20,17 +20,6 @@ const Parte6 = () => {
             horario: "Seg à Sex: 8h às 20h | Sáb: 8h às 17h",
             mapa:
                 "https://www.google.com/maps?q=Rua+Sinfonia+Popular+22+São+Paulo&output=embed"
-        },
-        {
-            id: "parelheiros",
-            nome: "Unidade São Paulo - Parelheiros",
-            badge: "",
-            endereco: "Estr. da Colônia Mário Reimberg Christe, 7, 2ª Sala, Parelheiros - SP",
-            telefone: "(11) 94080-9351",
-            email: "unidadeparelheiros@instituto.com.br",
-            horario: "Seg à Sex: 8h às 19h | Sáb: 8h às 16h",
-            mapa:
-                "https://www.google.com/maps?q=Estrada+da+Colonia+Mario+Reimberg+Christe+7+São+Paulo&output=embed"
         }
     ]
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Parte1.css"
 import { Link } from "react-router-dom";
 import { CiClock2 } from "react-icons/ci";
@@ -6,8 +6,11 @@ import { PiMedal } from "react-icons/pi";
 import { MdOutlineShield } from "react-icons/md";
 import { FaArrowDown } from "react-icons/fa";
 import { RiComputerLine } from "react-icons/ri";
+import Modal from "../../../componentes/modal/Modal"
 
 const Parte1 = ({ curso }) => {
+
+    const [aberto, setAberto] = useState(false)
 
     if (!curso) {
         return <h1>Carregando...</h1>;
@@ -107,7 +110,8 @@ const Parte1 = ({ curso }) => {
                             </p>
 
 
-                            <button className="botao-principal-cursos-detalhes-completo">
+                            <button className="botao-principal-cursos-detalhes-completo"
+                                onClick={() => setAberto(true)}>
                                 Inscreva-se Agora
                             </button>
 
@@ -182,6 +186,12 @@ const Parte1 = ({ curso }) => {
                 </div>
 
             </section>
+
+            <Modal
+                aberto={aberto}
+                fechar={() => setAberto(false)}
+                curso={curso.nome}
+            />
         </>
     )
 }

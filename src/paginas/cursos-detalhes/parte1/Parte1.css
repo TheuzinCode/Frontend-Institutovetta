@@ -234,18 +234,17 @@
 
 
 .economia-cursos-detalhes-completo {
-
     color: #ff6335;
     font-size: 13px;
     display: flex;
-    align-self: center;
     gap: 5px;
+    align-items: center;
 }
 
 
 
 .botao-principal-cursos-detalhes-completo {
-
+    font-family: "Inter", sans-serif;
     width: 100%;
     height: 42px;
     border: none;
@@ -255,7 +254,7 @@
     font-weight: bold;
     margin-top: 15px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 17px;
 
 }
 
@@ -298,13 +297,14 @@
 
 }
 
-.beneficios-cursos-descritivo{
+.beneficios-cursos-descritivo {
     display: flex;
     gap: 10px;
     align-items: center;
-    
+
 }
-.icone-beneficios-curso{
+
+.icone-beneficios-curso {
     display: flex;
 }
 

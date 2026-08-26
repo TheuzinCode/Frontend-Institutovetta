@@ -2,7 +2,7 @@ import React from 'react'
 import "./Parte2.css"
 import { LuBrain } from "react-icons/lu";
 import { RiRobot2Line } from "react-icons/ri";
-import { Link } from "react-router-dom";
+    import { Link } from "react-router-dom";
 import { CiClock2 } from "react-icons/ci";
 
 const Parte2 = () => {

@@ -6,7 +6,7 @@ import {
     FiArrowRight,
 } from "react-icons/fi";
 import "./Parte3.css"
-
+import { Link } from "react-router-dom";
 const Parte3 = () => {
     return (
         <>
@@ -193,13 +193,15 @@ const Parte3 = () => {
 
                     <div className="container-botao-parte3-home">
 
-                        <button className="botao-ver-todos-parte3-home">
+                        <Link to={"/cursos"} className='saiba-mais'>
+                            <button className="botao-ver-todos-parte3-home">
 
-                            Ver Todos os Cursos
+                                Ver Todos os Cursos
 
-                            <FiArrowRight />
+                                <FiArrowRight />
 
-                        </button>
+                            </button>
+                        </Link>
 
                     </div>
 

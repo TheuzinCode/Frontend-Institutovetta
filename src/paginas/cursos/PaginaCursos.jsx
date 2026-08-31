@@ -12,23 +12,28 @@ const PaginaCursos = () => {
 
     const [listaCursos, setListaCursos] = useState([]);
     const [nomeCurso, setNomeCurso] = useState("")
+    const [categoriaAtiva, setCategoriaAtiva] = useState("Todos");
 
     useEffect(() => {
         async function buscarCursos() {
             try {
-                const resp = await fetch(
-                    `http://localhost:8080/cursos?nome=${encodeURIComponent(nomeCurso)}`
-                );
+                const params = new URLSearchParams();
+
+                if (nomeCurso) params.append("nome", nomeCurso);
+                if (categoriaAtiva !== "Todos") params.append("categoria", categoriaAtiva);
+
+                const resp = await fetch(`http://localhost:8080/cursos?${params}`);
                 const data = await resp.json();
+                console.log("RETORNOU:", data.length, data);
                 setListaCursos(data);
             } catch (error) {
                 console.error("ERRO AO BUSCAR OS CURSOS:", error);
             }
         }
 
-        const timer = setTimeout(buscarCursos, 400); // debounce
+        const timer = setTimeout(buscarCursos, 400);
         return () => clearTimeout(timer);
-    }, [nomeCurso]);
+    }, [nomeCurso, categoriaAtiva]);
 
     return (
         <>
@@ -37,6 +42,8 @@ const PaginaCursos = () => {
             <MenuCurso
                 nomeCurso={nomeCurso}
                 setNomeCurso={setNomeCurso}
+                categoriaAtiva={categoriaAtiva}
+                setCategoriaAtiva={setCategoriaAtiva}
             />
             <CardCursos listaCursos={listaCursos} />
             <Parte4 />

@@ -1,8 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Parte1.css'
 import { ImUser } from "react-icons/im";
 
+
 const Parte1 = () => {
+
+    const [nome, setNome] = useState("")
+    const [email, setEmail] = useState("")
+    const [telefone, setTelefone] = useState("")
+    const [areaInteresse, setAreaInteresse] = useState("")
+
+
     return (
         <>
             <section className="pagina-page-form-parte1">

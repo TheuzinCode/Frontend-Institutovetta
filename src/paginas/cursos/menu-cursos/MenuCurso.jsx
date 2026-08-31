@@ -3,16 +3,14 @@ import { useState, useEffect } from "react";
 import "./MenuCurso.css";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 
-const MenuCurso = ({ nomeCurso, setNomeCurso }) => {
+const MenuCurso = ({ nomeCurso, setNomeCurso, categoriaAtiva, setCategoriaAtiva }) => {
 
-
-    const [categoriaAtiva, setCategoriaAtiva] = useState("Todos");
     const [modalidadeAtiva, setModalidadeAtiva] = useState("Todos");
 
     const categorias = [
         "Todos",
-        "Tecnologia",
-        "Gestão",
+        "logistica",
+        "Administração",
         "Marketing",
         "Soft Skills",
         "Finanças"
@@ -59,7 +57,7 @@ const MenuCurso = ({ nomeCurso, setNomeCurso }) => {
                         ))}
                     </div>
 
-                    {/* MODALIDADE */}
+                  {/*   MODALIDADE 
                     <div className="filtros-modalidade-menu-cursos-menu-cursos">
                         {modalidades.map((modalidade) => (
                             <button
@@ -74,7 +72,7 @@ const MenuCurso = ({ nomeCurso, setNomeCurso }) => {
                                 {modalidade}
                             </button>
                         ))}
-                    </div>
+                    </div> */}
                 </div>
 
             </section>

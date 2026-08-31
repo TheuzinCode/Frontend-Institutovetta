@@ -1,7 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import './Parte1.css'
+import { useNavigate } from "react-router-dom";
+
 
 const Parte1 = () => {
+    const navigate = useNavigate();
+    const [contador, setContador] = useState(10);
+    useEffect(() => {
+
+        const intervalo = setInterval(() => {
+            setContador((segundos) => segundos - 1);
+        }, 1000);
+
+        const timer = setTimeout(() => {
+            navigate("/");
+        }, 10000);
+
+        return () => {
+            clearInterval(intervalo);
+            clearTimeout(timer);
+        };
+
+    }, [navigate]);
+
     return (
         <>
             <section className="pagina-obrigado">
@@ -47,7 +68,13 @@ const Parte1 = () => {
 
                     <p className="aviso-obrigado">
                         Fique de olho no seu WhatsApp e Email — a primeira mensagem de boas-vindas já
-                        está a caminho. 📩
+                        está a caminho.
+                    </p>
+
+                    <p className="destaque-titulo-obrigado">
+                        Você será redirecionado para a página inicial em{" "}
+                        <strong>{contador}</strong> segundo
+                        {contador !== 1 ? "s" : ""}.
                     </p>
                 </div>
             </section>

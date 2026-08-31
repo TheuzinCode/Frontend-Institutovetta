@@ -1,6 +1,6 @@
 import React from 'react'
 import Cabecalho from "../../componentes/cabecalho/Cabecalho"
-import Parte1 from "./Parte1/Parte1"
+import Parte1 from "./parte1/Parte1"
 import Parte2 from "./parte2/Parte2"
 import Parte3 from "./parte3/Parte3"
 import Parte4 from "./parte4/Parte4"

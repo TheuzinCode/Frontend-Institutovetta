@@ -10,7 +10,7 @@ const Parte5 = () => {
         <>
             <section className="parte5-home">
                 <div className="container-parte5-home">
-                  
+
                     <div className="conteudo-parte5-home">
                         <div className="texto-parte5-home">
                             <span className="subtitulo-parte5-home">
@@ -23,9 +23,12 @@ const Parte5 = () => {
                                 Acreditamos em você. Receba até 50% de desconto
                                 para começar seu curso agora mesmo.
                             </p>
-                            <a href="#" className="botao-parte5-home">
-                                QUERO SABER MAIS
-                            </a>
+                            <Link to={"/quero-desconto"}>
+                                <a className="botao-parte5-home">
+                                    QUERO SABER MAIS
+                                </a>
+                            </Link>
+
                         </div>
                         <div className="imagem-parte5-home">
                             <img

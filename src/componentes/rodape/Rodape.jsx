@@ -11,7 +11,7 @@ import {
 import "./Rodape.css"
 import logo from "../../assets/imgs/Logo-cabecalho.png"
 import { FaFacebook } from "react-icons/fa";
-import { Link, useNavigate  } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 
@@ -67,7 +67,7 @@ const Rodape = () => {
       const data = await response.json();
 
       console.log(data);
-      
+
       setEmail("")
 
     } catch (error) {
@@ -148,10 +148,18 @@ const Rodape = () => {
 
               <h4>CURSOS</h4>
 
-              <a href="/">Gestão de Projetos</a>
-              <a href="/">Análise de Dados</a>
-              <a href="/">Marketing Digital</a>
-              <a href="/">Desenvolvimento Web</a>
+              <Link to={"/cursos"}>
+                Informática Completa
+              </Link>
+              <Link to={"/cursos"}>
+                Marketing Digital
+              </Link>
+              <Link to={"/cursos"}>
+                Desenvolvimento Web
+              </Link>
+              <Link to={"/cursos"}>
+                Assistente Administrativo
+              </Link>
 
             </div>
 

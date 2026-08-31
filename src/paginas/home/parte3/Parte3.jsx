@@ -1,12 +1,11 @@
 import React from 'react'
-import {
-    FiAward,
-    FiClock,
-    FiMonitor,
-    FiArrowRight,
-} from "react-icons/fi";
+import { FiAward, FiClock, FiMonitor, FiArrowRight, } from "react-icons/fi";
 import "./Parte3.css"
 import { Link } from "react-router-dom";
+import automacao from "../../../assets/imgs/Automação com IA n8n.svg";
+import Desenvolvimento from "../../../assets/imgs/Desenvolvimento web.svg"
+import criacao from "../../../assets/imgs/Criação de Apps com IA.svg"
+
 const Parte3 = () => {
     return (
         <>
@@ -39,7 +38,7 @@ const Parte3 = () => {
                             <div className="imagem-parte3-home">
 
                                 {/* COLOCAR IMAGEM */}
-                                <img />
+                                <img src={criacao}/>
 
                                 <span className="categoria-parte3-home">
                                     Inteligência Artificial
@@ -51,33 +50,36 @@ const Parte3 = () => {
                             <div className="conteudo-card-parte3-home">
 
                                 <h3>
-                                    IA Generativa & ChatGPT
+                                    Criação de Apps com IA
                                 </h3>
 
                                 <p>
-                                    Domine o ChatGPT, Midjourney, Copilot e as
-                                    principais ferramentas de IA generativa.
-                                    Aumente sua produtividade e destaque-se
-                                    no mercado.
+                                    Desenvolva aplicativos utilizando
+                                    Inteligência Artificial e tecnologia moderna.
+                                    Aprenda programação, criação de interfaces
+                                    e novas ferramentas digitais.
                                 </p>
 
                                 <div className="infos-parte3-home">
 
                                     <span>
                                         <FiClock />
-                                        40h de conteúdo
+                                        90h de conteúdo
                                     </span>
 
                                     <span>
                                         <FiMonitor />
-                                        Online
+                                        Presencial
                                     </span>
 
                                 </div>
 
-                                <button className="botao-card-parte3-home">
-                                    Ver Detalhes
-                                </button>
+                                <Link to={"/cursos"}>
+                                    <button className="botao-card-parte3-home">
+                                        Ver Detalhes
+                                    </button>
+                                </Link>
+
 
                             </div>
 
@@ -90,7 +92,7 @@ const Parte3 = () => {
                             <div className="imagem-parte3-home">
 
                                 {/* COLOCAR IMAGEM */}
-                                <img />
+                                <img src={automacao} />
 
                                 <span className="categoria-parte3-home">
                                     Inteligência Artificial
@@ -98,59 +100,6 @@ const Parte3 = () => {
 
                                 <span className="status-azul-parte3-home">
                                     Novo
-                                </span>
-
-                            </div>
-
-                            <div className="conteudo-card-parte3-home">
-
-                                <h3>
-                                    Machine Learning com Python
-                                </h3>
-
-                                <p>
-                                    Construa modelos preditivos, redes neurais
-                                    e sistemas de recomendação utilizando
-                                    Python, TensorFlow e Scikit-Learn.
-                                </p>
-
-                                <div className="infos-parte3-home">
-
-                                    <span>
-                                        <FiClock />
-                                        120h de conteúdo
-                                    </span>
-
-                                    <span>
-                                        <FiMonitor />
-                                        Online
-                                    </span>
-
-                                </div>
-
-                                <button className="botao-card-parte3-home">
-                                    Ver Detalhes
-                                </button>
-
-                            </div>
-
-                        </div>
-
-                        {/* CARD 3 */}
-
-                        <div className="card-parte3-home">
-
-                            <div className="imagem-parte3-home">
-
-                                {/* COLOCAR IMAGEM */}
-                                <img />
-
-                                <span className="categoria-parte3-home">
-                                    Inteligência Artificial
-                                </span>
-
-                                <span className="status-laranja-parte3-home">
-                                    Em Alta
                                 </span>
 
                             </div>
@@ -171,19 +120,76 @@ const Parte3 = () => {
 
                                     <span>
                                         <FiClock />
-                                        60h de conteúdo
+                                        120h de conteúdo
                                     </span>
 
                                     <span>
                                         <FiMonitor />
-                                        Online
+                                        Presencial
                                     </span>
 
                                 </div>
 
-                                <button className="botao-card-parte3-home">
-                                    Ver Detalhes
-                                </button>
+                                <Link to={"/cursos"}>
+                                    <button className="botao-card-parte3-home">
+                                        Ver Detalhes
+                                    </button>
+                                </Link>
+
+
+                            </div>
+
+                        </div>
+
+                        {/* CARD 3 */}
+
+                        <div className="card-parte3-home">
+
+                            <div className="imagem-parte3-home">
+
+                                {/* COLOCAR IMAGEM */}
+                                <img src={Desenvolvimento} />
+
+                                <span className="categoria-parte3-home">
+                                    Inteligência Artificial
+                                </span>
+
+                                <span className="status-laranja-parte3-home">
+                                    Em Alta
+                                </span>
+
+                            </div>
+
+                            <div className="conteudo-card-parte3-home">
+
+                                <h3>
+                                    Desenvolvimento Web
+                                </h3>
+
+                                <p>
+                                    Aprenda a desenvolver sistemas e páginas para internet. 
+                                    Domine programação, banco de dados e tecnologias essenciais da web.
+                                </p>
+
+                                <div className="infos-parte3-home">
+
+                                    <span>
+                                        <FiClock />
+                                        100h de conteúdo
+                                    </span>
+
+                                    <span>
+                                        <FiMonitor />
+                                        Presencial
+                                    </span>
+
+                                </div>
+
+                                <Link to={"/cursos"}>
+                                    <button className="botao-card-parte3-home">
+                                        Ver Detalhes
+                                    </button>
+                                </Link>
 
                             </div>
 

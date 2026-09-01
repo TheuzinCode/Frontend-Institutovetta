@@ -9,7 +9,7 @@ import BotaoWhats from '../../componentes/whats/BotaoWhats'
 import { useState, useEffect } from "react";
 
 const PaginaCursos = () => {
-
+   
     const [listaCursos, setListaCursos] = useState([]);
     const [nomeCurso, setNomeCurso] = useState("")
     const [categoriaAtiva, setCategoriaAtiva] = useState("Todos");

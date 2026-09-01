@@ -37,7 +37,7 @@ const CursosDetalhes = () => {
             <Cabecalho />
             <Parte1 curso={curso} />
             <Parte2 curso={curso} />
-            <Parte3 />
+            <Parte3 curso={curso} />
             <Rodape />
             <BotaoWhats />
         </>

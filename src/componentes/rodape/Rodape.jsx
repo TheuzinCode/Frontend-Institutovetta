@@ -66,8 +66,6 @@ const Rodape = () => {
 
       const data = await response.json();
 
-      console.log(data);
-
       setEmail("")
 
     } catch (error) {

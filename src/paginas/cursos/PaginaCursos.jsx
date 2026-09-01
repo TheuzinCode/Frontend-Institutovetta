@@ -24,7 +24,6 @@ const PaginaCursos = () => {
 
                 const resp = await fetch(`http://localhost:8080/cursos?${params}`);
                 const data = await resp.json();
-                console.log("RETORNOU:", data.length, data);
                 setListaCursos(data);
             } catch (error) {
                 console.error("ERRO AO BUSCAR OS CURSOS:", error);

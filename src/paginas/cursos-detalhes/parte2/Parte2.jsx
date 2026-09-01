@@ -17,8 +17,6 @@ const Parte2 = ({ curso }) => {
     const [abaAtiva, setAbaAtiva] = useState("visao");
     const [modal, setModal] = useState(false)
 
-    console.log(curso)
-
     return (
         <>
 

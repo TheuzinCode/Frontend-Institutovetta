@@ -12,7 +12,7 @@ const modal = ({ aberto, fechar, curso }) => {
     const [email, setEmail] = useState("")
     const [numero, setNumero] = useState("")
     const [cursoSelecionado, setCursoSelecionada] = useState(curso)
-    const link = `http://localhost:8080/curso/novoLead`
+    const link = `https://backend-institutovetta-production.up.railway.app/curso/novoLead`
 
 
     function formatarTelefone(valor) {

@@ -32,7 +32,7 @@ const Rodape = () => {
 
   const [email, setEmail] = useState("");
 
-  const linkUrl = `http://localhost:8080/novidade/novo`
+  const linkUrl = `https://backend-institutovetta-production.up.railway.app/novidade/novo`
 
   async function novidade(e) {
     e.preventDefault();

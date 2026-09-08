@@ -22,7 +22,7 @@ const PaginaCursos = () => {
                 if (nomeCurso) params.append("nome", nomeCurso);
                 if (categoriaAtiva !== "Todos") params.append("categoria", categoriaAtiva);
 
-                const resp = await fetch(`http://localhost:8080/cursos?${params}`);
+                const resp = await fetch(`https://backend-institutovetta-production.up.railway.app/cursos?${params}`);
                 const data = await resp.json();
                 setListaCursos(data);
             } catch (error) {

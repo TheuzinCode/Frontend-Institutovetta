@@ -16,7 +16,7 @@ const CursosDetalhes = () => {
     useEffect(() => {
         async function buscarCursos() {
             try {
-                const resp = await fetch(`http://localhost:8080/cursos/${id}`);
+                const resp = await fetch(`https://backend-institutovetta-production.up.railway.app/cursos/${id}`);
                 const data = await resp.json();
                 setCurso(data);
             } catch (err) {

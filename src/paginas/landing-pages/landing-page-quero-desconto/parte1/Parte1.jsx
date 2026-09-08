@@ -19,7 +19,7 @@ const Parte1 = () => {
     const [robo, setRobo] = useState("")
     const navigate = useNavigate();
 
-    const link = `http://localhost:8080/quero-desconto/novo/lead-desconto`
+    const link = `https://backend-institutovetta-production.up.railway.app/quero-desconto/novo/lead-desconto`
 
     function formatarTelefone(valor) {
         // Remove tudo que não for número

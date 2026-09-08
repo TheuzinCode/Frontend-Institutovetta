@@ -13,7 +13,7 @@ const Parte1 = () => {
     const [areaInteresse, setAreaInteresse] = useState("")
     const [mensagem, setMensagem] = useState("")
 
-    const link = `http://localhost:8080/leads/novolead`
+    const link = `https://backend-institutovetta-production.up.railway.app/leads/novolead`
 
     function formatarTelefone(valor) {
         // Remove tudo que não for número

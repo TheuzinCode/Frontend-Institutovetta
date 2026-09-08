@@ -14,7 +14,7 @@ const Parte3 = () => {
     const [assunto, setAssunto] = useState("");
     const [mensagem, setMensagem] = useState("");
 
-    const link = `http://localhost:8080/contato/novo/leadcontato`
+    const link = `https://backend-institutovetta-production.up.railway.app/contato/novo/leadcontato`
 
 
     function formatarTelefone(valor) {

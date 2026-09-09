@@ -3,7 +3,7 @@ import "./Parte5.css"
 import { IoArrowForward } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import Aluna from "../../../assets/imgs/aluna-vetta.svg"
+import Aluna from "../../../assets/imgs/aluna-vetta.svg";
 
 const Parte5 = () => {
     return (

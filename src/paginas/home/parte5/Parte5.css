@@ -13,7 +13,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: url("../../../assets/imgs/fundo-desconto.png") center /cover no-repeat;
+    background: url("../../../assets/imgs//fundo-desconto.webp") center /cover no-repeat;
     height: 100%;
     opacity: .7;
     pointer-events: none;

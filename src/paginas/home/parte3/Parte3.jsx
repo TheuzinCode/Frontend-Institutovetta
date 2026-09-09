@@ -2,9 +2,9 @@ import React from 'react'
 import { FiAward, FiClock, FiMonitor, FiArrowRight, } from "react-icons/fi";
 import "./Parte3.css"
 import { Link } from "react-router-dom";
-import automacao from "../../../assets/imgs/Automação com IA n8n.svg";
-import Desenvolvimento from "../../../assets/imgs/Desenvolvimento web.svg"
-import criacao from "../../../assets/imgs/Criação de Apps com IA.svg"
+import automacao from "../../../assets/imgs/Automação com IA n8n.webp";
+import Desenvolvimento from "../../../assets/imgs/Desenvolvimento web.webp";
+import criacao from "../../../assets/imgs/Criação de Apps com IA.webp";
 
 const Parte3 = () => {
     return (

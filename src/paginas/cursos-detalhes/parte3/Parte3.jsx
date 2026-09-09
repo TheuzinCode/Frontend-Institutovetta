@@ -7,7 +7,7 @@ const Parte3 = ({ curso }) => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:8080/cursos/${curso.id}/relacionados`)
+        fetch(`https://backend-institutovetta-production.up.railway.app/cursos/${curso.id}/relacionados`)
             .then(res => res.json())
             .then(data => setRelacionados(data));
 

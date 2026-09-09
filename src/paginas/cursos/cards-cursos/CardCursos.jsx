@@ -20,6 +20,9 @@ const CardCursos = ({ listaCursos }) => {
     useEffect(() => {
         setPaginaAtual(0);
     }, [listaCursos]);
+
+    console.log("Lista de cursos recebida:", listaCursos);
+
     return (
 
         <>

@@ -21,8 +21,6 @@ const CardCursos = ({ listaCursos }) => {
         setPaginaAtual(0);
     }, [listaCursos]);
 
-    console.log("Lista de cursos recebida:", listaCursos);
-
     return (
 
         <>
@@ -34,7 +32,7 @@ const CardCursos = ({ listaCursos }) => {
                         <div className="imagem-container-cards-cursos">
 
                             <img
-                                src={`data:image/jpeg;base64,${curso.imagemCurso}`}
+                                src={`data:image/webp;base64,${curso.imagemCurso}`}
                                 alt="Inteligência Artificial"
                                 className="imagem-curso-cards-cursos"
                             />

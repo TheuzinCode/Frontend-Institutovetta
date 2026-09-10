@@ -4,6 +4,7 @@ import { FaRegClock } from "react-icons/fa6"; // icone relogio
 import { GoShieldCheck } from "react-icons/go"; // icone escudo check
 import { ImUser } from "react-icons/im"; //icone pessoa
 import Swal from "sweetalert2";
+import { rastrearEvento } from "../../../componentes/meta-pixel/rastrearEvento";
 import "./Parte3.css"
 
 const Parte3 = () => {
@@ -89,6 +90,13 @@ const Parte3 = () => {
                 },
                 body: JSON.stringify(Lead)
             });
+
+            if (resp.ok) {
+                rastrearEvento("Lead", {
+                    content_name: "Formulário de Contato",
+                    content_category: assunto
+                });
+            }
 
             Swal.fire({
                 icon: "success",

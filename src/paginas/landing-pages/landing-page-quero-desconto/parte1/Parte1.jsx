@@ -3,6 +3,7 @@ import './Parte1.css'
 import aluna from "../../../../assets/imgs/aluno-vetta.svg"
 import logo from "../../../../assets/imgs/logo-desconto.svg"
 import { useNavigate } from "react-router-dom";
+import { rastrearEvento } from "../../../../componentes/meta-pixel/rastrearEvento";
 
 const Parte1 = () => {
 
@@ -118,6 +119,11 @@ const Parte1 = () => {
             setTelefone("")
             setUnidades("") 
             setRobo("")
+
+            rastrearEvento("Lead", {
+                content_name: "Quero Desconto",
+                content_category: unidades
+            });
 
             navigate("/quero-desconto/obrigado")
 

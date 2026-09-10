@@ -11,6 +11,7 @@ import SobreNos from './paginas/sobre-nos/SobreNos';
 import Obrigado from './paginas/landing-pages/obrigado/obrigado'
 import ObrigadoLaranja from './paginas/landing-pages/landing-page-quero-desconto/pagina-obrigado/ObrigadoLaranja'
 import RolarParaTopo from './componentes/rolar-para-topo/RolarParaTopo'
+import MetaPixel from './componentes/meta-pixel/MetaPixel'
 import QueroDesconto from './paginas/landing-pages/landing-page-quero-desconto/QueroDesconto';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <>
       <BrowserRouter>
         <RolarParaTopo />
+        <MetaPixel />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cursos" element={<PaginaCursos />} />

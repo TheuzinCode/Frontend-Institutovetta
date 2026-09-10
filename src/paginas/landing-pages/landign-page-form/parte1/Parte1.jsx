@@ -201,12 +201,21 @@ const Parte1 = () => {
                                 Área de interesse
                             </option>
 
-                            <option value="marketing">Marketing Digital</option>
-                            <option value="dados">Análise de Dados</option>
-                            <option value="projetos">Gestão de Projetos</option>
-                            <option value="web">Desenvolvimento Web</option>
-                            <option value="design">Design UX/UI</option>
-                            <option value="ia">Inteligência Artificial</option>
+                            <option value="Administração e Gestão">Administração e Gestão</option>
+                            <option value="Finanças e Contabilidade">Finanças e Contabilidade</option>
+                            <option value="Comércio, Atendimento e Serviços">Comércio, Atendimento e Serviços</option>
+                            <option value="Saúde e Cuidados">Saúde e Cuidados</option>
+                            <option value="Desenvolvimento Pessoal">Desenvolvimento Pessoal</option>
+                            <option value="Marketing Digital">Marketing Digital</option>
+                            <option value="Informática">Informática</option>
+                            <option value="Excel e Análise de Dados">Excel e Análise de Dados</option>
+                            <option value="Inteligência Artificial">Inteligência Artificial</option>
+                            <option value="Automação">Automação</option>
+                            <option value="Programação">Programação</option>
+                            <option value="Desenvolvimento Web">Desenvolvimento Web</option>
+                            <option value="Design Gráfico">Design Gráfico</option>
+                            <option value="Desenvolvimento de Games">Desenvolvimento de Games</option>
+                            <option value="Idiomas">Idiomas</option>
 
                         </select>
 

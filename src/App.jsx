@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./paginas/home/PaginaHome";
 import PaginaCursos from "./paginas/cursos/PaginaCursos";
 import CursosDetalhes from './paginas/cursos-detalhes/CursosDetalhes';
@@ -34,6 +34,10 @@ function App() {
           <Route path="/obrigado" element={<Obrigado />} />
           <Route path="/quero-desconto" element={<QueroDesconto />} />
           <Route path="/quero-desconto/obrigado" element={<ObrigadoLaranja />} />
+
+          {/* Qualquer URL desconhecida volta para a home,
+             para não cair em página em branco. */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
     </>

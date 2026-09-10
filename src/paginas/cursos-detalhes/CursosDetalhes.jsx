@@ -1,7 +1,6 @@
 import { React, useState, useEffect } from 'react'
 import Parte1 from "./parte1/Parte1"
 import Parte2 from "./parte2/Parte2"
-import Parte3 from "./parte3/Parte3"
 import Cabecalho from '../../componentes/cabecalho/Cabecalho'
 import Rodape from '../../componentes/rodape/Rodape'
 import BotaoWhats from '../../componentes/whats/BotaoWhats'
@@ -37,7 +36,6 @@ const CursosDetalhes = () => {
             <Cabecalho />
             <Parte1 curso={curso} />
             <Parte2 curso={curso} />
-            <Parte3 curso={curso} />
             <Rodape />
             <BotaoWhats />
         </>

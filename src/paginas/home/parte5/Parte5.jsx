@@ -23,10 +23,8 @@ const Parte5 = () => {
                                 Acreditamos em você. Receba até 50% de desconto
                                 para começar seu curso agora mesmo.
                             </p>
-                            <Link to={"/quero-desconto"}>
-                                <a className="botao-parte5-home">
-                                    QUERO SABER MAIS
-                                </a>
+                            <Link to={"/quero-desconto"} className="botao-parte5-home">
+                                QUERO SABER MAIS
                             </Link>
 
                         </div>

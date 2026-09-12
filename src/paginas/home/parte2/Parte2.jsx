@@ -23,10 +23,8 @@ const Parte2 = () => {
                                     que estão transformando carreiras
                                 </h2>
                             </div>
-                            <Link to={"/cursos"}>
-                                <a className="btn-cursos-part2-home">
-                                    Ver todos os cursos de IA →
-                                </a>
+                            <Link to={"/cursos"} className="btn-cursos-part2-home">
+                                Ver todos os cursos de IA →
                             </Link>
                         </div>
                         <div className="cards-part2-home">
@@ -47,8 +45,8 @@ const Parte2 = () => {
                                         <CiClock2 className='icone-relogio' size={15} />  <span> 40h de conteúdo</span>
                                     </div>
 
-                                    <Link to={"/cursos"} className='saiba-mais'>
-                                        <a className="rodape-card-a-part2-home" >Saiba mais →</a>
+                                    <Link to={"/cursos"} className="saiba-mais rodape-card-a-part2-home">
+                                        Saiba mais →
                                     </Link>
                                 </div>
                             </div>
@@ -68,8 +66,8 @@ const Parte2 = () => {
                                     <div className='horas-rodape'>
                                         <CiClock2 className='icone-relogio' size={15} />  <span> 120h de conteúdo</span>
                                     </div>
-                                    <Link to={"/cursos"} className='saiba-mais'>
-                                        <a className="rodape-card-a-part2-home">Saiba mais →</a>
+                                    <Link to={"/cursos"} className="saiba-mais rodape-card-a-part2-home">
+                                        Saiba mais →
                                     </Link>
                                 </div>
                             </div>
@@ -89,8 +87,8 @@ const Parte2 = () => {
                                     <div className='horas-rodape'>
                                         <CiClock2 className='icone-relogio' size={15} />  <span> 60h de conteúdo</span>
                                     </div>
-                                    <Link to={"/cursos"} className='saiba-mais'>
-                                        <a className="rodape-card-a-part2-home">Saiba mais →</a>
+                                    <Link to={"/cursos"} className="saiba-mais rodape-card-a-part2-home">
+                                        Saiba mais →
                                     </Link>
                                 </div>
                             </div>
@@ -125,10 +123,8 @@ const Parte2 = () => {
 
                             <img className="imagem-destaque-img-parte2-home" />
 
-                            <Link to={"/cursos"}>
-                                <a className="botao-inscrever-parte2-home">
-                                    Quero me inscrever →
-                                </a>
+                            <Link to={"/cursos"} className="botao-inscrever-parte2-home">
+                                Quero me inscrever →
                             </Link>
 
                         </div>

@@ -13,12 +13,21 @@ const Parte1 = () => {
     const [telefone, setTelefone] = useState("")
     const [areaInteresse, setAreaInteresse] = useState("")
     const [mensagem, setMensagem] = useState("")
+    const [erros, setErros] = useState({})
+
+    // Ordem visual dos campos, usada para focar o primeiro com erro
+    const ordemCampos = ["nome", "email", "telefone", "areaInteresse"]
 
     const link = `https://backend-institutovetta-production.up.railway.app/leads/novolead`
 
     function formatarTelefone(valor) {
         // Remove tudo que não for número
         valor = valor.replace(/\D/g, "");
+
+        // O preenchimento automático pode vir com o código do país (+55)
+        if (valor.length > 11 && valor.startsWith("55")) {
+            valor = valor.slice(2);
+        }
 
         // Limita a 11 dígitos
         valor = valor.slice(0, 11);
@@ -57,30 +66,58 @@ const Parte1 = () => {
         return valor.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ\s]/g, "");
     }
 
-    async function salvarDados(e) {
-        e.preventDefault();
+    function validarCampos() {
+        const novosErros = {};
 
-        if (!nome || !email || !telefone || !areaInteresse) {
-            alert("Por favor, preencha todos os campos");
-            return;
-        }
-
-        if (!email.includes("@")) {
-            alert("Digite um email válido");
-            return;
+        if (!nome.trim()) {
+            novosErros.nome = "Digite seu nome completo.";
         }
 
         const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-        if (!emailValido.test(email)) {
-            alert("Digite um e-mail válido.");
-            return;
+        if (!email.trim()) {
+            novosErros.email = "Digite seu e-mail.";
+        } else if (!emailValido.test(email)) {
+            novosErros.email = "Digite um e-mail válido.";
         }
 
         const telefoneNumeros = telefone.replace(/\D/g, "");
 
-        if (telefoneNumeros.length < 10) {
-            alert("Digite um telefone válido.");
+        if (!telefoneNumeros) {
+            novosErros.telefone = "Digite seu WhatsApp com DDD.";
+        } else if (telefoneNumeros.length < 10) {
+            novosErros.telefone = "Digite um telefone válido, com DDD.";
+        }
+
+        if (!areaInteresse) {
+            novosErros.areaInteresse = "Selecione uma área de interesse.";
+        }
+
+        return novosErros;
+    }
+
+    // Some o erro do campo assim que o usuário começa a corrigi-lo
+    function limparErro(campo) {
+        setErros((anteriores) => ({ ...anteriores, [campo]: "" }));
+    }
+
+    function classeCampo(classeBase, campo) {
+        return erros[campo]
+            ? classeBase + " campo-com-erro-page-form-parte1"
+            : classeBase;
+    }
+
+    async function salvarDados(e) {
+        e.preventDefault();
+
+        const novosErros = validarCampos();
+        setErros(novosErros);
+
+        // Mostra o erro embaixo de cada campo e leva o foco ao primeiro deles
+        const primeiroCampoComErro = ordemCampos.find((campo) => novosErros[campo]);
+
+        if (primeiroCampoComErro) {
+            document.getElementById(primeiroCampoComErro)?.focus();
             return;
         }
 
@@ -122,7 +159,9 @@ const Parte1 = () => {
 
         } catch (error) {
             console.error("Erro ao salvar:", error);
-            alert("Erro ao salvar. Por favor, tente novamente.");
+            setErros({
+                envio: "Não foi possível enviar. Verifique sua conexão e tente novamente."
+            });
         }
 
     }
@@ -154,7 +193,10 @@ const Parte1 = () => {
                     </div>
 
                     {/* FORMULARIO */}
-                    <div className="card-formulario-page-form-parte1">
+                    <form id="formulario" className="card-formulario-page-form-parte1"
+                        onSubmit={salvarDados}
+                        noValidate
+                    >
 
                         <h2 className="titulo-formulario-page-form-parte1">
                             Fale com a gente
@@ -168,33 +210,85 @@ const Parte1 = () => {
 
                         <input
                             type="text"
-                            className="entrada-page-form-parte1"
+                            id="nome"
+                            name="nome"
+                            autoComplete="name"
+                            autoCapitalize="words"
+                            className={classeCampo("entrada-page-form-parte1", "nome")}
                             placeholder="Nome completo"
                             value={nome}
-                            onChange={(e) => setNome(formatarNome(e.target.value))}
+                            aria-invalid={!!erros.nome}
+                            aria-describedby={erros.nome ? "erro-nome" : undefined}
+                            onChange={(e) => {
+                                setNome(formatarNome(e.target.value));
+                                limparErro("nome");
+                            }}
                         />
+
+                        {erros.nome && (
+                            <p id="erro-nome" className="mensagem-erro-page-form-parte1">
+                                {erros.nome}
+                            </p>
+                        )}
 
 
                         <input
                             type="email"
-                            className="entrada-page-form-parte1"
+                            id="email"
+                            name="email"
+                            autoComplete="email"
+                            className={classeCampo("entrada-page-form-parte1", "email")}
                             placeholder="Seu melhor e-mail"
                             value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                            aria-invalid={!!erros.email}
+                            aria-describedby={erros.email ? "erro-email" : undefined}
+                            onChange={(e) => {
+                                setEmail(e.target.value);
+                                limparErro("email");
+                            }}
                         />
+
+                        {erros.email && (
+                            <p id="erro-email" className="mensagem-erro-page-form-parte1">
+                                {erros.email}
+                            </p>
+                        )}
 
 
                         <input
                             type="tel"
-                            className="entrada-page-form-parte1"
+                            id="telefone"
+                            name="telefone"
+                            autoComplete="tel-national"
+                            className={classeCampo("entrada-page-form-parte1", "telefone")}
                             placeholder="WhatsApp com DDD"
                             value={telefone}
-                            onChange={(e) => setTelefone(formatarTelefone(e.target.value))}
+                            aria-invalid={!!erros.telefone}
+                            aria-describedby={erros.telefone ? "erro-telefone" : undefined}
+                            onChange={(e) => {
+                                setTelefone(formatarTelefone(e.target.value));
+                                limparErro("telefone");
+                            }}
                         />
 
+                        {erros.telefone && (
+                            <p id="erro-telefone" className="mensagem-erro-page-form-parte1">
+                                {erros.telefone}
+                            </p>
+                        )}
 
-                        <select className="selecao-page-form-parte1" value={areaInteresse}
-                            onChange={(e) => setAreaInteresse(e.target.value)}
+
+                        <select
+                            id="areaInteresse"
+                            name="areaInteresse"
+                            className={classeCampo("selecao-page-form-parte1", "areaInteresse")}
+                            value={areaInteresse}
+                            aria-invalid={!!erros.areaInteresse}
+                            aria-describedby={erros.areaInteresse ? "erro-areaInteresse" : undefined}
+                            onChange={(e) => {
+                                setAreaInteresse(e.target.value);
+                                limparErro("areaInteresse");
+                            }}
                         >
 
                             <option value="" disabled>
@@ -219,8 +313,16 @@ const Parte1 = () => {
 
                         </select>
 
+                        {erros.areaInteresse && (
+                            <p id="erro-areaInteresse" className="mensagem-erro-page-form-parte1">
+                                {erros.areaInteresse}
+                            </p>
+                        )}
+
 
                         <textarea
+                            id="mensagem"
+                            name="mensagem"
                             className="area-texto-page-form-parte1"
                             placeholder="Mensagem adicional (opcional)"
                             value={mensagem}
@@ -228,13 +330,17 @@ const Parte1 = () => {
                         ></textarea>
 
 
-                        <button className="botao-page-form-parte1"
-                            onClick={salvarDados}
-                        >
+                        {erros.envio && (
+                            <p className="mensagem-erro-page-form-parte1 mensagem-erro-envio-page-form-parte1" role="alert">
+                                {erros.envio}
+                            </p>
+                        )}
+
+                        <button className="botao-page-form-parte1" type="submit">
                             INSCREVA-SE
                         </button>
 
-                    </div>
+                    </form>
 
 
 

@@ -65,6 +65,8 @@
 /* FORMULARIO */
 
 .card-formulario-page-form-parte1 {
+    /* Compensa o cabeçalho fixo ao rolar até o formulário */
+    scroll-margin-top: 90px;
     max-width: 470px;
     background: #ffffff;
     border-radius: 16px;
@@ -103,6 +105,8 @@
     outline: none;
     transition: 0.2s;
     box-sizing: border-box;
+    /* Compensa o cabeçalho fixo quando o campo recebe foco */
+    scroll-margin-top: 90px;
 }
 
 
@@ -138,6 +142,33 @@
     border-color: #ff6335;
     background: #ffffff;
     box-shadow: 0 0 0 3px rgba(255, 99, 53, 0.12);
+}
+
+
+/* Campo com erro de validação */
+
+.campo-com-erro-page-form-parte1,
+.campo-com-erro-page-form-parte1:focus {
+    margin-bottom: 6px;
+    border-color: #e5484d;
+    background: #fff7f7;
+    box-shadow: 0 0 0 3px rgba(229, 72, 77, 0.12);
+}
+
+
+.mensagem-erro-page-form-parte1 {
+    margin: 0 0 14px 2px;
+    color: #d93a3f;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+
+/* Erro geral de envio, acima do botão */
+
+.mensagem-erro-envio-page-form-parte1 {
+    margin: 0;
+    text-align: center;
 }
 
 

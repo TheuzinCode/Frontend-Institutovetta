@@ -1,8 +1,13 @@
 import React from 'react'
 import './Parte5.css'
-import { Link } from "react-router-dom";
 
 const Parte5 = () => {
+
+    function rolarParaFormulario() {
+        document.getElementById("formulario")
+            ?.scrollIntoView({ behavior: "smooth" });
+    }
+
     return (
         <>
             <section className="pagina-page-form-parte5">
@@ -23,15 +28,15 @@ const Parte5 = () => {
                         garanta sua consultoria gratuita com um de nossos especialistas.
                     </p>
 
-                    <Link to={"/page-form"}>
-                    <button className="botao-page-form-parte5">
+                    <button className="botao-page-form-parte5"
+                        onClick={rolarParaFormulario}
+                    >
 
                         Quero Agendar Minha Consultoria
 
                         <span className="seta-botao-page-form-parte5">↑</span>
 
                     </button>
-                    </Link>
 
 
                     <div className="status-page-form-parte5">

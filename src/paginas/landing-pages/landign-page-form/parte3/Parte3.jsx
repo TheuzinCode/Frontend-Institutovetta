@@ -18,7 +18,7 @@ const Parte3 = () => {
             icone: <CiCalendar />,
             nome: "1 Anos de Excelência",
             texto:
-                "Mais de uma década formando líderes que hoje dirigem equipes nas principais empresas do país."
+                "Mais de um ano formando líderes que hoje dirigem equipes nas principais empresas do país."
         },
         {
             icone: <LuMedal />,

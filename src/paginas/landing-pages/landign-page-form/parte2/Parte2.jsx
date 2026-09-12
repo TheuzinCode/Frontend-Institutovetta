@@ -3,7 +3,7 @@ import './Parte2.css'
 import { FaChartColumn } from "react-icons/fa6";
 import { LuBrain } from "react-icons/lu";
 import { FaRegBuilding } from "react-icons/fa";
-import { FaPeopleRobbery } from "react-icons/fa6";
+import { MdElderly } from "react-icons/md";
 import { GoGraph } from "react-icons/go";
 
 const Parte2 = () => {
@@ -40,10 +40,10 @@ const Parte2 = () => {
                 "Fundamentos do N8N, ChatGPT, Inteligência Artificial E Lovable com aplicações práticas em negócios."
         },
         {
-            icone: <FaPeopleRobbery />,
+            icone: <MdElderly />,
             nome: "Cuidador de Idosos",
             texto:
-                "Figma, design systems, pesquisa com usuários e prototipação interativa com feedback de experts."
+                "Prestar assistência, cuidado e acompanhamento de pessoas idosas com responsabilidade, respeito e humanização."
         }
     ];
 

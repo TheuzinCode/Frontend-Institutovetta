@@ -157,7 +157,7 @@ const Parte1 = () => {
                     <div className="card-formulario-page-form-parte1">
 
                         <h2 className="titulo-formulario-page-form-parte1">
-                            Agende sua Consultoria Gratuita
+                            Fale com a gente
                         </h2>
 
 
@@ -231,7 +231,7 @@ const Parte1 = () => {
                         <button className="botao-page-form-parte1"
                             onClick={salvarDados}
                         >
-                            INSCREVER - SE
+                            INSCREVA-SE
                         </button>
 
                     </div>

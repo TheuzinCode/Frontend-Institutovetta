@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './Parte1.css'
 import { ImUser } from "react-icons/im";
 import { useNavigate } from "react-router-dom";
-import { rastrearEvento } from "../../../../componentes/meta-pixel/rastrearEvento";
 
 
 const Parte1 = () => {
@@ -150,12 +149,8 @@ const Parte1 = () => {
             setAreaInteresse("")
             setMensagem("")
 
-            rastrearEvento("Lead", {
-                content_name: "Consultoria Gratuita",
-                content_category: areaInteresse
-            });
-
-            navegate("/obrigado");
+            // A página /obrigado dispara o Lead do pixel ao ser aberta
+            navegate("/obrigado", { state: { areaInteresse } });
 
         } catch (error) {
             console.error("Erro ao salvar:", error);

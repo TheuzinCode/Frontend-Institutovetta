@@ -337,11 +337,6 @@ const Parte1 = () => {
 
                     </form>
 
-
-
-
-
-
                 </div>
 
             </section>

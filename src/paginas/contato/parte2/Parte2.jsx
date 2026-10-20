@@ -115,11 +115,11 @@ const Parte2 = () => {
                             </h3>
 
                             <p className="texto-canal-contato-parte2">
-                                contato@instituto.com.br
+                                contato@institutovetta.com.br
                             </p>
 
                             <p className="texto-canal-contato-parte2">
-                                suporte@instituto.com.br
+                                suporte@institutovetta.com.br
                             </p>
 
                         </div>
@@ -136,7 +136,7 @@ const Parte2 = () => {
                             </h3>
 
                             <p className="texto-canal-contato-parte2">
-                                (11) 3000-0000
+                                (11) 2976-2480
                             </p>
 
                             <p className="texto-canal-contato-parte2">

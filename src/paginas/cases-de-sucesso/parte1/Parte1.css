@@ -129,7 +129,7 @@
 
 
 .destaque-titulo-cases-sucesso-parte1 {
-    background: linear-gradient(90deg, #ff6335 0%, #ff8a5c 40%, #8c94a8 72%, #6f9fd8 100%);
+    background-color:#ff6335;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

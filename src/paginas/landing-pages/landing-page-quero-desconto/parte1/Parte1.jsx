@@ -295,7 +295,7 @@ const Parte1 = () => {
                                 </label>
 
                                 <p className="aviso-quero-desconto">
-                                    Exemplo: Ao informar meus dados, estou ciente das diretrizes da{" "}
+                                     Ao informar meus dados, estou ciente das diretrizes da{" "}
                                     <a className="link-quero-desconto" href="#">
                                         Política de Privacidade
                                     </a>
